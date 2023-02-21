@@ -4,7 +4,11 @@ let yuli = "holi"
 let manuel=1234567890;
 let nicolas = "."
 var sebastian="xd"
-var Erick = "pro fin pude :v"
+var Erick = "por fin pude :v"
 let Adrian = "NO le entiendo JOven"
 let Breinner = "Hi"
-console.log(" gente somos famosos")
+console.log("Siguen aqui? ")
+
+
+console.log(nicolas)
+
