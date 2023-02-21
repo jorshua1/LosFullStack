@@ -1,4 +1,7 @@
-//Par e Impaar
+function suma(a,b) {
+    return a+b
+}
+console.log(suma(5,5));//Par e Impaar
 do {
     var numero = prompt("Ingrese un número de valor Entero Positivo \nSi desea finalizar el programa ingrese la palabra salir")
     alert(parImpar(numero))
@@ -14,5 +17,6 @@ do {
       }
       return (numero + " No es un caracter valido, intente nuevamente");
       
+
     }
   }while (numero !== "salir");ñ
