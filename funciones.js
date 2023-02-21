@@ -1,5 +1,3 @@
-let jorshua = "Hola"
-
 let edgar = 5164;
 let jenifer ="wenas"
 let yuli = "holi"
@@ -9,3 +7,4 @@ var sebastian="xd"
 var Erick = "pro fin pude :v"
 let Adrian = "NO le entiendo JOven"
 let Breinner = "Hi"
+
