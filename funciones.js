@@ -8,3 +8,4 @@ var Erick = "pro fin pude :v"
 let Adrian = "NO le entiendo JOven"
 let Breinner = "Hi"
 
+console.log("hola");
