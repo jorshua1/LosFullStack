@@ -7,4 +7,4 @@ var sebastian="xd"
 var Erick = "pro fin pude :v"
 let Adrian = "NO le entiendo JOven"
 let Breinner = "Hi"
-
+console.log("Siguen aqui? ")
