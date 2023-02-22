@@ -1,6 +1,6 @@
 let edgar = 5164;
 let jenifer ="wenas"
-let yuli = "holi"
+let yuli = "si"
 let manuel=1234567890;
 let nicolas = "."
 var sebastian="xd"
@@ -12,6 +12,4 @@ console.log("Siguen aqui? ")
 console.log("Hola nb")
 
 console.log(nicolas)
-
-
 
