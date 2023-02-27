@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mi primera pagina</title>
+  </head>
+  <style>
+    #contenedor1 {
+      background-color: black;
+      color: #fff;
+    }
+
+    #contenedor2 {
+      /*         background-color: tomato;
+        color: lime; */
+    }
+
+    #contenedor3 {
+      background-color: blue;
+      color: crimson;
+    }
+    #formulario {
+      background-color: paleturquoise;
+      color: royalblue
+      
+
+    }
+    
+    table,
+    th,
+    td {
+      border: 1px solid blue;
+      border-collapse: collapse;
+    }
+  </style>
+  <body>
+    <div id="tabla">
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Fecha</th>
+        </tr>
+        <tr>
+          <td>jorshua</td>
+          <td>25</td>
+          <td>24/2/23</td>
+        </tr>
+        <tr>
+          <td>yuli</td>
+          <td>20</td>
+          <td>24/2/23</td>
+        </tr>
+      </table>
+    </div>
+    <br /><br /><br /><br /><br />
+    <form action="">
+      <label for="nombre">Ingrese su nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre" required/>
+      
+      <br>
+      
+      <label for="edad">ingrese su edad</label>
+      <input type="number" id="edad" name="edadd" max="30" min="0" maxlength="" required>
+      <label>Seleccion multiple</label>
+      <input type="checkbox">
+      <label for="radio">radioButton</label>
+      <input type="radio" id="radio" name="">
+      <br>
+      <label for="click">click aq1ui</label>
+      <input type="button" id="click" name="">
+      <br>
+      <label for="color"> escoja color</label>
+      <input type="color" id="color" name="">
+      <br>
+      <label for="constraseña"> ingrese su coonstraseña</label>
+      <input type="password" id="constraseña" name="constra">
+      <br>
+      <input type="image" src="KirbyAspirando.jpg" alt="este debe ser KirbyAspirando"> 
+      <br>
+      <button onclick="saludar()"> saludao aqui </button>
+      <label for="descripcion">ingrese una descripcion </label>
+      <textarea name="" id="descripcion" cols="30" rows="10" placeholder="ingres su biografia "></textarea>
+
+    </form>
+    <label for="menu">seleciona una opction del menu </label>
+    <select name="" id="menu">
+      <option value="1  "> uno</option>
+      <option value="2"> udos</option>
+      <option value="3  "> treee</option>
+      <option value="4"> cuantro</option>
+      <option value="5 "> cinco</option>
+    </select>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div id = reprodutor youtube >
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+    </div>
+    <div id="contenedor1">
+      <!-- Este es mi primer comentario de muchos -->
+      <!-- <h1>Hola mi nombre es russell</h1> -->
+      <h1>Esta es mi primer pagina</h1>
+      <img
+        src="tungsten-rising-dDh-GhLjHmk-unsplash.jpg"
+        alt="paisaje bonito"
+        height="400px"
+        width="200px"
+      />
+
+      <a href="#lista"><h2 id="cabecera">ir a la lista de haceres</h2></a>
+      <h3>Tercer titulo</h3>
+      <h4>Cuarto titulo</h4>
+      <h5>Quinto titulo</h5>
+      <h6>Sexto titulo</h6>
+
+      <a href="#salto"><h1>ir al parrafo</h1></a>
+      <a href="https://www.youtube.com" target="_blank">Irnos a youtube</a>
+      <br /><br />
+      <a href="tungsten-rising-dDh-GhLjHmk-unsplash.jpg" download
+        >Descargar imagen</a
+      >
+
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <p id="salto">
+        Este es un parrafo con Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Fuga iusto, accusamus quia praesentium molestiae eius
+        possimus numquam sequi magnam id.
+      </p>
+      <a href="#cabecera">ir hacia arriba</a>
+
+      <h3>Lista de tareas</h3>
+      <ul id="lista">
+        <li>aprender html</li>
+        <li>manejar mas paciencia</li>
+      </ul>
+      <br />
+      <h3>Lista ordenada</h3>
+      <ol type="1">
+        <li>
+          submenu
+          <ol type="a">
+            <li>uno uno</li>
+            <li>uno dos</li>
+          </ol>
+        </li>
+        <li>dos</li>
+        <li>tres</li>
+        <li>cuatro</li>
+        <li>cinco</li>
+      </ol>
+    </div>
+    <br />
+    <div id="contenedor2">
+      <h1>Hola soy el segundo contenedor</h1>
+      <br />
+      <h1>Este texto cambia <span style="color: crimson"> de color</span></h1>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <span>
+        <p style="color: cornflowerblue">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, labore
+          earum? Cupiditate animi laborum veritatis!
+        </p>
+      </span>
+    </div>
+    <div id="contenedor3">
+      <img
+        src="tungsten-rising-dDh-GhLjHmk-unsplash.jpg"
+        alt=""
+        height="400px"
+      />
+      <br />
+      <h4>Lista de items</h4>
+      <ol type="a">
+        <li>sexo</li>
+        <li>hay</li>
+        <li>alguien</li>
+        <li>aqui</li>
+        <li>xd</li>
+      </ol>
+    </div>
+    <br />
+    <script> 
+    function saludar(){
+      alert("hola mundo  MUY FACIL REYYY ")
+    }
+    </script>
+  </body>
+</html>
