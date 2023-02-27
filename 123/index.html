@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="">
     <title>mi primera pagina</title>
   </head>
   <style>
@@ -21,6 +22,8 @@
       background-color: blue;
       color: crimson;
     }
+
+    form{text-transform: uppercase;}
 
     table,
     th,
@@ -52,14 +55,21 @@
     <br /><br /><br /><br /><br />
     <form action="">
       <label for="nombre">Ingrese su nombre</label>
-      <input type="text" id="nombre" name="nombre" maxlength="5">
+      <input type="text" id="nombre" name="nombre" maxlength="5" placeholder="ingresa tu nombre" required>
       <label>ingrese su edad</label>
-      <input type="number">
+      <input type="number" value="744" required max="20" min="10">
       <label>Seleccion multiple</label>
       <input type="checkbox">
       <label>radioButton</label>
       <input type="radio">
     </form>
+    <label for="menu">Seleccione una opcion del menu</label>
+    <select name="menu" id="menu" >
+      <option value="1">uno</option>
+      <option value="2">dos</option>
+      <option value="3">tres</option>
+    </select>
+    
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <div id="contenedor1">
       <!-- Este es mi primer comentario de muchos -->
@@ -147,12 +157,21 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/PpGHtPlBuUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <form >
         <label for="password">Ingrese su contraseña</label>
-        <input type="password" id="password">
-        
+        <input type="password" id="password" value="545">
+        <input type="image" src="photo-1677445285696-455b37a7d80e (1).avif" alt="input deberia salir con una imagen" >
+        <label for="descripcion">Ingrese descripcion</label>
+        <textarea name="" id="descipcion" cols="50" rows="2" placeholder="ingrese datos "></textarea>
+        <button onclick="saludar()">  oprime este botom </button>
       </form>
     </div>
 
 
     <br />
+    <script>
+      function saludar(){
+        alert("buenos dias ¿como estas?");
+      };
+
+    </script>
   </body>
 </html>
