@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera pagina</title>
+</head>
+
+<style>
+    #contenedor1 {
+        background-color: black;
+        color: #fff;
+    }
+    #contenedor2{
+        background-color: aqua;
+        color:blueviolet
+    }
+    #contenedor3{
+        background-color: blue;
+    }
+    #formulario{
+        background-color: pink;
+    }
+    table,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    body{
+        background-color: white;
+    }
+</style>
+
+ body{
+    background-color: 051923;
+    color: white;
+}
+<body>
+   <div id="formulario">
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>edad</th>
+            <th>fecha</th>
+        </tr>
+        <tr>
+            <td>Yuli</td>
+            <td>20</td>
+            <td>20/04/2002</td>
+        </tr>
+        <tr>
+            <td>Nicolas</td>
+            <td>18</td>
+            <td>20/03/2022</td>
+        </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <div>
+        <form action="">
+         <label for="nombre">Ingrese su nombre</label>
+         <input type="text" id="nombre" name="" maxlength="3" placeholder="Ingrese su nombre" required>
+         <label for="edad">Ingrese su edad</label>
+         <input type="number" id="edad" max="30" min="0" maxlength="2" value="25">
+         <label>Seleccion multiple</label>
+         <input type="checkbox">
+         <label >radiobutton</label>
+         <input type="radio">
+         <label for="">Tipo de boton</label>
+         <input type="button" value="usame">
+         <label for="">boton</label>
+         <label for="">seleccione color</label>
+         <input type="color">
+         <label for="">Ingrese su contraseña</label>
+         <input type="password" name="password" id="password">
+         <input type="image" src = "https://colorear123.com/wp-content/uploads/2022/08/Mario-Bros-3.png?v=1660545423" alt="este input deberia salir con una imagen">
+         <label for="descripcion">Ingrese una descripcion</label>
+         <textarea name="" id="descripcion" cols="30" rows="3" placeholder="Ingrese datos"></textarea>
+         <button onclick="saludo()">clickeame</button>
+         <div>
+       </form>
+       <label for="menu">Seleccione una opcion del menu</label>
+       <select name="" id="menu">
+         <option value="1">Uno</option>
+         <option value="2">Dos</option>
+         <option value="3">Tres</option>
+       </select> 
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       </div>
+       <div id="reproductor">
+        <iframe width="560" height="315" src="https://youtu.be/o1dfTZS8E90" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>
+       </div>
+       <div id ="contenedor1">
+        <!--Este es mi primer comentario de muchos -->
+        <!-- <h1>Hola mi nombre es russell</h1> -->
+        <h1>Esta es mi primera pagina</h1>
+        <img src="nikita-pishchugin-XrUfb1UK-Bg-unsplash.jpg" height="400px" width="200px">
+        <br>
+        <a href="#lista">
+            <h2 id="cabecera">ir a la lista de haceres</h2>
+        </a>
+        <h3>Tercer titulo</h3>
+        <h4>Cuarto Titulo</h4>
+        <h5>Quinto Titulo</h5>
+        <h6>Sexto Titulo</h6>
+        <a href="#salto">
+            <h1>ir al parrafo</h1>
+        </a>
+
+        <a href="https://www.youtube.com/" target="_blank">Irnos a youtube</a>
+        <br><br>
+        <a href="https://www.astrobitacora.com/wp-content/uploads/2016/09/crab-nebula-esa-1024.jpg?resolution=1920,1"
+            download=>Descargar imagen</a>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p id="salto">Este es un parrofo con Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed amet aliquam
+            dolor animi culpa voluptatibus architecto! Consectetur mollitia nobis dolorum.</p>
+        <a href="#cabecera">ir hacia arriba</a>
+
+        <h3>Lista de tareas</h3>
+        <ul id=lista>
+            <li>aprender html></li>
+            <li>repasar mas</li>
+        </ul>
+
+        <h3>Lista ordenada</h3>
+        <ol type="1">
+            <li>submenu
+                <ol type="a">
+                    <li>uno uno</li>
+                    <li>uno dos</li>
+                </ol>
+            </li>
+            <li>dos</li>
+            <li>tres</li>
+            <li>cuarto</li>
+            <li>cinco</li>
+        </ol>
+    </div>
+   </div>
+    <div id ="contenedor2">
+        <h1>Hola soy el segundo contenedor</h1>
+        <br>
+        <h1>Este texto cambia<span style="color:crimson"> de color</span></h1>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <span>
+            <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, id?
+        </h1>
+    </span>
+    <p style="color:cornflowerblue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, fugit.</p>
+    <span>
+        <div id="contenerdor3"><img src="" alt="400px>
+        </div>
+        <br>
+        <h4>Lista de items</h4>
+        <ol type="a">
+            <li>hay</li>
+            <li>alguien</li>
+            <li>aqui</li>
+            <li>hola</li>
+        </ol>
+    </span>
+    </div>
+    <script>
+        function saludo(){
+            alert("hola")
+    }
+    </script>
+</body>
+
+</html>
