@@ -4,69 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi primera página</title>
+    <title>mi primera pagina</title>
   </head>
   <style>
     #contenedor1 {
       background-color: black;
-      color: white;
+      color: #fff;
     }
-    #contenedor2{
-      background-color: tomato;
-      color: lime;
+
+    #contenedor2 {
+      /*         background-color: tomato;
+        color: lime; */
+    }
+
+    #contenedor3 {
+      background-color: blue;
+      color: crimson;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid blue;
+      border-collapse: collapse;
     }
   </style>
-
   <body>
+    <div id="tabla">
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Fecha</th>
+        </tr>
+        <tr>
+          <td>jorshua</td>
+          <td>25</td>
+          <td>24/2/23</td>
+        </tr>
+        <tr>
+          <td>yuli</td>
+          <td>20</td>
+          <td>24/2/23</td>
+        </tr>
+      </table>
+    </div>
+    <br /><br /><br /><br /><br />
+    <form action="">
+      <label for="nombre">Ingrese su nombre</label>
+      <input type="text" id="nombre" name="nombre"/>
+      <label>ingrese su edad</label>
+      <input type="number">
+      <label>Seleccion multiple</label>
+      <input type="checkbox">
+      <label>radioButton</label>
+      <input type="radio">
+    </form>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <div id="contenedor1">
-      <!--Este es mi primer comentario-->
-      <h1>Esta es mi primera página</h1>
+      <!-- Este es mi primer comentario de muchos -->
+      <!-- <h1>Hola mi nombre es russell</h1> -->
+      <h1>Esta es mi primer pagina</h1>
       <img
-        src="halo-5-guardians-soundtrack-now-available-online_evzx.jpg"
-        alt="Halo"
-        height="100px"
+        src="tungsten-rising-dDh-GhLjHmk-unsplash.jpg"
+        alt="paisaje bonito"
+        height="400px"
         width="200px"
       />
-      <a href="#lista">
-        <h2 id="cabecera">Ir a la lista de haceres</h2>
-      </a>
+
+      <a href="#lista"><h2 id="cabecera">ir a la lista de haceres</h2></a>
       <h3>Tercer titulo</h3>
       <h4>Cuarto titulo</h4>
-      <h5>Quinto</h5>
-      <h6>Sexto</h6>
-      <a href="#salto">
-        <h1>Ir al Parrafo prrrro</h1>
-      </a>
-      <a href="https://www.youtube.com/watch?v=mCdA4bJAGGk" target="_blank"
-        >Irnos a Youtube</a>
+      <h5>Quinto titulo</h5>
+      <h6>Sexto titulo</h6>
+
+      <a href="#salto"><h1>ir al parrafo</h1></a>
+      <a href="https://www.youtube.com" target="_blank">Irnos a youtube</a>
       <br /><br />
-      <a
-        href="halo-5-guardians-soundtrack-now-available-online_evzx.jpg"
-        download
+      <a href="tungsten-rising-dDh-GhLjHmk-unsplash.jpg" download
         >Descargar imagen</a
       >
 
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
       <p id="salto">
-        Este es un parrafo con Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Temporibus consectetur suscipit cum velit non ullam
-        eos quo labore cupiditate ipsam.
+        Este es un parrafo con Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Fuga iusto, accusamus quia praesentium molestiae eius
+        possimus numquam sequi magnam id.
       </p>
-      <a href="#cabecera">Volver arriba</a>
-      <h3>Lista de Tareas</h3>
+      <a href="#cabecera">ir hacia arriba</a>
+
+      <h3>Lista de tareas</h3>
       <ul id="lista">
-        <li>Aprender Html</li>
-        <li>Paciencia para Jorshua</li>
+        <li>aprender html</li>
+        <li>manejar mas paciencia</li>
       </ul>
       <br />
-      <h3>Lista con Orden</h3>
-      <ol>
+      <h3>Lista ordenada</h3>
+      <ol type="1">
         <li>
-          Submenu
+          submenu
           <ol type="a">
             <li>uno uno</li>
-            <li>dos dos</li>
+            <li>uno dos</li>
           </ol>
         </li>
         <li>dos</li>
@@ -77,7 +116,34 @@
     </div>
     <br />
     <div id="contenedor2">
-      <h1>Segundo Contenedor</h1>
+      <h1>Hola soy el segundo contenedor</h1>
+      <br />
+      <h1>Este texto cambia <span style="color: crimson"> de color</span></h1>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <span>
+        <p style="color: cornflowerblue">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, labore
+          earum? Cupiditate animi laborum veritatis!
+        </p>
+      </span>
     </div>
+    <div id="contenedor3">
+      <img
+        src="tungsten-rising-dDh-GhLjHmk-unsplash.jpg"
+        alt=""
+        height="400px"
+      />
+      <br />
+      <h4>Lista de items</h4>
+      <ol type="a">
+        <li>sexo</li>
+        <li>hay</li>
+        <li>alguien</li>
+        <li>aqui</li>
+        <li>xd</li>
+      </ol>
+    </div>
+    <br />
   </body>
 </html>
+
