@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="decorar.css" />
+    <title>mi primera pagina</title>
+  </head>
+
+  <body>
+    <div id="fondo">
+      <div id="tabla">
+        <table>
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Fecha</th>
+          </tr>
+          <tr>
+            <td>jorshua</td>
+            <td>25</td>
+            <td>24/2/23</td>
+          </tr>
+          <tr>
+            <td>yuli</td>
+            <td>20</td>
+            <td>24/2/23</td>
+          </tr>
+        </table>
+      </div>
+      <br /><br /><br /><br /><br />
+      <form action="" id="formulario">
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          alt="Aqui es para escribir"
+          placeholder="Ingrese su nombre"
+          required
+        />
+        <br />
+
+        <label for="edad">ingrese su edad</label>
+        <input type="number" id="edad" max="30" min="0" maxlength="2" /> <br />
+
+        <label for="multiple">Seleccion multiple</label>
+        <input type="checkbox" id="multiple" /><br />
+
+        <label for="radio">radioButton</label>
+        <input type="radio" id="radio" /><br />
+
+        <label for="color">selecione un color </label>
+        <input type="color" id="color" /><br />
+
+        <label for="documentos">selecione su documento</label>
+        <input type="file" id="documentos" /><br />
+
+        <label for="contraseña">contraseña</label>
+        <input type="password" id="contraseña" /><br/>
+
+        <label for="imagen"></label>
+        <input type="image" src="luigi.webp" id="imagen" /><br/>
+
+        <label for="descripcion">Ingresa algo</label>
+        <textarea name="" id="descripcion" cols="30" rows="10"></textarea><br/>
+
+        <button onclick="saludo()">Aqui</button>
+
+
+      </form>
+      <label for="menu"> Selecione </label>
+      <select name="" id="menu">
+        <option value="1">Uno</option>
+        <option value="2">Dos</option>
+        <option value="3">Tres</option>
+      </select>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <br />
+    <script>
+      const saludo = () =>{
+        alert("hola")}
+      
+  
+    </script>
+  </body>
+</html>
+
+
+
