@@ -19,4 +19,5 @@ La creacion de este repo esta enfocado para que los talentos puedan subir sus re
     | [w3schools javascript](https://www.w3schools.com/js/js_statements.asp)     | Documentacion / sandbox  | Super completa y facil de usar 🤓 (ingles)
     | [video: Aprende javascript](https://youtu.be/ivdTnPl1ND0) | videotutorial/curso     | Facil de seguir pero largo (~10H) 🥶
     | [video: Aprende html y css](https://youtu.be/XqFR2lqBYPs) | videotutorial/curso     | Facil de seguir, ni tan largo(~5H) 🥶
+    | [FreeCodeCamp](https://www.freecodecamp.org/learn) | Curso interactivo     | Moderado 🥶
         
