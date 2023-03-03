@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <head>
+    <meta charset="UTF-8">
+    <h1 id=title>Formulario de encuesta freeCodeCamp</<h1>
+     <p id="description">Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma.</p> 
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+ 
+<form id="survey-form" action=" https://survey-form.freecodecamp.rocks">
+  <fieldset>
+  <label  id="name-label" for="name">Nombre<input  id="name" type="text" placeholder="ingrese  su nombre" required/> <label>
+    
+    <label id="email-label" for="email">correo electronico<input id="email" type="email" placeholder="ingrese su correo" required/> <label>
+<label value="number" id="number-label" for="number">edad<input id="number" type="number" min="13" max="120" placeholder="ingrese su edad" required/> <label>
+<label for="dropdown">opciones
+<select id="dropdown" name="dropdow">
+<option value="0">(elija una opcion)</option>
+<option value="1">opcion uno</option>
+<option value="2">opcion dos</option>
+</select>
+</label>
+</fieldset>
+<fieldset>
+  <a>¿Recomendarías freeCodeCamp a un amigo?</a>
+  <label><input value="1" name="option" type="radio">Definitivamente</label>
+  <label><input value="2" name="option" type="radio">Tal vez</label>
+  <label><input value="3" name="option" type="radio">No estoy seguro</label>
+  </fieldset>
+  <fieldset>
+  <a>¿Qué te gustaría ver mejorado? </a>
+<label><input value="front" type="checkbox">Proyectos front-end<label>
+  <label><input value="back" type="checkbox">Proyectos back-end<label>
+    <label><input value="visual" type="checkbox">Visualización de datos<label>
+  </fieldset>
+  <fieldset>
+    <label>¿Algún comentario o sugerencia?
+      <textarea id="survey-form">escriba aqui su comentario</textarea>
+    </label>
+  </fieldset>
+  <input id="submit" type="submit">
+</form>
