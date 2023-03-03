@@ -1,14 +1,14 @@
 table,
 th,
 td {
-    font-family: Arial;
-    font-size: 105%;
+  font-family: Arial;
+  font-size: 105%;
   border: 2px solid white;
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
-}   
+}
 #fondo {
   background: rgb(99, 146, 246);
   background: linear-gradient(
@@ -18,22 +18,18 @@ td {
   );
 }
 
-#formulario{
-    font-family: Arial;
-    font-size: 130%;
-
-    
+#formulario {
+  font-family: Arial;
+  font-size: 130%;
 }
 
-#imagen{
-width: 200px;
+#imagen {
+  width: 200px;
   height: 200px;
 }
 
-img{
+img {
   display: block;
-  margin-left:auto ; 
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
