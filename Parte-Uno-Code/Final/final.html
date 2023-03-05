@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form
+      method="post"
+      action="https://register-demo.freecodecamp.org"
+      id="survey-form"
+    >
+      <fieldset>
+        <label id="name-label"
+          >Name:
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            placeholder="Nombre"
+        /></label>
+
+        <label id="email-label"
+          >Enter Your Email:
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="email"
+        /></label>
+        <label id="number-label"
+          >Age
+          <input
+            id="number"
+            type="number"
+            name="number"
+            min="13"
+            max="120"
+            placeholder="edad"
+        /></label>
+
+        <label id="dropdown-label"
+          >Which option best describes your current role?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select current role)</option>
+            <option value="1">Student</option>
+            <option value="2">Full time job</option>
+            <option value="3">Full time learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label id="">
+          Would you recommend freeCodeCamp to a friend?
+          <label id="personal-account"
+            ><input
+              id="personal-account"
+              type="radio"
+              name="account-type"
+              class="inline"
+              value="definitely"
+            />
+            definitely
+          </label>
+          <label id="business-account"
+            ><input
+              id="business-account"
+              type="radio"
+              name="account-type"
+              class="inline"
+              value="Maybe"
+            />
+            Maybe</label
+          >
+          <label id="business-account"
+            ><input
+              id="business-account"
+              type="radio"
+              name="account-type"
+              class="inline"
+              value="Not"
+            />
+            Not sure</label
+          ></label
+        >
+
+        <label id="terms-and-conditions">
+          <input
+            id="terms-and-conditions"
+            type="checkbox"
+            required
+            name="terms-and-conditions"
+            class="inline"
+            value="Front"
+          />
+          Front-end Projects
+        </label>
+        <label id="terms-and-conditions">
+          <input
+            id="terms-and-conditions"
+            type="checkbox"
+            required
+            name="terms-and-conditions"
+            class="inline"
+            value="Back"
+          />
+          Back-end Projects
+        </label>
+        <label id="terms-and-conditions">
+          <input
+            id="terms-and-conditions"
+            type="checkbox"
+            required
+            name="terms-and-conditions"
+            class="inline"
+            value="Data"
+          />
+          Data Visualization
+        </label>
+        <label id="terms-and-conditions">
+          <input
+            id="terms-and-conditions"
+            type="checkbox"
+            required
+            name="terms-and-conditions"
+            class="inline"
+            value="Challenges"
+          />
+          Challenges
+        </label>
+        <label id="terms-and-conditions">
+          <input
+            id="terms-and-conditions"
+            type="checkbox"
+            required
+            name="terms-and-conditions"
+            class="inline"
+            value="Open"
+          />
+          Open Source Community
+        </label>
+        <label id="terms-and-conditions">
+          <input
+            id="terms-and-conditions"
+            type="checkbox"
+            required
+            name="terms-and-conditions"
+            class="inline"
+            value="Gitter"
+          />
+          Gitter help rooms
+        </label>
+        <label id="terms-and-conditions">
+          <input
+            id="terms-and-conditions"
+            type="checkbox"
+            required
+            name="terms-and-conditions"
+            class="inline"
+            value="Videos"
+          />
+          Videos
+        </label>
+        <label id="terms-and-conditions">
+          <input
+            id="terms-and-conditions"
+            type="checkbox"
+            required
+            name="terms-and-conditions"
+            class="inline"
+            value="City"
+          />
+          City Meetups
+        </label>
+        <label id="terms-and-conditions">
+          <input
+            id="terms-and-conditions"
+            type="checkbox"
+            required
+            name="terms-and-conditions"
+            class="inline"
+            value="Wiki"
+          />
+          Wiki
+        </label>
+        <label id="terms-and-conditions">
+          <input
+            id="terms-and-conditions"
+            type="checkbox"
+            required
+            name="terms-and-conditions"
+            class="inline"
+            value="Forum"
+          />
+          Forum
+        </label>
+        <label id="terms-and-conditions">
+          <input
+            id="terms-and-conditions"
+            type="checkbox"
+            required
+            name="terms-and-conditions"
+            class="inline"
+            value="Additional"
+          />
+          Additional Courses
+        </label>
+
+        <label id="bio"
+          >Provide a bio:
+          <textarea
+            id="bio"
+            name="bio"
+            rows="10"
+            cols="30"
+            placeholder="I like coding on the beach..."
+          ></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
