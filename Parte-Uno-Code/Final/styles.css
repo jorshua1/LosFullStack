@@ -13,7 +13,7 @@ body {
     text-align: center;
   }
   
-  form {s
+  form {
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
@@ -74,4 +74,5 @@ body {
   a{
     color:#dfdfe2;
   }
+ 
   
