@@ -1,0 +1,45 @@
+body{
+          width: 90%;
+          height: 110vh;
+          margin: 50;
+          background-image: url(https://i.pinimg.com/originals/41/e9/d5/41e9d54c50af0bd73d0bdf8ab86ffe69.jpg)
+        }
+        
+        h1{
+          color: #1CDFD6;
+          font-family: Tahoma;
+          font-size: 45px;
+          text-align: center;
+          margin: 1px;
+        }
+        
+        p{
+          color: #9CF79E;
+          font-family: Georgia
+          
+        }
+        
+        form{
+          color: white;
+          font-family: Marker-Felt;
+        }
+        
+        input{
+          background-color: #046442;
+        }
+        textarea{
+          background-color: #3EC494;
+        }
+        
+        
+        
+          input[type="submit"] {
+          display: block;
+          width: 60%;
+          margin: 1em auto;
+          height: 2em;
+          font-size: 1.1rem;
+          background-color: #5CA2E1;
+          border-color: #EA2A4D;
+          min-width: 300px;
+        }
