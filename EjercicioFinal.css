@@ -1,0 +1,64 @@
+.cajaGrande {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 60%;
+    border: none;
+    height: auto;
+    left: auto;
+    right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 1px  solid;
+    border-color:  rgb(13, 3, 155);
+    background-color: rgb(13, 3, 155);
+    opacity: 70%;
+}
+body{
+    color: white;
+    background-image: url(258211.jpg);
+    background-repeat: 0;
+    background-size: auto;
+}
+
+.cajaIntermedia {
+    width: 670px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    opacity: 200%;
+}
+.cajaInferior{
+    margin-top: 30px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    margin-top: 42px;
+}
+
+.descripcion {
+    margin-top: -14px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20.5px;
+    font-style: italic;
+}
+
+.labeltext {
+    text-align: left;
+    font-size: 20px;
+}
+
+.cajatexto {
+    margin-top: 7px;
+    border: none;
+    font-size: 17px;
+    padding: 8px 10px;
+    text-align: left;
+    width: 93%;
+    border-radius: 5px;
+}
