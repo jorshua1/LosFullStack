@@ -1,0 +1,38 @@
+#image{
+    max-width:100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  
+  }
+  body{
+    background-color: lightskyblue;
+    font-family: Tahoma;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 100px;
+  }
+  h1{
+    text-align: center;
+  }
+  #img-caption{
+    text-align: center;
+    font-weight: 900;
+  }
+  #tribute-info{
+    text-align: center;
+    max-width:100%;
+    height: auto;
+    display: block;
+
+  }
+  #main {
+    margin: 100px 4px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  #info{
+    text-align: center;
+    display: block;
+  }
+  
