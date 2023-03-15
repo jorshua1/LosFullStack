@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500;600;700&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f5ebe0;
+    font-family: 'Jost', sans-serif;
+}
+
+.contener-big {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 380px;
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 1px 1px 10px 1px rgb(174, 174, 174);
+}
+
+.contener-qr {
+    border-radius: 13px;
+    width: 220px;
+    height: 210px;
+    background-image: url("../../frontMentor/primerDesafio/images/image-qr-code.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-justify: inter-word;
+    margin: 0%;
+    text-align: center;
+    padding: 10px 20px 0 20px;
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(27, 27, 27);
+}
+
+p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 0 20px 10px 20px;
+}
