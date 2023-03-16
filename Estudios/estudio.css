@@ -1,0 +1,69 @@
+@media (min-width: 375px) and (max-width: 1440px) {
+}
+
+#padre {
+  background-color: brown;
+  margin: 100px 150px 10px 150px;
+}
+
+#superior {
+  background-color: blue;
+  display: flex;
+  margin: 15px 1px 200px 1px;
+}
+
+#titulo {
+    background-color: rgb(196, 250, 255);
+    border-radius: 6px; 
+    overflow: hidden; 
+ 
+}
+
+#descrip{
+    padding: -151px 1px 3px 1px;
+    margin: 1% 10% 1% 10%;
+    overflow: hidden;
+    background-color: rgb(255, 127, 185);
+}
+
+#h1titulo{
+  text-align: center;
+  font-size: 40px;
+
+}
+#ptitulo {
+  
+  text-align: center;
+}
+
+#estrellas {
+  background-color: chocolate;
+  margin: 15px 1px 1px 1px;
+  ;
+}
+
+#e1 {
+  text-align: center;
+}
+#e2 {
+  text-align: center;
+}
+#e3 {
+  text-align: center;
+}
+
+#inferior {
+  background-color: darkmagenta;
+  display: flex;
+  margin: 15px 150px 25% 150px;
+}
+
+#profesion1 {
+  background-color: aquamarine;
+}
+#profesion2 {
+  background-color: rgb(195, 255, 127);
+}
+#profesion3 {
+  background-color: rgb(223, 157, 157);
+}
