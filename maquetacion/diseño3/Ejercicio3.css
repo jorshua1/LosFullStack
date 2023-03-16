@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.caja-padre {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.caja-intermedia1 {
+    display: flex;
+    height: 50%;
+}
+
+.intermedia-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.intermedia-2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.text1-intermedia {
+    font-size: 40px;
+    width: 60%;
+    font-weight: 700;
+    line-height: 40px;
+    color: hsl(300, 43%, 22%);
+}
+
+.text2-intermedia {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 15px;
+    width: 75%;
+    color: rgb(30, 30, 30);
+}
+
+.intermedia-caja {
+    color: hsl(300, 43%, 22%);
+    font-size: 15px;
+    font-weight: 700;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    background-color: hsl(300, 24%, 96%);
+}
+
+.intermedia-caja div {
+    margin-right: 30px;
+}
+
+.r1 {
+    margin-left: 0;
+}
+
+.r2 {
+    margin-left: 40px;
+}
+
+.r3 {
+    margin-left: 80px;
+}
+
+.caja-intermedia2 {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja-persona {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 300px;
+    height: 200px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+}
+
+.persona-text {
+    margin-top: 0;
+    font-size: 14.5px;
+    color: white;
+    text-align: left;
+    padding: 25px;
+    line-height: 20px;
+}
+
+.title-img {
+    font-size: 14px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.title-text {
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+.title1 {
+    color: white;
+}
+
+.title2 {
+    color: hsl(333, 80%, 67%);
+}
+
+.img1 {
+    margin-left: -90px;
+    text-align: left;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("social-proof-section-master/images/image-colton.jpg");
+}
+
+.img2 {
+    margin-left: -90px;
+    text-align: left;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("social-proof-section-master/images/image-irene.jpg");
+}
+
+.img3 {
+    margin-left: -90px;
+    text-align: left;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("social-proof-section-master/images/image-anne.jpg");
+}
+
+.m1 {
+    margin-top: 0;
+}
+
+.m2 {
+    margin-top: 30px;
+}
+
+.m3 {
+    margin-top: 60px;
+}
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        font-family: 'League Spartan', sans-serif;
+    }
+
+    .caja-padre {
+        width: 90%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja-intermedia1 {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+    }
+
+    .intermedia-1 {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .intermedia-2 {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text1-intermedia {
+        font-size: 40px;
+        width: 100%;
+        font-weight: 700;
+        line-height: 40px;
+        color: hsl(300, 43%, 22%);
+    }
+
+    .text2-intermedia {
+        margin-top: 0;
+        font-weight: 400;
+        font-size: 15px;
+        width: 100%;
+        color: rgb(30, 30, 30);
+    }
+
+    .intermedia-caja {
+        color: hsl(300, 43%, 22%);
+        font-size: 15px;
+        font-weight: 700;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        margin-top: 0;
+        width: 80%; 
+        height: 40px;
+        background-color: hsl(300, 24%, 96%);
+    }
+
+    .intermedia-caja div {
+        margin-right: 0;
+    }
+
+    .r1 {
+        margin-left: 0;
+    }
+
+    .r2 {
+        margin-left:0;
+    }
+
+    .r3 {
+        margin-left: 0;
+    }
+
+    .caja-intermedia2 {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .caja-persona {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        width: 300px;
+        height: 200px;
+        background-color: hsl(300, 43%, 22%);
+        border-radius: 10px;
+    }
+
+    .persona-text {
+        margin-top: 0;
+        font-size: 14.5px;
+        color: white;
+        text-align: left;
+        padding: 0;
+        line-height: 20px;
+    }
+
+    .title-img {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .title-text {
+        text-align: left;
+        margin-left: 0;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title1 {
+        color: white;
+    }
+
+    .title2 {
+        color: hsl(333, 80%, 67%);
+    }
+
+    .img1 {
+        margin-left: 0;
+        text-align: left;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("social-proof-section-master/images/image-colton.jpg");
+    }
+
+    .img2 {
+        margin-left: 0;
+        text-align: left;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("social-proof-section-master/images/image-irene.jpg");
+    }
+
+    .img3 {
+        margin-left: 0;
+        text-align: left;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("social-proof-section-master/images/image-anne.jpg");
+    }
+
+    .m1 {
+        margin-top: 0;
+    }
+
+    .m2 {
+        margin-top: 0;
+    }
+
+    .m3 {
+        margin-top: 0;
+    }
+}
