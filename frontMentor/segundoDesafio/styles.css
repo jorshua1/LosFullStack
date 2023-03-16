@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600&display=swap');
+
+body{
+    height: 100vh;
+    display: flex;
+    background-color: hsl(212, 45%, 89%);
+    flex-direction: column;
+    flex-direction: row;
+}
+
+.contenedorprimario{
+    height: 650px;
+    width: 1500px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 150px;
+    display: flex;
+}
+.contenedortitulo{
+    margin: 150px;
+    display: flex;
+    color: hsl(300, 43%, 22%);
+    font-family: "League Spartan", sans-serif;
+    font-size: 50px;
+    font-weight:600;
+    flex-direction: column;
+}
+
+.texto{
+   color: #dee2e6;
+   font-size: 30px;
+   font-weight: 400;
+   margin: 40px;
+}
+
+.contenedortexto1{
+    background-color:hsl(300, 24%, 96%);
+    margin: 30px;
+    height: 50px;
+    height: 50px;
+}
+
+.contenedortexto2{
+    background-color:hsl(300, 24%, 96%);
+    margin: 30px;
+    height: 50px;
+    height: 50px;}
+
+.contenedortexto3{
+    background-color:hsl(300, 24%, 96%);
+    margin: 30px;
+    height: 50px;
+    height: 50px;
+}
+
+.contenedorsecundario{
+    height: 400px;
+    width: 1500px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+}
+.contenedoruno{
+    height: 190px;
+    width: 350px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    background-color: hsl(300, 43%, 22%);
+    flex-direction: row;
+    margin: 25px;
+}
+
+.contenedordos{
+    height: 190px;
+    width: 350px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    background-color: hsl(300, 43%, 22%);
+    flex-direction: row;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.contenedortres{
+    height: 190px;
+    width: 350px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    background-color: hsl(300, 43%, 22%);
+    flex-direction: row;
+    margin: 25px;
+}
