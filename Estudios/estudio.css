@@ -1,69 +1,112 @@
 @media (min-width: 375px) and (max-width: 1440px) {
 }
 
-#padre {
-  background-color: brown;
-  margin: 100px 150px 10px 150px;
+#padre{
+  margin: 5% 15%  5% 15% ;
+
 }
 
-#superior {
-  background-color: blue;
+#superior{
   display: flex;
-  margin: 15px 1px 200px 1px;
+  
 }
 
-#titulo {
-    background-color: rgb(196, 250, 255);
-    border-radius: 6px; 
-    overflow: hidden; 
+#titulo{
+  margin: 5px 5px  80px 5px;
+ 
+  height: auto;
+  width: 35%;
+}
+
+
+#h1titulo{
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+#ptitulo{
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+#p1{
+  margin: 1px 0px 10px 0px ;
+}
+
+#estrellas{
+    text-align: center;
+    margin: 60px 5%  5% 10%;
+   
+}
+
+#svg1{
+  margin-top: 15px;
+  margin-right: 35px;
+  margin-left: 30px;
+}
+
+#e1{
+
+display: flex;
+background-color: hsl(300, 24%, 96%);
+height: auto;
+width: 500px;
+border-radius: 5px;
+padding-top :1px;
+padding-bottom:1px;
+margin: 5% 0% 0% 0% ;
+
+}
+
+#e2{
+  display: flex;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+  padding-top:1px;
+  padding-bottom:1px;
+  margin: 5% -50px 0% 50px ;
+}
+#e3{
+  display: flex;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+  padding-top:1px;
+  padding-bottom:1px;
+  margin: 5% -100px 0% 100px ;
+}
+
+
+
+
+#inferior{
+  display: flex;
+  margin: 5px 5px  45px 5px; 
+  height: 300px;
+  background-color: black;
  
 }
 
-#descrip{
-    padding: -151px 1px 3px 1px;
-    margin: 1% 10% 1% 10%;
-    overflow: hidden;
-    background-color: rgb(255, 127, 185);
-}
-
-#h1titulo{
+#profesion1{
+  background-color: hsl(300, 43%, 22%);
+  color: white;
   text-align: center;
-  font-size: 40px;
-
+  border-radius: 10px;
+  margin: 5px 5px 5px 5px;
 }
-#ptitulo {
-  
+
+#profesion2{
+  background-color: hsl(300, 43%, 22%);
+  color: white;
   text-align: center;
+  border-radius: 10px;
+  margin: 5px 5px 5px 5px;
 }
 
-#estrellas {
-  background-color: chocolate;
-  margin: 15px 1px 1px 1px;
-  ;
-}
-
-#e1 {
+#profesion3{
+  background-color: hsl(300, 43%, 22%);
+  color: white;
   text-align: center;
-}
-#e2 {
-  text-align: center;
-}
-#e3 {
-  text-align: center;
-}
-
-#inferior {
-  background-color: darkmagenta;
-  display: flex;
-  margin: 15px 150px 25% 150px;
-}
-
-#profesion1 {
-  background-color: aquamarine;
-}
-#profesion2 {
-  background-color: rgb(195, 255, 127);
-}
-#profesion3 {
-  background-color: rgb(223, 157, 157);
+  border-radius: 10px;
+  margin: 5px 5px 5px 5px;  
 }
