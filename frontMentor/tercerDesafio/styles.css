@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    width: 100vw;
+    margin:0 ;
+  }
+.contenedor1{
+    height: 100vh;
+    width: 100%;
+    background: url(images/desktop/image-header.jpg) no-repeat center;  
+}
+nav{
+    padding: 40px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    height: 36px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+a:hover{
+    color: hsl(51, 100%, 49%);
+}
+.links{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    align-items: center;
+}
+
+.contacto{
+    padding: 20px 30px;
+    background-color: #fff;
+    color: black;
+    font-family: "fraunces", serif;
+    border-radius: 50px;
+}
+.contacto:hover{
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    font-family: "fraunces", serif;
+    border-radius: 50px;
+}
+.verMas{
+    width: 100%;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 10px;
+    font-family: "fraunces", serif;
+}
+.verMas h1{
+    padding-bottom: 180px;
+}
+.verMas img{
+    height: calc(114px*1.5);
+    width: calc(36px*1.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  About
+  Services
+  Projects
+  Contact
+
+  We are creatives
+
+  Transform your brand
+
+  We are a full-service creative agency specializing in helping brands grow fast. 
+  Engage your clients through compelling visuals that do most of the marketing for you.
+
+  Learn more
+
+  Stand out to the right audience
+
+  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+
+  Learn more
+
+  Graphic design
+  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+
+  Photography
+  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+
+  Client testimonials
+
+  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+  Emily R.
+  Marketing Director
+
+  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+  Thomas S.
+  Chief Operating Officer
+
+  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+  Jennie F.
+  Business Owner
+
+  About
+  Services
+  Projects
+  Contact  
+  
+  
