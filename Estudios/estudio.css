@@ -85,6 +85,8 @@ margin: 5% 0% 0% 0% ;
 
 
 #inferior{
+  max-width: 50px;
+  max-height: 500px;
   display: flex;
   margin: 5px 5px  45px 5px; 
   height: 380px;
@@ -136,7 +138,7 @@ margin: 5% 0% 0% 0% ;
 
 #imagen{
   margin: 25px 15px 1px 20px ;
-  border-radius: 60px;
+  border-radius: 60px;  
   height: 50px;
   width: 50px;
 }
