@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800&display=swap');
+
+body {
+  height: 100vw;
+  display: flex;
+  margin: 0;
+  border: 0;
+  
+}
+.texto1{
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Barlow",serif;
+    color: white;
+    margin: 30px;
+}
+
+.txt{
+    display: flex;
+    color: white;
+    justify-content: right;
+    word-spacing: 20px;
+}
+
+.imagen{
+    background: url("images/desktop/image-header.jpg");
+    height:1000px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo1{
+    display: flex;
+    justify-content: center;
+    font-family: "Fraunces",serif;
+    font-weight: 650;
+    font-size: 60px;
+    color: white;
+    word-spacing: 15px
+}
