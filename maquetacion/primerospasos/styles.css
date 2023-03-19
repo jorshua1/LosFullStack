@@ -1,18 +1,13 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: #000000;
-}
+
 body {
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #494d4e;
-  
+  margin: 0;
+  padding: 0;
 }
 .contenedor{
     height: 600px;
@@ -24,55 +19,74 @@ body {
 
 .imagen{
     height: 100%;
-    width: 50%;
+    width: 58%;
+    background-size: cover;
+    border-radius: 25px 0 0 25px;
+    
 
 }
 .contenido{
-    height: 100%;
+    border-radius: 0 25px 25px 0;
+    height: auto;
     width: 50%;
-    background-color: rgb(208, 208, 208);
-    border-radius: 0 25px 25px 0 ;
+    background-color: white;
     display: flex;
     flex-direction: column;
     padding: 25px;
-    display: inline-block;
     
 }
 .imagen img{
   height: 100%;
   max-width: 100%;
   border-radius: 25px 0 0 25px ;
+  
 }
 .categoria{
     letter-spacing: 4px;
     font-weight: 600;
+    font-size: 13px;
 
 }
-h1{
+
+.contenido h1 h2{
     font-family: 'domine', serif;
+    font-weight: 700;
+    font-size: 30px;
 }
 .carrito{
     fill: #ffff;
     height: 20px;
     width: 25px;
-    background-color: rgb(8, 64, 20);
-
 }
-.precio{
-font-family: 'Montserrat', sans-serif;
-}
-.contenidobutton{
-margin: auto;
-display: flex;
-flex-direction: column;
-padding: 5px;
-background-color: rgb(8, 64, 20);
-color: #ffff;
+.preciototal{
+    color: #175d22;
+    font-size: 40px;
+    font-family: 'Domine', serif;
+    font-weight: 700;
+    
 }
 .description{
     height: 100vh;
-    font-weight: 600;
+    line-height: 35px;
 }
-.carritotext{
-    color: #ffff;
+.boton{
+    padding: 10px;
+    width: auto;
+    border-radius: 7px;
+    border: none;
+    background-color: #175d22;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+.precio{
+    display: flex;
+    align-items: center;
+}
+.orgin{
+    font-weight: 400    ;
+    font-size: 12px;
+    text-decoration: line-through;
+    color: black;
+    padding-left: 25px;
 }
