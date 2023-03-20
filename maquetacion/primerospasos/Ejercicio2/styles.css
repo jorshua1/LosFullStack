@@ -11,20 +11,20 @@ body{
 }
 
 .contenedor{
-    height: 490px;
-    width: 300px;
+    height: 500px;
+    width: 320px;
     display: flex;
     border-radius: 15px;
     background-color: white;
-    justify-content: center;
+   
     align-items: center;
-    flex-direction: column;
+   
 }
 
 img{
     border-radius: 10px;
     height: 280px;
-    width: 270px;
+    width: 290px;
     display: flex;
     margin:auto;
 }
@@ -32,8 +32,8 @@ img{
 h1{
     color: hsl(216, 19%, 31%);
     font-family:'Jost',sans-serif;
-    font-size: 23px;
-    padding-left: 10px;
+    font-size: 25px;
+    padding-left: 15px;
     padding-right: 15px;
     text-align: center;
 }
@@ -41,9 +41,7 @@ h1{
 p{
     color: hsl(218, 11%, 48%);
     font-family:'Jost',sans-serif;
-    font-size: 16px;
-    padding-left: 15px;
+    padding-left: 19px;
     padding-right: 15px;
     text-align: center;
-    font-weight: 300;
 }
