@@ -78,3 +78,28 @@ a:hover{
     height: calc(114px*1.5);
     width: calc(36px*1.5);
 }
+
+.contenedor{
+    margin: 0;
+    height: 100vw;
+     width: 100vw;
+    display: flex;
+  
+}
+.contenido{
+    margin: 50px;
+    border-radius: 0 25px 25px 0;
+    height: 720px;
+    width: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    font-family: 'Fraunces', sans-serif;
+}
+.imagen{
+    height: 600px;
+    width: 720px;
+    background-size: cover;
+    border-radius: 25px 0 0 25px;
+}
