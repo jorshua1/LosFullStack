@@ -70,6 +70,113 @@ a:hover{
     height: calc(114px*1.5);
     width: calc(36px*1.5);
 }
+.contenedor2{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.contenido2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img2{
+    height: 100%;
+    width: 100%;
+    background: url(images/desktop/image-transform.jpg)no-repeat center;
+    background-size: cover;
+   
+}
+.contenedor3{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.img3{
+    height: 100%;
+    width: 100%;
+    background: url(images/desktop/image-stand-out.jpg) no-repeat center;
+    background-size: cover;
+}
+.contenido3{
+    height: 100%;
+    width: 100%;
+    
+}
+.contenedor4{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.img4{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    background: url(images/desktop/image-graphic-design.jpg) no-repeat center;
+    background-size: cover;
+}
+.img5{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    background: url(images/desktop/image-photography.jpg) no-repeat center;
+    background-size: cover;
+}
+.texto1{
+    margin: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.a{
+    font-size: 50px;  
+    font-family: "fraunces";
+    text-align: left;
+}
+.b{
+    color: gray;
+    text-align: left;
+    font-size: 20px;
+    font-family: "barlow";
+    line-height: 1.5; 
+}
+.learn{
+    font-weight: "bold";
+    font-family: "barlow";
+    
+}
+.texto4{
+    margin: 0 280px 80px ;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 40px;
+    text-align: center;
+    color: hsl(167, 40%, 24%);
+    font-family: "fraunces";
+    line-height: 1.5;
+}
+.texto5{
+    margin: 0 290px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    color:  hsl(198, 62%, 26%);
+    font-family: "fraunces";
+    line-height: 1.5;
+}
+
+
+
 
 
 
