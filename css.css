@@ -1,5 +1,5 @@
 body {
-  width: 100vw;
+  width: 99vw;
   margin: 0;
   font-family: "Barlow", serif;
 }
@@ -22,7 +22,7 @@ nav img {
   width: 10%;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: white;
   font-size: 18px;
@@ -78,4 +78,271 @@ a:hover {
 .verMas img {
   height: calc(114px * 1.5);
   width: calc(36px * 1.5);
+}
+
+.primero {
+  width: 100%;
+  display: flex;
+  font-family: "Fraunces", serif;
+}
+
+.primeroTexto {
+  width: 50%;
+  margin: 5% 0% 0% 0%;
+}
+
+.primeroTexto h1 {
+  margin: 8% 20% 0% 20%;
+  font-size: 65px;
+}
+
+.primeroTexto p {
+  margin: 5% 20% 0% 20%;
+  font-size: 20px;
+}
+.primeroImagen {
+  width: 50%;
+}
+
+.primeroImagen img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.segundo {
+  width: 100%;
+  display: flex;
+  font-family: "Fraunces", serif;
+}
+
+.segundoTexto {
+  width: 50%;
+  margin: 8% 0% 0% 0%;
+}
+
+.segundoTexto h1 {
+  margin: 8% 5% 0% 15%;
+  font-size: 65px;
+}
+
+.segundoTexto p {
+  margin: 5% 20% 0% 15%;
+  font-size: 20px;
+}
+.segundoImagen {
+  width: 50%;
+}
+
+.segundoImagen img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.dosfin {
+  width: 100%;
+  display: flex;
+}
+
+.cereza {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+}
+.cereza img {
+  width: 100%;
+}
+.dosH1 {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  font-family: "Fraunces", serif;
+}
+
+.dosP {
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  margin: 3% 30% 0% 30%;
+  line-height: 180%;
+  font-size: 18px;
+}
+
+.mandarina {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: hsl(198, 62%, 26%);
+}
+
+.mandarina img {
+  width: 100%;
+}
+.dosH1m {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  font-family: "Fraunces", serif;
+}
+
+.dospm {
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  margin: 3% 30% 0% 30%;
+  line-height: 180%;
+  font-size: 18px;
+}
+
+.testimonios {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  margin: 10% 20% 3% 20%;
+  letter-spacing: 5px;
+  font-size: 25px;
+  color: hsl(210, 4%, 67%);
+}
+.info {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+.info img {
+  border-radius: 100px;
+  width: 12%;
+  margin-bottom: 5%;
+}
+.info1 {
+  width: 33.333333%;
+  line-height: 180%;
+  margin-left: 5%;
+}
+.texto1 {
+  color: hsl(213, 9%, 39%);
+  margin: 2% 20% 8% 20%;
+}
+
+.texto11 {
+  margin: 1% 20% 0% 20%;
+  font-family: "Fraunces", serif;
+}
+
+.texto111 {
+  margin: 0% 20% 20% 20%;
+  color: hsl(210, 4%, 67%);
+}
+
+.info2 {
+  width: 33.333333%;
+  line-height: 180%;
+}
+.texto2 {
+  color: hsl(213, 9%, 39%);
+  margin: 2% 20% 8% 20%;
+}
+
+.texto22 {
+  margin: 1% 20% 0% 20%;
+  font-family: "Fraunces", serif;
+}
+
+.texto222 {
+  margin: 0% 20% 20% 20%;
+  color: hsl(210, 4%, 67%);
+}
+
+.info3 {
+  width: 33.333333%;
+  line-height: 180%;
+  margin-right: 5%;
+}
+.texto3 {
+  color: hsl(213, 9%, 39%);
+  font-weight: 600;
+  margin: 2% 20% 8% 20%;
+}
+
+.texto33 {
+  margin: 1% 20% 0% 20%;
+  font-family: "Fraunces", serif;
+}
+
+.texto333 {
+  margin: 0% 20% 20% 20%;
+  color: hsl(210, 4%, 67%);
+}
+
+.imagenes {
+  width: 100%;
+  display: flex;
+}
+
+.imagen1 {
+  width: 25%;
+}
+.imagen1 img {
+  width: 100%;
+}
+
+.imagen2 {
+  width: 25%;
+}
+.imagen2 img {
+  width: 100%;
+}
+
+.imagen3 {
+  width: 25%;
+}
+.imagen3 img {
+  width: 100%;
+}
+
+.imagen4 {
+  width: 25%;
+}
+.imagen4 img {
+  width: 100%;
+}
+
+.banner {
+  margin-top: -3px;
+  width: 100%;
+  background-color: hsl(169, 28%, 66%);
+  display: flex;
+  flex-direction: column;
+  color: hsl(168, 34%, 41%);
+}
+
+.banner1 {
+  margin: 4% 15% 0% 45%;  
+  font-family: "Barlow", sans-serif;
+  
+}
+
+.banner2 {
+  display: flex;
+  margin: 1% 5% 0% 39%;
+  hyphens: 5px;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+
+.banner2 p{
+  margin: 0% 5% 0% 3%;
+}
+.banner3 {
+  margin: 4% 15% 4% 45%;
+  letter-spacing: 25px;
 }
