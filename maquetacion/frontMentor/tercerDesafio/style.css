@@ -80,26 +80,45 @@ a:hover{
 }
 
 .contenedor{
-    margin: 0;
-    height: 100vw;
-     width: 100vw;
+    width: 100%;
     display: flex;
+    font-family: "Fraunces", serif;
   
 }
 .contenido{
-    margin: 50px;
-    border-radius: 0 25px 25px 0;
-    height: 720px;
-    width: 600px;
-    background-color: white;
+    width: 50%;
+    margin: 5% 0% 0% 0%;
+  }
+
+.imagen {
+    width: 50%;
+  }
+
+  .imagen img {
     display: flex;
-    flex-direction: column;
-    padding: 25px;
-    font-family: 'Fraunces', sans-serif;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+  }
+.contenido h2{
+    color: rgb(32, 32, 32);
+    margin: 5.08rem 7.2rem 0px 14.2rem;
+    font-size: 65px;
+
+  }
+
+  .contenido p {
+    color: rgb(108, 106, 127);
+    margin: 0.05rem 14.2rem 0px 14.2rem;
+    padding: 44px  0; 
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Barlow', sans-serif;  
 }
-.imagen{
-    height: 600px;
-    width: 720px;
-    background-size: cover;
-    border-radius: 25px 0 0 25px;
+.contenido h3{
+    color: rgb(32, 32, 32);
+    margin: 1.08rem 0rem 0rem 14.2rem;
+    font-size: 18px;
+    font-family: 'Fraunces', sans-serif;
 }
