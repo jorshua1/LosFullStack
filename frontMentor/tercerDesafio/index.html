@@ -13,12 +13,18 @@
     />
 
     <title>Sunnyside agency landing page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -30,18 +36,36 @@
       />
       <img src="./images/logo.svg" class="logo" />
       <div class="text">
-        <a class="button">About </a>
-        <a class="button"> Services</a>
-        <a class="button">Projects</a>
-        <a class="button">Contact</a>
+        <a href="">About </a>
+        <a href=""> Services</a>
+        <a href="">Projects</a>
+        <a class="contacto" href="">Contact</a>
       </div>
       <h1>WE ARE CREATIVES</h1>
+      <img src="./images/icon-arrow-down.svg" alt="" class="flechita" />
+    </div>
+
+    <!-- contenedor 2 -->
+    <div class="contenedor2">
+      <div class="letra">
+        <h1 class="te2">Transform your brand</h1>
+        <p>
+          We are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do most
+          of the marketing for you.
+        </p>
+        <p class="more">LEARN MORE</p>
+      </div>
+      <img
+        src="./images/desktop/image-transform.jpg"
+        alt="huevito"
+        class="huevon"
+      />
     </div>
   </body>
 
   <style>
     .contenedor {
-      background-color: aquamarine;
       position: relative;
       display: inline-block;
     }
@@ -55,22 +79,127 @@
       color: white;
       top: 0%;
       right: 0;
-      font-family: 'Barlow', sans-serif;
+      font-family: "Barlow", sans-serif;
     }
     .logo {
       position: absolute;
-      top: 30px;
-      left: 35px;
+      top: 40px;
+      left: 40px;
       height: 35px;
-      width: 155px;
+      width: 180px;
     }
-   h1{
-    position: absolute;
-      top: 225px;
-      left: 880px;
-      width: 1550px;
-      font-size: 55px;
-      font-family: 'Fraunces', serif;
-   }
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 50%;
+      font-size: 70px;
+      color: #fff;
+      letter-spacing: 13px;
+      font-family: "Fraunces", serif;
+    }
+    .flechita {
+      position: absolute;
+      height: 12%;
+      width: 2%;
+      top: 43%;
+      left: 49%;
+    }
+
+    .text {
+      width: 15%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 70px;
+      padding: 40px 70px;
+      align-items: center;
+      font-family: "Barlow", sans-serif;
+    }
+
+    .contacto:hover {
+      padding: 20px 30px;
+      background-color: rgba(256, 256, 256, 0.4);
+      color: white;
+      font-family: "Fraunces", serif;
+      border-radius: 30px;
+    }
+    .contacto {
+      padding: 20px 30px;
+      background-color: #fff;
+      color: black;
+      font-family: "Fraunces", serif;
+      border-radius: 50px;
+      font-size: 19px;
+      text-transform: uppercase;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 24px;
+      font-family: "Barlow", sans-serif;
+    }
+
+    /* contenedor 2 */
+
+    .contenedor2 {
+      position: relative;
+      display: inline-block;
+      width: 98.5vw;
+      height: 40vw;
+    }
+
+    .letra {
+      position: absolute;
+      background-color: #fff;
+      color: black;
+      left: 20px;
+      right: 20px;
+      right: 10px;
+      width: 50%;
+      height: 100%;
+    }
+
+    .te2 {
+      position: absolute;
+      top: 45%;
+      left: 45%;
+      width: 50%;
+      font-size: 60px;
+      letter-spacing: normal;
+      color: black;
+      font-family: "Fraunces", serif;
+    }
+
+    p {
+      position: absolute;
+      top: 40%;
+      width: 50%;
+      height: 20;
+      left: 20%;
+      font-size: 25px;
+      font-family: "Barlow", sans-serif;
+      line-height: 1.7;
+    }
+    .more {
+      position: absolute;
+      top: 70%;
+      left: 21%;
+      text-decoration-line: underline ;
+      text-decoration-style: line;
+      text-decoration-thickness: 10px;
+      text-decoration-style:solid ;
+      text-underline-offset: -0.6px;  
+      text-decoration-color: rgba(233, 229, 7, 0.479) ;
+    }
+
+    .huevon {
+      position: absolute;
+      width: 50%;
+      height: 20;
+      right: 0;
+      top: 0;
+    }
   </style>
 </html>
