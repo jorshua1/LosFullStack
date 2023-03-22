@@ -150,7 +150,8 @@ a:hover{
 }
 .learn{
     font-weight: "bold";
-    font-family: "barlow";
+    font-family: "fraunces";
+
     
 }
 .texto4{
@@ -174,76 +175,123 @@ a:hover{
     font-family: "fraunces";
     line-height: 1.5;
 }
+.contenedor5{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo{
+    text-align: center;
+    font-family: "fraunces";
+    letter-spacing: 10px;
+    color: gray;
+    font-size: 26px;
+}
+.tarjetas{
+    height: 500px;
+    width: 1500px;
+    display: flex;
+    flex-direction: row;
 
+}
+.tarjeta1{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: hsl(213, 9%, 39%);
+    font-family: "Barlow";
+    line-height: 1.5;
+    margin: 30px;
+    text-align: center;
+}
+.tarjeta2{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(213, 9%, 39%);
+    font-family: "Barlow";
+    line-height: 1.5;
+    margin: 30px;
+    text-align: center;
+    
 
+}
+.tarjeta3{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: hsl(213, 9%, 39%);
+    font-family: "Barlow";
+    line-height: 1.5;
+    margin: 30px;
+    text-align: center;
 
+}
+.img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin: 80px;
+    font-family: "Barlow";
+    line-height: 1.5;
+}
+.name{
+    font-family: "fraunces";
+    color: black;
+    margin: 90px 0 0 0;
+}
+.text{
+    margin: 20px  60px 0 ;
+}
+.contenedor6{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column
+}
+.imagenes{
+    height: 61.5%;
+    width: 200px;
+    display: flex;
+   
+}
+.contenido6{
+    height: 100vh;
+    width: 100%;
+    background-color:  hsl(168, 49%, 57%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    margin: 80px;
+    font-size: 20px;
+    color: hsl(167, 40%, 24%);
+    font-family: "fraunces";
+}
+.icons{
+    letter-spacing: 20px;
+}
+.m{
+    margin: 18px;
+}
+.t{
+    color: hsl(167, 40%, 24%);
+    font-family: "fraunces";
+}
 
+.m:hover{
+    color: white;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  About
-  Services
-  Projects
-  Contact
-
-  We are creatives
-
-  Transform your brand
-
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact  
-  
   
