@@ -1,25 +1,48 @@
 @media screen and (max-width: 375px) {
-  nav .links {
+  nav .linksPc {
     display: none;
+  }
+
+  .nav_links {
+  position: fixed;
+  left: 50px;
+  top: 150px;
+  padding: 100px 100px 100px 100px ;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  line-height: 100px;
+  clip-path: circle(0% at top right);
+  transition: clip-path .5s;
+
+  }
+nav a{
+color: black !important;
+}
+  .nav_links:target{
+    clip-path: circle(150% at top left);
   }
 
   body #padre {
     background: url(images/desktop/mobile/image-header.jpg) no-repeat center;
-    height: 95vh;
   }
 
   #padre nav .hamburguesa {
-    display: block;
+    margin: 0px 100px 0px 100px ;
+    display: flex;
     height: 24px;
     width: 24px;
   }
   nav {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
     flex-direction: row;
     padding: 50px 25px !important;
   }
 
   .verMas h1 {
-    margin-top: 25%;
+    margin-top: 1%;
     text-align: center;
     font-size: 50px;
     letter-spacing: 4px;
@@ -75,38 +98,183 @@
   .dosfin {
     flex-direction: column;
   }
-  
+
   .dosfin .cerezaCel {
     display: block;
     height: auto;
     width: 200%;
   }
   .cereza img {
-    display:none;
+    display: none;
   }
 
   .dosH1 {
     top: 65% !important;
     left: 125% !important;
     margin: 5% -180px 0% -180px !important;
-    
   }
-  
+
   .dosP {
     position: absolute;
     top: 75% !important;
     left: 100% !important;
     margin: 5% -180px 0% -180px !important;
-    line-height:20px !important;
+    line-height: 20px !important;
     font-size: 15px;
   }
 
-
-
-
-  .mandarina{
+  .mandarina {
     width: 100% !important;
   }
+
+  .mandarina img {
+    display: none;
+  }
+
+  .dosfin .mandarinaCel {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  .dosH1m {
+    top: 65% !important;
+    left: 70% !important;
+    margin: 5% -180px 0% -180px !important;
+  }
+
+  .dosPm {
+    position: absolute;
+    top: 75% !important;
+    left: 3% !important;
+    margin: 5% 10px 0% 10px !important;
+    line-height: 20px !important;
+    font-size: 18px;
+  }
+
+  .testimonios {
+    margin: 15% 10% 18% 10% !important ;
+    font-size: 15px !important;
+    letter-spacing: 2px;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .info1 {
+    width: 100% !important;
+    line-height: 180% !important;
+    margin-left: 1% !important;
+  }
+
+  .info img {
+    border-radius: 100px;
+    width: 20% !important;
+  }
+
+  .texto1 {
+    margin: 2% 5% 8% 5% !important;
+  }
+
+  .info2 {
+    width: 100% !important;
+    line-height: 180% !important;
+    margin-left: 1% !important;
+  }
+  .texto2 {
+    margin: 2% 5% 8% 5% !important;
+  }
+
+  .info3 {
+    width: 100% !important;
+    line-height: 180% !important;
+    margin-left: 1% !important;
+  }
+  .texto3 {
+    margin: 2% 5% 8% 5% !important;
+  }
+  .imagenes {
+    flex-direction: row;
+    flex-wrap: wrap !important;
+    flex-flow: row;
+  }
+  
+
+  .imagenM{
+    display: none;
+  }
+
+  .imagenM1{
+    display: block !important;
+    height: auto;
+    width: 100%;
+  }
+  .imagenM2{
+    display: block !important;
+    height: auto;
+    width: 100%;
+  }
+  .imagenM3{
+    display: block !important;
+    height: auto;
+    width: 100%;
+  }
+  .imagenM4{
+    display: block !important;
+    height: auto;
+    width: 100%;
+  }
+
+
+  .imagen1{
+    width: 50% !important;
+  }
+  .imagen1 img {
+    width: 100% !important;
+  }
+  .imagen2 {
+    width: 50% !important;
+  }
+  .imagen2 img {
+    width: 100% !important;
+  }
+  
+  .imagen3 {
+    width: 50% !important;
+  }
+  .imagen3 img {
+    width: 100%!important;
+  }
+  
+  .imagen4 {
+    width: 50%!important;
+  }
+  .imagen4 img {
+    width: 100% !important;
+  }
+
+  .banner1 {
+    margin: 15% 10% 8% 30% !important; 
+  }
+    .banner1 img{
+      height: 40px !important;
+      width: 150px !important;
+    }
+
+    .banner2 {
+      margin: 1% 50% 8% 15% !important;
+      hyphens: 100px !important;
+    }
+    
+    .banner2 p {
+      margin: 0% 30% 0% 3% !important;
+    }
+
+    .banner3 {
+      margin: 4% 1% 10% 30% !important; 
+      letter-spacing: 25px !important;
+    }
 
 }
 
@@ -128,7 +296,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-nav img {
+nav .logo {
   height: 3em;
   width: 10em;
 }
@@ -145,8 +313,10 @@ nav a {
 a:hover {
   color: hsl(51, 100%, 49%);
 }
-
-.links {
+.linksCel{
+  display: none;
+}
+.linksPc {
   width: 30%;
   display: flex;
   justify-content: flex-end;
@@ -269,7 +439,7 @@ a:hover {
   color: hsl(167, 40%, 24%);
 }
 
-.cerezaCel{
+.cerezaCel {
   display: none;
 }
 .cereza img {
@@ -300,17 +470,20 @@ a:hover {
   color: hsl(198, 62%, 26%);
 }
 
+.mandarinaCel {
+  display: none;
+}
 .mandarina img {
   width: 100%;
 }
-.dosH1m { 
+.dosH1m {
   position: absolute;
   top: 60%;
   left: 40%;
   font-family: "Fraunces", serif;
 }
 
-.dospm {
+.dosPm {
   position: absolute;
   top: 70%;
   left: 0%;
@@ -400,9 +573,22 @@ a:hover {
   color: hsl(210, 4%, 67%);
 }
 
+
 .imagenes {
   width: 100%;
   display: flex;
+}
+.imagenM1{
+  display: none;
+}
+.imagenM2{
+  display: none;
+}
+.imagenM3{
+  display: none;
+}
+.imagenM4{
+  display: none;
 }
 
 .imagen1 {
@@ -443,8 +629,13 @@ a:hover {
 }
 
 .banner1 {
-  margin: 4% 15% 0% 45%;
+  margin: 4% 10% 4% 45%;
   font-family: "Barlow", sans-serif;
+}
+
+.banner1 img{
+  height: 60px;
+  width: 200px;
 }
 
 .banner2 {

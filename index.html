@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
@@ -28,14 +28,25 @@
   <body>
     <div id="padre">
       <nav>
-        <img src="./images/logo.svg" alt="logo" />
-        <div class="links">
-          <a href="">About</a>
-          <a href="">Services</a>
-          <a href="">Projects</a>
-          <a href="" class="contacto">Contact</a>
+        <img src="./images/logo.svg" alt="logo" class="logo" />
+        <div class="linksPc">
+          <a class="links" href="">About</a>
+          <a class="links" href="">Services</a>
+          <a class="links" href="">Projects</a>
+          <a class="links" href="" class="contacto">Contact</a>
         </div>
-        <img class="hamburguesa" src="./images/icon-hamburger.svg">
+
+        <a href="#menu" class="nav_target">
+          <img class="nav_icono" src="./images/icon-hamburger.svg"
+        /></a>
+        <nav>
+          <div class="nav_links" id="menu">
+            <div><a class="nav_link" href="#">About</a></div>
+            <div> <a class="nav_link" href="#">Services</a></div>
+            <div><a class="nav_link" href="#">Projects</a></div>
+            <div><a class="nav_link" href="#">Contact</a></div>
+          </div>
+        </nav>
       </nav>
 
       <div class="verMas">
@@ -78,7 +89,10 @@
 
     <div class="dosfin">
       <div class="cereza">
-        <img class="cerezaCel" src="images/desktop/mobile/image-graphic-design.jpg">
+        <img
+          class="cerezaCel"
+          src="images/desktop/mobile/image-graphic-design.jpg"
+        />
         <img src="images/desktop/image-graphic-design.jpg" alt="" />
         <h1 class="dosH1">Graphic Design</h1>
         <p class="dosP">
@@ -88,8 +102,12 @@
       </div>
       <div class="mandarina">
         <img src="images/desktop/image-photography.jpg" alt="" />
+        <img
+          src="images/desktop/mobile/image-photography.jpg"
+          class="mandarinaCel"
+        />
         <h1 class="dosH1m">Photography</h1>
-        <p class="dospm">
+        <p class="dosPm">
           Increase your credibility by getting the most stunning, high-quality
           photos that improve your business image.
         </p>
@@ -131,21 +149,57 @@
 
     <div class="imagenes">
       <div class="imagen1">
-        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="leche" />
+        <img
+          class="imagenM1"
+          src="images/desktop/mobile/image-gallery-milkbottles.jpg"
+          alt="leche"
+        />
+        <img
+          class="imagenM"
+          src="images/desktop/image-gallery-milkbottles.jpg"
+          alt="leche"
+        />
       </div>
       <div class="imagen2">
-        <img src="images/desktop/image-gallery-orange.jpg" alt="naranja" />
+        <img
+          class="imagenM2"
+          src="images/desktop/mobile/image-gallery-orange.jpg"
+          alt="naranja"
+        />
+        <img
+          class="imagenM"
+          src="images/desktop/image-gallery-orange.jpg"
+          alt="naranja"
+        />
       </div>
       <div class="imagen3">
-        <img src="images/desktop/image-gallery-cone.jpg" alt="cono" />
+        <img
+          class="imagenM3"
+          src="images/desktop/mobile/image-gallery-cone.jpg"
+          alt="cono"
+        />
+        <img
+          class="imagenM"
+          src="images/desktop/image-gallery-cone.jpg"
+          alt="cono"
+        />
       </div>
       <div class="imagen4">
-        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="azucar" />
+        <img
+          class="imagenM4"
+          src="images/desktop/mobile/image-gallery-sugar-cubes.jpg"
+          alt="azucar"
+        />
+        <img
+          class="imagenM"
+          src="images/desktop/image-gallery-sugarcubes.jpg"
+          alt="azucar"
+        />
       </div>
     </div>
 
     <div class="banner">
-      <div class="banner1"><h1>Sunnyside</h1></div>
+      <div class="banner1"><img src="images/logo.svg" alt="Logo" /></div>
       <div class="banner2">
         <p>About</p>
         <p>Services</p>
