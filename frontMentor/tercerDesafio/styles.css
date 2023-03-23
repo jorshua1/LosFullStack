@@ -7,6 +7,11 @@ body {
   margin: 0;
   border: 0;
 }
+
+.contenedorPadre {
+  margin: 0;
+}
+
 .titulo {
   font-size: 40px;
   font-weight: 800;
@@ -19,16 +24,24 @@ body {
 }
 
 .txt {
-  margin: 45px;
+  margin-left: 150px;
+  margin-top: 35px;
   display: flex;
   float: left;
+  justify-content: end;
+  align-items: center;
   width: 800px;
   height: 50px;
   font-size: 30px;
   font-weight: 700;
   font-family: "Barlow", serif;
-  text-indent: 40px;
   color: white;
+  text-indent: 40px;
+}
+
+.txt a {
+  color: white;
+  text-decoration: none;
 }
 
 .imagen {
@@ -59,6 +72,17 @@ body {
   color: black;
   display: flex;
   margin-top: 625px;
+}
+
+.imagen2 {
+  background: url("images/desktop/image-transform.jpg");
+  height: 700px;
+  width: 955px;
+  display: flex;
+  float: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -698px;
 }
 
 .titulo2 {
@@ -96,16 +120,7 @@ body {
   font-size: 20px;
 }
 
-.imagen2 {
-  background: url("images/desktop/image-transform.jpg");
-  height: 700px;
-  width: 955px;
-  display: flex;
-  float: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -698px;
-}
+
 
 .imagen3 {
   background: url("images/desktop/image-stand-out.jpg");
@@ -278,7 +293,6 @@ body {
 }
 
 .contenido1 {
-
   width: 470px;
   height: 340px;
   font-size: 20px;
@@ -335,7 +349,6 @@ body {
 }
 
 .contenido2 {
-
   width: 470px;
   height: 340px;
   font-size: 20px;
@@ -435,8 +448,549 @@ body {
   font-size: 15px;
 }
 
+.imagen9 {
+  background: url("images/desktop/image-gallery-milkbottles.jpg");
+  height: 500px;
+  width: 480px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  margin-top: 180px;
+}
 
-.imagen9{
+.imagen10 {
+  background: url("images/desktop/image-gallery-orange.jpg");
+  height: 500px;
+  width: 480px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  margin-top: -500px;
+  margin-left: 480px;
+}
+
+.imagen11 {
+  background: url("images/desktop/image-gallery-cone.jpg");
+  height: 500px;
+  width: 480px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  margin-left: 960px;
+  margin-top: -500px;
+}
+
+.imagen12 {
+  background: url("images/desktop/image-gallery-sugarcubes.jpg");
+  height: 500px;
+  width: 463px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  margin-left: 1440px;
+  margin-top: -500px;
+}
+
+.final {
+  background-color: hsl(168, 68%, 70%);
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.texto0 {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Barlow", serif;
+  width: 40%;
+  color: hsl(167, 45%, 26%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.txt0 {
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Barlow", serif;
+  width: 60%;
+  display: flex;
+}
+
+.txt0 a {
+  color: hsl(167, 45%, 40%);
+  text-decoration: none;
+  text-indent: 40px;
+  margin-top: -100px;
+}
+
+.iconos {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconos svg {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    height: 10vw;
+    display: flex;
+    margin: 0;
+    border: 0;
+    background-color: blueviolet;
+  }
+
+  .titulo {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Barlow", serif;
+    width: 50px;
+    color: white;
+    margin: 25px;
+    display: flex;
+    float: left;
+  }
+
+  .txt {
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "Barlow", serif;
+    color: white;
+    text-indent: 10px;
+  }
+  
+  .txt a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .imagen {
+    background: url("images/desktop/image-header.jpg");
+    height: 300px;
+    width: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .titulo1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Fraunces", serif;
+    font-weight: 650;
+    font-size: 20px;
+    color: white;
+    word-spacing: 15px;
+  }
+  
+  .imagen2 {
+    background: url("images/desktop/image-transform.jpg");
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contenedor1 {
+    width: 950px;
+    height: 699px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Barlow", serif;
+    color: black;
+    display: flex;
+    margin-top: 625px;
+  }
+  
+  .titulo2 {
+    display: flex;
+    font-family: "Fraunces", serif;
+    font-weight: 750;
+    font-size: 40px;
+    width: 400px;
+    height: 270px;
+    color: black;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content: center;
+    margin-left: 150px;
+  }
+  
+  .texto {
+    display: flex;
+    flex-direction: column;
+    font-family: "Fraunces", serif;
+    font-weight: 90;
+    font-size: 20px;
+    color: black;
+    height: 200px;
+    width: 500px;
+    margin-top: 350px;
+    margin-left: -400px;
+    float: left;
+  }
+  
+  .txt1 {
+    margin-top: 60px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+
+  
+  .imagen3 {
+    background: url("images/desktop/image-stand-out.jpg");
+    height: 705px;
+    width: 948px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 1000px;
+    margin-top: -0.11px;
+  }
+  
+  .contenedor2 {
+    width: 955px;
+    height: 700px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Barlow", serif;
+    color: black;
+    display: flex;
+    margin-top: -800px;
+    margin-left: 948px;
+  }
+  
+  .titulo3 {
+    display: flex;
+    font-family: "Fraunces", serif;
+    font-weight: 750;
+    font-size: 40px;
+    width: 450px;
+    height: 270px;
+    color: black;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content: center;
+    margin-left: 200px;
+  }
+  
+  .texto1 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Fraunces", serif;
+    font-weight: 90;
+    font-size: 20px;
+    color: black;
+    height: 200px;
+    width: 550px;
+    margin-top: 350px;
+    margin-left: -450px;
+    float: left;
+  }
+  
+  .txt2 {
+    margin-top: 60px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .imagen4 {
+    background: url("images/desktop/image-graphic-design.jpg");
+    height: 700px;
+    width: 950px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 1000px;
+    margin-top: -0.5px;
+  }
+  
+  .titulo4 {
+    display: flex;
+    font-family: "Fraunces", serif;
+    font-weight: 750;
+    font-size: 30px;
+    width: 450px;
+    height: 270px;
+    color: black;
+    flex-direction: column;
+    margin-top: 350px;
+    justify-content: center;
+    margin-left: 350px;
+  }
+  
+  .texto2 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Fraunces", serif;
+    font-weight: 70;
+    font-size: 20px;
+    color: black;
+    height: 200px;
+    width: 500px;
+    margin-left: 250px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+  }
+  
+  .imagen5 {
+    background: url("images/desktop/image-photography.jpg");
+    height: 700px;
+    width: 955px;
+    display: flex;
+    float: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 1000px;
+    margin-top: -700px;
+  }
+  
+  .titulo5 {
+    display: flex;
+    font-family: "Fraunces", serif;
+    font-weight: 750;
+    font-size: 30px;
+    width: 450px;
+    height: 270px;
+    color: black;
+    flex-direction: column;
+    margin-top: 390px;
+    justify-content: center;
+    margin-left: 400px;
+  }
+  
+  .texto3 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Fraunces", serif;
+    font-weight: 70;
+    font-size: 20px;
+    color: black;
+    height: 200px;
+    width: 500px;
+    margin-left: 270px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+  }
+  
+  .titulo6 {
+    display: flex;
+    font-family: "Fraunces", serif;
+    font-weight: 750;
+    font-size: 30px;
+    width: 700px;
+    height: 90px;
+    color: black;
+    flex-direction: column;
+    margin-top: 170px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 650px;
+    letter-spacing: 10px;
+  }
+  
+  .imagen6 {
+    background: url("images/image-emily.jpg");
+    height: 70px;
+    width: 70px;
+    display: flex;
+    border-radius: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+  
+  .contenido1 {
+    width: 470px;
+    height: 340px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Barlow", serif;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 200px;
+    text-align: center;
+  }
+  
+  .texto4 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Fraunces", serif;
+    font-weight: 70;
+    font-size: 20px;
+    color: black;
+    height: 200px;
+    width: 450px;
+    margin-left: 10px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .txt3 {
+    margin-top: 10px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .txt4 {
+    margin-top: 10px;
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .imagen7 {
+    background: url("images/image-thomas.jpg");
+    height: 70px;
+    width: 70px;
+    display: flex;
+    border-radius: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+  
+  .contenido2 {
+    width: 470px;
+    height: 340px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Barlow", serif;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 750px;
+    margin-top: -390px;
+    text-align: center;
+  }
+  
+  .texto5 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Fraunces", serif;
+    font-weight: 70;
+    font-size: 20px;
+    color: black;
+    height: 200px;
+    width: 450px;
+    margin-left: 10px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .txt5 {
+    margin-top: 10px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .txt6 {
+    margin-top: 10px;
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .imagen8 {
+    background: url("images/image-jennie.jpg");
+    height: 70px;
+    width: 70px;
+    display: flex;
+    border-radius: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+  
+  .contenido3 {
+    width: 470px;
+    height: 340px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Barlow", serif;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1300px;
+    margin-top: -390px;
+    text-align: center;
+  }
+  
+  .texto6 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Fraunces", serif;
+    font-weight: 70;
+    font-size: 20px;
+    color: black;
+    height: 200px;
+    width: 430px;
+    margin-left: 20px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .txt7 {
+    margin-top: 10px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .txt8 {
+    margin-top: 10px;
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .imagen9 {
     background: url("images/desktop/image-gallery-milkbottles.jpg");
     height: 500px;
     width: 480px;
@@ -445,10 +999,9 @@ body {
     background-size: cover;
     justify-content: center;
     margin-top: 180px;
-}
-
-
-.imagen10{
+  }
+  
+  .imagen10 {
     background: url("images/desktop/image-gallery-orange.jpg");
     height: 500px;
     width: 480px;
@@ -458,9 +1011,9 @@ body {
     justify-content: center;
     margin-top: -500px;
     margin-left: 480px;
-}
-
-.imagen11{
+  }
+  
+  .imagen11 {
     background: url("images/desktop/image-gallery-cone.jpg");
     height: 500px;
     width: 480px;
@@ -470,9 +1023,9 @@ body {
     justify-content: center;
     margin-left: 960px;
     margin-top: -500px;
-}
-
-.imagen12{
+  }
+  
+  .imagen12 {
     background: url("images/desktop/image-gallery-sugarcubes.jpg");
     height: 500px;
     width: 463px;
@@ -482,4 +1035,62 @@ body {
     justify-content: center;
     margin-left: 1440px;
     margin-top: -500px;
+  }
+  
+  .final {
+    background-color: hsl(168, 68%, 70%);
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .texto0 {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Barlow", serif;
+    width: 40%;
+    color: hsl(167, 45%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .txt0 {
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Barlow", serif;
+    width: 60%;
+    display: flex;
+  }
+  
+  .txt0 a {
+    color: hsl(167, 45%, 40%);
+    text-decoration: none;
+    text-indent: 40px;
+    margin-top: -100px;
+  }
+  
+  .iconos {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .iconos svg {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+  }
+
 }
