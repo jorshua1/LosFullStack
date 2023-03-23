@@ -173,14 +173,14 @@ a:hover {
 
 .imagen3 h2 {
   color: hsl(167, 40%, 24%);
-  margin: 33.08rem 14.2rem; 
+  margin: 33.08rem 14.2rem;
   font-family: "Fraunces", serif;
   text-align: center;
   font-size: 45px;
 }
 .imagen3 p {
   color: hsl(167, 40%, 24%);
-  margin: -33.95rem 16.2rem 0px 17.2rem; 
+  margin: -33.95rem 16.2rem 0px 17.2rem;
   padding: 44px 0;
   font-size: 20px;
   line-height: 30px;
@@ -213,6 +213,7 @@ a:hover {
 }
 .contenedor4 {
   width: 100%;
+  height: 60vh;
   display: flex;
   flex-direction: row;
 }
@@ -227,59 +228,165 @@ a:hover {
   margin: 0 0 7% 38%;
 }
 
-.emily{
+.emily {
   width: 36.3%;
-  float: left;  
+  float: left;
   margin-left: 24%;
-  
-  }
+}
 .emily img {
   display: flex;
   border-radius: 100px;
   width: 13%;
   margin-bottom: 5%;
-  }
-  
-.text-emily{
+}
+
+.text-emily {
   color: hsl(213, 9%, 39%);
-  margin: 10% 57% 0% -29%;; 
+  margin: 10% 57% 0% -29%;
   text-align: center;
-  }
-  
+}
+
 .text2-emily {
   font-size: 20px;
   margin: 21% -5%;
   font-family: "Fraunces", sans-serif;
-  }
-  
+}
+
 .text3-emily {
   font-size: 14px;
   margin: -17% -8%;
   color: hsl(210, 4%, 67%);
-  }
+}
 
-  .thomas{
+.thomas {
   width: 36.3%;
   float: none;
   text-align: center;
   font-size: 15px;
-
-  }
-  .thomas img {
+}
+.thomas img {
   display: flex;
   border-radius: 100px;
   width: 13%;
   margin-bottom: 5%;
-  }
-  
-  .jennie{
+}
+.text-thomas {
+  color: hsl(213, 9%, 39%);
+  margin: 10% 61% 0% -25%;
+  text-align: center;
+}
+
+.text2-thomas {
+  font-size: 20px;
+  margin: 21% 0% 0% -83%;
+  font-family: "Fraunces", sans-serif;
+}
+
+.text3-thomas {
+  font-size: 14px;
+  margin: 5% -8% 0% -91%;
+  color: hsl(210, 4%, 67%);
+}
+.jennie {
   width: 36.3%;
   float: right;
   margin-right: 5%;
-  }
-  .jennie img {
+}
+.jennie img {
   display: flex;
   border-radius: 100px;
   width: 13%;
   margin-bottom: 5%;
-  }
+}
+
+.text-jennie {
+  color: hsl(213, 9%, 39%);
+  margin: 10% 58% 0% -29%;
+  text-align: center;
+}
+
+.text2-jennie {
+  font-size: 20px;
+  margin: 21% -3%;
+  font-family: "Fraunces", sans-serif;
+}
+
+.text3-jennie {
+  font-size: 14px;
+  margin: -17% -5%;
+  color: hsl(210, 4%, 67%);
+}
+
+.contenedor5 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.milk {
+  width: 50%;
+}
+
+.milk img {
+  display: flex;
+  width: 100%;
+}
+
+.orannge {
+  width: 50%;
+}
+
+.orannge img {
+  display: flex;
+  width: 100%;
+}
+.cone {
+  width: 50%;
+}
+
+.cone img {
+  display: flex;
+  width: 100%;
+}
+
+.sugar {
+  width: 50%;
+}
+
+.sugar img {
+  display: flex;
+  width: 100%;
+}
+.contenedor6 {
+  margin-top: -3px;
+  width: 100%;
+  background-color: hsl(169, 52%, 68%);
+  display: flex;
+  flex-direction: column;
+  color: hsl(168, 34%, 41%);
+}
+
+.contenido3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Barlow", sans-serif;
+}
+
+.contenido3 h2 {
+  display: flex;
+  hyphens: 5px;
+  font-family: "Barlow", sans-serif;
+  font-size: 45px;
+}
+.contenido3 p {
+  /* margin: 0% 5% 0% 3%; */
+  display: flex;
+  /* align-items: center; */
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
