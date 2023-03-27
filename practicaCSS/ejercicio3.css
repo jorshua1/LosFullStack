@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+    position: relative;
+}
+
+input{
+    text-align: left;
+    border-radius: 10px;
+    outline: 0 none;
+    border: 1px solid black;
+    padding: 0.6rem 1.2rem;
+    color: rgb(41, 41, 41);
+    font-size: 1.1rem;
+}
+
+label{
+    text-transform: uppercase;
+    background-color: white;
+    position: absolute;
+    top: 0.5rem;
+    left: 1.2rem;
+    color: rgba(0, 0, 0);
+    font-size: 1.1rem;
+    transition: all .4s;
+    padding-inline: 0.25rem;
+}
+
+input:focus~label{
+top: -0.5rem;
+left: 0.5rem;
+background-color: white;
+font-size: 0.85rem;
+}
+input:focus{
+    border: 1px solid cyan;
+    box-shadow: 0.5px 0.5px 5px 0.5px rgba(0, 0, 0, 0.3);
+}
+input:hover{
+    border: 1px solid rgb(0, 133, 133)
+}

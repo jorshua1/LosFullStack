@@ -1,0 +1,42 @@
+.galeria {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+
+.galeria>div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .5s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.galeria>div:hover {
+    flex: 3;
+}
+
+.div1 {
+    background-image: url(imagenes/dotor.jpg);
+}
+
+.div2 {
+    background-image: url(imagenes/fondo-citas.jpg);
+}
+
+.div3 {
+    background-image: url(imagenes/fondo-inicio.jpg);
+}
+
+.div4 {
+    background-image: url(imagenes/fondo-register.jpg);
+}
+
+.div5 {
+    background-image: url(imagenes/fondo-vacuna.jpg);
+}

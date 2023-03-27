@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.caja-iconos a {
+    position: relative;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 1px 1px 10px 1px rgb(0, 0, 0.5);
+    transition: transform .5s;
+    overflow: hidden;
+}
+
+.caja-iconos a::after {
+    height: 100%;
+    width: 100%;
+    top: -90px;
+    left: 0;
+    content: "";
+    background: linear-gradient(-45deg, #11ecfc, rgb(0, 132, 255) 40%, blue);
+    transition: 0.5s;
+    color: white;
+    position: absolute;
+}
+
+.caja-iconos a .fa {
+    z-index: 10;
+    font-size: 20px;
+    position: relative;
+    transition: color 0.5s;
+}
+
+
+.caja-iconos a:hover::after {
+    top: 0;
+
+}
+
+.caja-iconos a:hover .fa {
+    color: white;
+}
+
+.caja-iconos a:hover {
+    transform: translateY(-10px);
+}
