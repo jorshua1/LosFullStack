@@ -42,3 +42,23 @@ estudiantes[index].style.color="black"
     }
     
 }
+
+let listaTareas = document.getElementById("listaTareas");
+let tarea = document.createElement("li");
+let tareas = ["Despertar","Cepillarse", "Comer", "Bañarse", "Trabajar", "Almorzar", "Trabajar", "Comer", "Dormir"]
+
+console.log(tareas)
+console.log(listaTareas.innerText)
+console.log(listaTareas.textContent)
+console.log(listaTareas.innerHTML)
+
+
+for(let i = 0; i<tareas.length; i++) {
+    let tarea = document.createElement("li");
+    let texto = tareas[i]
+    tarea.innerHTML = texto;
+    listaTareas.append(tarea);
+    tarea.setAttribute("class", "tarea")
+}
+
+idhambre.remove()
