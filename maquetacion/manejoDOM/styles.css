@@ -61,7 +61,8 @@ body{
 }
 
 .ejemplo1{
-    width: 100px;
+    width: 200px;
+    height: 50%;
     padding: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -72,9 +73,13 @@ body{
     gap: 20px;
 
 }
+.ejemplo1 h1{
+    font-size: 25px;
+}
 
 .ejemplo2{
-    width: 100px;
+    width: 200px;
+    height: 50%;
     padding: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -86,7 +91,8 @@ body{
 }
 
 .ejemplo3{
-    width: 100px;
+    width: 200px;
+    height: 50%;
     padding: 100px;
     display: flex;
     flex-wrap: wrap;
