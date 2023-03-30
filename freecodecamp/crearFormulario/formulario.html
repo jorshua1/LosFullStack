@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>
+    </title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform
+    <p>
+</head>
+<body>
+    <form id="survey-form" required>
+        <label id="name-label" >nombre</label>
+        <br>
+        <input id="name" type="text" placeholder=" enter your name" required/>
+        <br>
+        <label id="email-label" required >Email</label>
+        <br>
+        <input id="email" type="email"  placeholder="enter you email" required/>
+        <br>
+        <label id="number-label" required >number</label>
+        <br>
+        <input id="number" type="number" min="0" max="100" placeholder="enter you age" required/>
+        <br>
+        <select name="select" id="dropdown">
+            <option value="student"></option>
+            <option value="ful time job"></option>
+            <option value="other"></option>
+        </select>
+        <br>
+     <label>
+    <input type="radio" name="gender" value="male">
+    Male
+  </label>
+  <label>
+    <input type="radio" name="gender" value="female">
+    Female
+  </label>
+        <br>
+        <input type="checkbox" name="checkbox1" value="font-end">
+        <input type="checkbox" name="checkbox2" value="back-end">
+        <input type="checkbox" name="checkbox3" value="senior">
+        <input type="checkbox" name="checkbox4" value="full stack">
+        <br>
+        <textarea name="textarea" id="comentarios" cols="30" rows="10"></textarea>
+        <br>
+        <button id="submit">Sudmit</button>
+
+
+
+
+    </form>
+</body>
+

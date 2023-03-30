@@ -1,0 +1,42 @@
+body {
+    background-color: #8EECF5;
+    margin: 0%;
+    padding: 0%;
+}
+
+.contenedor1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.estudiantes {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.estudiante {
+    text-align: center;
+    width: 200px;
+    padding: 30px 0;
+    background-color: #9381ff;
+    color: #fff;
+    border-radius: 25px;
+    border: 3px solid #fff;
+}
+.butonn{
+    background-color: #9381ff;
+    height: 75%;
+    width: 33.3;
+    display: flow;
+    float: left;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.boton 
