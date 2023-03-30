@@ -1,0 +1,110 @@
+.body {
+  background-color: hsl(185, 41%, 84%);
+  font-family: 'Space Mono', monospace;
+  color: hsl(186, 14%, 43%);
+}
+.completo {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 350px;
+  width: 50%;
+  margin: 300px 10px 0px 450px;
+    border-radius: 15px;
+}
+
+
+.mitad1 {
+  width: 50%;
+  margin: 15px 1px 15px 50px;
+}
+
+.titulo1 {
+}
+
+.inValor {
+  background-color: hsl(189, 41%, 97%);
+  margin: -15px 50px 45px 0px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  height: 25px;
+}
+
+.boton {
+  width: 100%;
+  margin: 0px 0px 45px 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  justify-content: start;
+}
+
+.boton1 {
+  background-color: hsl(183, 100%, 15%);
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+.boton2 {
+  background-color: hsl(183, 100%, 15%);
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+.boton3 {
+  background-color: hsl(183, 100%, 15%);
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+.boton4 {
+  background-color: hsl(183, 100%, 15%);
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+.boton5 {
+  background-color: hsl(183, 100%, 15%);
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+.boton6 {
+  background-color: hsl(183, 100%, 15%);
+  width: 100px;
+  height: 45px;
+  border-radius: 5px; 
+  text-align: center;
+  color: white;
+}
+
+
+.titulo3{
+
+}
+
+.personas{
+    background-color: hsl(189, 41%, 97%);
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 50px 5px 0px;
+    border-radius: 5px;
+    height: 25px;
+}
+
+.mitad2 {
+  background-color: hsl(183, 100%, 15%);
+  width: 50%;
+  margin: 5px 5px 5px 5px;
+}
