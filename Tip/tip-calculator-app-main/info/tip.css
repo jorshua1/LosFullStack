@@ -36,8 +36,9 @@
   margin: 0px 0px 45px 0px;
   display: grid;
   grid-template-columns: repeat(3, 100px);
-  grid-gap: 10px;
   justify-content: start;
+  gap: 15px;
+  font-size: 20px;
 }
 
 .boton1 {
@@ -47,6 +48,9 @@
   border-radius: 5px;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .boton2 {
   background-color: hsl(183, 100%, 15%);
@@ -55,6 +59,9 @@
   border-radius: 5px;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .boton3 {
   background-color: hsl(183, 100%, 15%);
@@ -63,6 +70,9 @@
   border-radius: 5px;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .boton4 {
   background-color: hsl(183, 100%, 15%);
@@ -71,6 +81,9 @@
   border-radius: 5px;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .boton5 {
   background-color: hsl(183, 100%, 15%);
@@ -79,6 +92,9 @@
   border-radius: 5px;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .boton6 {
   background-color: hsl(183, 100%, 15%);
@@ -87,6 +103,9 @@
   border-radius: 5px; 
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
