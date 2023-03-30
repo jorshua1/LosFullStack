@@ -28,3 +28,60 @@ body{
     color: black;
     border-radius: 60px;
 }
+#listaTareas{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  
+}
+.tareas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarea{
+    width: 150px;
+    text-align: center;
+    padding: 25px;
+    background-color: #5fa8d3;
+    border-radius: 25px;
+    list-style: none;
+}
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+}
+.tarjeta1{
+    height: 500px;
+    width: 500px;
+    background-color: #5fa8d3;
+    margin: 20px;
+    border-radius: 20px;
+}
+.tarjeta2{
+    height: 500px;
+    width: 500px;
+    background-color: #5fa8d3;
+    margin: 20px;
+    border-radius: 20px;
+}
+.tarjeta3{
+    height: 500px;
+    width: 500px;
+    background-color: #5fa8d3;
+    margin: 20px;
+    border-radius: 20px;
+}
+.titulo{
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 40px;
+}
+.boton{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
