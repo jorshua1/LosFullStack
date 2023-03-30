@@ -39,3 +39,26 @@ for (let i = 0; i < estudiantes.length; i++) {
 // console.log(body);
 document.getElementsByTagName("body")[0].style.fontFamily =
   "Verdana,sans-serif";
+
+let listaTareas = document.getElementById("listaTareas");
+let tareas = [
+  "Despertar",
+  "cepillarse",
+  "Comer",
+  "bañarse",
+  "trabajar",
+  "almorzar",
+  "trabajar",
+  "comer",
+  "dormir",
+];
+
+for (let i = 0; i < tareas.length; i++) {
+  let tarea = document.createElement("li");
+  let texto = tareas[i];
+  tarea.innerHTML = texto;
+  listaTareas.append(tarea);
+  tarea.setAttribute("class", "tarea");
+}
+
+idHambre.remove()
