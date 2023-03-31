@@ -66,3 +66,29 @@ for (let i = 0; i < tareas.length; i++) {
 }
 
 idHambre.remove()
+
+// captura de eventos
+// onclick
+let boton3 = document.getElementById("boton3");
+let mensaje = () => alert("no kismi wakala");
+boton3.addEventListener("click", mensaje);
+
+// mouseover
+ 
+let boton2 = document.querySelector('#boton2')
+function cambiarEstiloBoton(){
+  boton2.style.backgroundColor ="black"
+  boton2.style.color="white"
+  boton2.style.border="2px solid red"
+}
+function reestablecerBoton(){
+  boton2.style.backgroundColor="#03418d";
+  boton2.style.color="#5FA9D6";
+  boton2.style.border="none" 
+}
+
+boton2.addEventListener("mouseover", cambiarEstiloBoton);
+boton2.addEventListener("mouseleave", reestablecerBoton);
+
+let card = document.querySelector(".fondo");
+let aumentarFondo
