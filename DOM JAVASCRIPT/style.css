@@ -1,5 +1,5 @@
 body {
-    background-color: #8EECF5;
+    background-color: #022a2e;
     margin: 0%;
     padding: 0%;
 }
@@ -10,6 +10,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10%;
+    
 }
 
 .estudiantes {
@@ -30,13 +32,25 @@ body {
     border: 3px solid #fff;
 }
 .butonn{
-    background-color: #9381ff;
-    height: 75%;
-    width: 33.3;
-    display: flow;
-    float: left;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+     background-color: #170967;
+     border: 5px solid rgb(35, 233, 35);
+     color: rgb(4, 75, 75);
+     height: 50vh;
+     width: 30.33%;
+     text-align: center;
+     margin: 2%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+    
 }
-.boton 
+.fondo{
+    background: url("https://images.unsplash.com/photo-1680210479198-ec7f45725860?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+
+
+

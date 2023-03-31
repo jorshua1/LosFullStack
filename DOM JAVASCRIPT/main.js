@@ -7,7 +7,7 @@ let classpuntual = document.querySelector(".estudiantepuntual")
 let idhambre = document.querySelector("#hambre")
 let estudiantes = document.querySelectorAll(".estudiante")
 
-console.log()
+
 
 
 
@@ -67,4 +67,26 @@ for (let i = 0; i < tareasDiarias.length; i++) {
 }
 
 idhambre.remove()
+
 //escuchas de eventos 
+// capturando datosd de input o cambiar el contenido de un input
+let nombre =document.getElementById("#nombre");
+nombre.value = "erick"
+console.log(nombre);
+//captura de evento
+let boton2=document.getElementById("boton2")
+let mesajeBo= () => alert("estoy es una captura de eventos");
+boton2.addEventListener("click",mesajeBo)
+//mouseover
+ let botton3 = document.querySelector("#boton");
+ function cambiarBotton3(){
+    botton3.style.backgroundColor="green"
+    botton3.style.color="yellow"
+    botton3.style.border="black"
+ }
+ botton3.addEventListener("mouseover",cambiarBotton3())
+ function restablecerBotton(){
+    botton3.style.backgroundColor="white"
+ }
+
+ botton3.addEventListener("mouseover",cambiarBotton3 )
