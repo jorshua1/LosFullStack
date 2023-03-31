@@ -47,10 +47,10 @@ let listaTareas = document.getElementById("listaTareas");
 let tarea = document.createElement("li");
 let tareas = ["Despertar","Cepillarse", "Comer", "Bañarse", "Trabajar", "Almorzar", "Trabajar", "Comer", "Dormir"]
 
-console.log(tareas)
+/*console.log(tareas)
 console.log(listaTareas.innerText)
 console.log(listaTareas.textContent)
-console.log(listaTareas.innerHTML)
+console.log(listaTareas.innerHTML)*/
 
 
 for(let i = 0; i<tareas.length; i++) {
@@ -62,3 +62,32 @@ for(let i = 0; i<tareas.length; i++) {
 }
 
 idhambre.remove()
+
+
+//capturando datos de un input
+
+let nombre = document.querySelector("#nombre")
+nombre.value= "Yuli";
+console.log(nombre)
+
+
+//captura de evento
+//onclick
+let boton2 = document.getElementById("boton2")
+let mensaje = () => alert("yo ahora no tengo hambre");
+boton2.addEventListener("click", mensaje);
+
+//mouseover
+let boton3 = document.querySelector("#boton3")
+function cambiarEstiloBoton(){
+    boton3.style.backgroundColor = "black"
+    boton3.style.color = "white"
+    boton3.style.border = "white"
+}
+function restablecerBoton(){
+    boton3.style.backgroundColor = "rgb(255, 255, 255)";
+    boton3.style.color = "black"
+    boton3.style.border =" 1px black"
+}
+boton3.addEventListener("mouseover", cambiarEstiloBoton);
+boton3.addEventListener("mouseleave", restablecerBoton);
