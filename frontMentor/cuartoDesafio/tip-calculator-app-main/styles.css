@@ -1,0 +1,48 @@
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contenedor{
+    width: 900px;
+    height: 400px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px;
+}
+.b{
+    height: 100%;
+    width: 50%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 20px;
+}
+
+
+
+
+/* Bill
+
+Select Tip %
+5%
+10%
+15%
+25%
+50%
+Custom
+
+Number of People
+
+Tip Amount
+/ person
+
+Total
+/ person
+
+Reset */

@@ -1,87 +1,86 @@
-body{
-    background-color: #1b263b;
-    color: white;
-    font-size: 24px;
-    margin: 0;
-    padding: 0;
+body {
+  background-color: #1b263b;
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
 }
-.centro{
-    width: 100%;
-    height: 100vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.estudiantes{
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.estudiante{
-    width: 150px;
-    text-align: center;
-    padding: 25px;
-    margin: 5px;
-    background-color: #fdf0d5;
-    color: black;
-    border-radius: 60px;
-}
-#listaTareas{
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;  
-}
-.tareas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.centro {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.tarea{
-    width: 150px;
-    text-align: center;
-    padding: 25px;
-    background-color: #5fa8d3;
-    border-radius: 25px;
-    list-style: none;
+.estudiantes {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.tarjetas{
-    display: flex;
-    flex-direction: row;
+.estudiante {
+  width: 150px;
+  text-align: center;
+  padding: 25px;
+  margin: 5px;
+  background-color: #fdf0d5;
+  color: black;
+  border-radius: 60px;
 }
-.tarjeta1{
-    height: 500px;
-    width: 500px;
-    background-color: #5fa8d3;
-    margin: 20px;
-    border-radius: 20px;
+#listaTareas {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.tarjeta2{
-    height: 500px;
-    width: 500px;
-    background-color: #5fa8d3;
-    margin: 20px;
-    border-radius: 20px;
+.tareas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.tarjeta3{
-    height: 500px;
-    width: 500px;
-    background-color: #5fa8d3;
-    margin: 20px;
-    border-radius: 20px;
+
+.tarea {
+  width: 150px;
+  text-align: center;
+  padding: 25px;
+  background-color: #5fa8d3;
+  border-radius: 25px;
+  list-style: none;
 }
-.titulo{
-    color: black;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    margin: 40px;
+.tarjetas {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
-.boton{
-    font-size: 20px;
-    display: flex;
-    align-items: center;
+.tarjeta {
+  height: 500px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #457b9d;
+  margin: 20px;
+  border-radius: 20px;
+  justify-content: space-around;
+}
+.titulo {
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin: 40px;
+}
+.boton {
+  width: 50%;
+  font-size: 20px;
+  margin-left: 100px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.fondo {
+  background: url("https://plus.unsplash.com/premium_photo-1667837079891-3de84bbc4369?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80");
+  background-size: cover;
+  background-repeat: none;
 }

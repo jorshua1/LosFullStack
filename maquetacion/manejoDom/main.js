@@ -49,5 +49,27 @@ for(let i=0; i<tareas.length; i++){
   tarea.setAttribute("class","tarea");
 }
 
-console.log(listaTareas.innerText);
+//console.log(listaTareas.innerText);
 idHambre.remove()
+
+let nombre = document.getElementById("nombre");
+nombre.value="jenifer"
+console.log(nombre);
+
+let boton2= document.getElementById("boton2");
+let mensaje = () => alert("ya no");
+boton2.addEventListener("click", mensaje);
+
+let boton3 =document.getElementById("boton3");
+
+function cambiarBoton(){
+  boton3.style.backgroundColor="black";
+  boton3.style.color="white";
+}
+function restablecerBoton(){
+  boton3.style.backgroundColor="white";
+  boton3.style.color= "black";
+}
+
+boton3.addEventListener("mouseover", cambiarBoton );
+boton3.addEventListener("mouseleave", restablecerBoton);
