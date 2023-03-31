@@ -30,14 +30,24 @@
     </div>
 
     <div class="centro">
-      <div class="tarjeta">
-        <h1>Ejemplo</h1>
-        <button type="submit">MANDAR</button>
-      </div>
-      <div class="tarjeta"> <h1>Ejemplo</h1>
-        <button type="submit">MANDAR</button></div>
-      <div class="tarjeta"> <h1>Ejemplo</h1>
-        <button type="submit">MANDAR</button></div>
+      <div class="tarjetas"> 
+        <div class="tarjeta">
+          <h1>Ejemplo</h1>
+          <button id="boton">MANDAR</button>
+        </div>
+        <div class="tarjeta fondo">
+          <h1>Ejemplo</h1>
+          <button id="boton" onclick="alert('adios')">MANDAR</button>
+        </div>
+        <div class="tarjeta">
+          <h1>Ejemplo</h1>
+          <button id="boton3" onclick="alert('adios')">MANDAR</button>
+        </div>
+    </div>
+  </div>
+    <div class="centro">
+      <label for="nombre"></label>
+      <input type="text" name="nombre" id="nombre" class="input-nombre" />
     </div>
 
     <script src="./main.js"></script>

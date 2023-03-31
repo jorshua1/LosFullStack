@@ -53,12 +53,35 @@ body {
   align-items: center;
 }
 
+.tarjetas {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .tarjeta {
+  height: 350px;
   width: 30.33%;
   text-align: center;
-  display: flow;
   justify-content: center;
   align-items: center;
-  border: 3px saddlebrown solid;
-  height: 250px;
+  border: 5px saddlebrown solid;
+  background-color: rgba(139, 69, 19, 0.316);
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta button {
+  background-color: rgb(223, 196, 176);
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.fondo {
+  background: url(https://images.unsplash.com/photo-1680252112129-91e7840cba38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80);
+background-size: cover;
+background-repeat:no-repeat ;
 }

@@ -59,3 +59,21 @@ for(let i=0; i<tareas.length; i++){
   tarea.setAttribute("class", "tarea")
 }
 
+let nombre=document.getElementById("input-nombre");
+
+let boton = document.getElementById("boton");
+let mensaje = ()=>alert("Primer boton");
+boton.addEventListener("click",mensaje);
+
+
+let boton3 =document.querySelector("#boton3");
+function cambiarEstilo(){
+boton3.style.backgroundColor="rgb(240, 149, 79)";
+}
+
+function Normal(){
+  boton3.style.backgroundColor="rgb(223, 196, 176)";
+  }
+
+boton3.addEventListener("mouseover", cambiarEstilo);
+boton3.addEventListener("mouseleave", Normal);
