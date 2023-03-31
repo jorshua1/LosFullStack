@@ -5,36 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejercicio5.css">
     <title>Frontend Mentor | Tip calculator app</title>
 </head>
 
 <body>
-    <header class="encabezado">SPLITTER</header>
-    <div class="contenedor-all">
-        <label for="text_number">Bill</label>
-        <input type="text" class="text_number" id="text_number" name="text_numbre">
-        <label> Select Tip %</label>
-        <div class="contenedor-button">
-            <button type="submit">5%</button>
-            <button type="submit">10%</button>
-            <button type="submit">15%</button>
-            <button type="submit">25%</button>
-            <button type="submit">50%</button>
-            <button type="submit">Custom</button>
+   <form action="ejercicio5.js" method="post">
+    <header class="encabezado"><span>SPLI</span><span>TTER</span></header>
+    <div class="centro">
+        <div class="contenedor-all">
+
+            <div class="contenedor-intermedio">
+    
+                <div class="intermedio-intermedio">
+                    <div class="contenedor-number">
+                        <label for="text_number">Bill</label>
+                        <input type="text" id="text_number" name="text_numbre">
+                    </div>
+        
+                    <div class="contenedor-button">
+                        <label>Select Tip %</label>
+                        <button class="color-paralelo" type="submit">5%</button>
+                        <button class="color-paralelo" type="submit">10%</button>
+                        <button class="color-diferent" type="submit">15%</button>
+                        <button class="color-paralelo" type="submit">25%</button>
+                        <button class="color-paralelo" type="submit">50%</button>
+                        <button class="color-custom" type="submit">Custom</button>
+                    </div>
+        
+                    <div class="contenedor-people">
+                        <label for="text_people"> Number of People</label>
+                        <input type="text" class="text_people" name="text_people" id="text_people">
+                    </div>
+                </div>
+            
+            <div class="contenedor-result">
+                <div class="result-intermedio">
+    
+                    <div class="espancion">
+                        <div class="result-resultado">
+                            <p class="result-negrita">Tip Amount</p><span>$4.6</span>
+                        </div>
+                        <p class="result-clara">/ person</p>
+                    </div>
+    
+                    <div class="espancion">
+                        <div class="result-resultado">
+                            <p class="result-negrita">Total</p><span>$4.7</span>
+                        </div>
+                        <p class=" result-clara">/ person</p>
+                    </div>
+    
+                    <button type="submit">RESET</button>
+                </div>
+    
+            </div>
         </div>
-
-        <label for="text_people"> Number of People</label>
-        <input type="text" class="text_people" name="text_people" id="text_people">
-        <div class="contenedor-result">
-            <p>Tip Amount <span></span></p>
-            <p>/ person <span></span></p>
-
-            <p>Total</p>
-            <p>/ person</p>
-
-            <button type="submit">RESET</button>
         </div>
     </div>
+   </form>
 </body>
 
 </html>

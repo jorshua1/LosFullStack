@@ -9,20 +9,20 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-   align-content: center;
+    align-content: center;
 }
 
-.caja-estudiantes{
+.caja-estudiantes {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-   gap: 15px 15px;
+    gap: 15px 15px;
 }
 
 .estudiantes {
-    border-bottom:3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
     border-radius: 50px;
     text-transform: uppercase;
     font-weight: 600;
@@ -31,12 +31,118 @@ body {
     align-content: center;
     background: linear-gradient(90deg, rgb(255, 255, 255), rgb(201, 201, 201), rgb(151, 151, 151));
     width: 150px;
-   padding: 10px 0;
+    padding: 10px 0;
     color: black;
     cursor: default;
     transition: all .4s;
 }
 
-.estudiantes:hover{
-box-shadow: 1px 1px 15px 1px rgba(255, 255, 255, 0.7);
+.estudiantes:hover {
+    box-shadow: 1px 1px 15px 1px rgba(255, 255, 255, 0.7);
+}
+
+.tareas {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#listaTareas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 102, 255, 0.7);
+    box-shadow: 1px 1px 10px 1px rgba(0, 102, 255, 0.7);
+}
+
+.tarea {
+    width: 250px;
+    cursor: default;
+    text-align: center;
+    padding: 1px;
+    list-style: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    border: 0;
+}
+
+.tarea:hover {
+    border: 1px solid rgba(0, 102, 255, 0.7);
+    box-shadow: 1px 1px 10px 1px rgba(0, 102, 255, 0.7);
+}
+
+.caja-targeta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 500px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 20px 1px rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+}
+
+.targeta {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 80%;
+    border-radius: 20px;
+    border: 1px hidden;
+    border: 1px solid white;
+}
+
+.targeta:hover {
+    box-shadow: 1px 1px 20px 1px rgba(255, 255, 255, 0.7);
+    transform: scale(1.1);
+}
+
+.targeta h1{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.targeta button{
+    color: white;
+    text-transform: uppercase;
+    border-radius: 20px;
+    width: 80%;
+    padding: 15px;
+    border: 1px 1px 10px 1px rgba(255, 255, 255, 0.7);
+    background: transparent;
+    border: 1px solid white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#fondo{
+    background: url("../practicaCSS/imagenes/fondo-examen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    transition: .4s;
+}
+
+
+
+.targeta button:hover{
+    text-shadow:1px 2px rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 20px 1px rgba(255, 255, 255, 0.7);
 }
