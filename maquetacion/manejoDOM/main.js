@@ -58,3 +58,28 @@ for (let i = 0; i < tareas.length; i++) {
   }
 
 idhambre.remove();
+
+//capturando datos de un input
+let nombre= document.querySelector("#nombre");
+nombre.value="Breinner";
+console.log(nombre);
+
+//captura de eventos
+let boton2 = document.getElementById("boton2");
+let mensaje =() => alert("yo no tengo hambre prro");
+boton2.addEventListener("click", mensaje);
+
+//mouseover
+let boton3 = document.querySelector("#boton3");
+function cambiarEstiloBoton(){
+  boton3.style.backgroundColor="tomato";
+  boton3.style.color="#1c003c;"
+  boton3.style.border="3px solid #5c004c;"
+} 
+function restablecerBoton(){
+  boton3.style.backgroundColor="aquamarine";
+  boton3.style.color="#1c003c;"
+  
+}
+boton3.addEventListener("mouseover", cambiarEstiloBoton);
+boton3.addEventListener("mouseleave", restablecerBoton);
