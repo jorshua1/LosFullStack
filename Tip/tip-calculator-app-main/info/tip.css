@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   margin-top: 350px;
-  width: 50%;
+  width: 45%;
   margin: 300px 10px 0px 450px;
     border-radius: 15px;
 }
@@ -19,7 +19,9 @@
   margin: 15px 1px 15px 50px;
 }
 
-.titulo1 {
+input{
+  border: 0;
+  outline: none;
 }
 
 .inValor {
@@ -28,7 +30,7 @@
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
-  height: 25px;
+  height: 30px;
 }
 
 .boton {
@@ -43,7 +45,7 @@
 
 .boton1 {
   background-color: hsl(183, 100%, 15%);
-  width: 100px;
+  width: 100%;
   height: 45px;
   border-radius: 5px;
   text-align: center;
@@ -54,7 +56,7 @@
 }
 .boton2 {
   background-color: hsl(183, 100%, 15%);
-  width: 100px;
+  width:  100%;
   height: 45px;
   border-radius: 5px;
   text-align: center;
@@ -65,7 +67,7 @@
 }
 .boton3 {
   background-color: hsl(183, 100%, 15%);
-  width: 100px;
+  width:  100%;
   height: 45px;
   border-radius: 5px;
   text-align: center;
@@ -76,7 +78,7 @@
 }
 .boton4 {
   background-color: hsl(183, 100%, 15%);
-  width: 100px;
+  width:  100%;
   height: 45px;
   border-radius: 5px;
   text-align: center;
@@ -87,7 +89,7 @@
 }
 .boton5 {
   background-color: hsl(183, 100%, 15%);
-  width: 100px;
+  width:  100%;
   height: 45px;
   border-radius: 5px;
   text-align: center;
@@ -97,12 +99,12 @@
   align-items: center;
 }
 .boton6 {
-  background-color: hsl(183, 100%, 15%);
-  width: 100px;
+  background-color: hsla(188, 14%, 56%, 0.25); 
+  width:  100%;
   height: 45px;
   border-radius: 5px; 
   text-align: center;
-  color: white;
+  color: hsl(184, 14%, 56%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,11 +121,78 @@
     justify-content: space-between;
     margin: -15px 50px 5px 0px;
     border-radius: 5px;
-    height: 25px;
+    height: 30px;
 }
 
 .mitad2 {
   background-color: hsl(183, 100%, 15%);
   width: 50%;
-  margin: 5px 5px 5px 5px;
+  margin: 35px 15px 15px 50px;
+  border-radius:15px;
+  display: grid;
+  flex-wrap: wrap;
+}
+
+span{
+  color: white;
+}
+
+.primero{
+  margin: 15px 0px;
+  display: flex;
+  width: 100%;
+ font-size: 18px;
+}
+
+.primeroUno{
+  width: 50%;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.primeroDos{
+  width: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.segundo{
+  margin: 15px 0px;
+  display: flex;
+  width: 100%;
+ font-size: 18px;
+}
+
+.segundoUno{
+  width: 50%;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.segundoDos{
+  width: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.tercero{
+margin-top: 20% ;
+text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.tercero button{
+  background-color: rgb(223, 196, 176);
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 90%;
+  
 }

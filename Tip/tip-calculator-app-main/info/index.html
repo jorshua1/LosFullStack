@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="tip.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -21,24 +24,45 @@
   <body class="body">
     <div class="completo">
       <div class="mitad1">
-
         <p class="titulo1">Precio:</p>
-        <div class="inValor">
-          <img src="images/icon-dollar.svg" alt="pesos" /> 
+        <div class="inValor"> 
+          <img src="images/icon-dollar.svg" alt="pesos" />
+          <input type="number">
         </div>
         <p class="titulo2">Cuanto daras de propina %</p>
         <div class="boton">
-        <div class="boton1">5%</div>
-        <div class="boton2">10%</div>
-        <div class="boton3">15%</div>
-        <div class="boton4">25%</div>
-        <div class="boton5">50%</div>
-        <div class="boton6">custom</div>
+          <div class="boton1">5%</div>
+          <div class="boton2">10%</div>
+          <div class="boton3">15%</div>
+          <div class="boton4">25%</div>
+          <div class="boton5">50%</div>
+          <div class="boton6">Custom</div>
         </div>
         <p class="titulo3">Entre cuantas personas:</p>
-        <div class="personas"><img src="images/icon-person.svg" alt="Persona"></div>
+        <div class="personas">
+          <img src="images/icon-person.svg" alt="Persona" />
+        </div>
       </div>
-      <div class="mitad2">Tip Amount / person Total / person Reset</div>
+      <div class="mitad2">
+        <div class="mitad2Todo">
+          <div class="primero">
+            <div class="primeroUno">
+              <p> <span>Tip Amount</span> <br />/person</p>
+            </div>
+            <div class="primeroDos">plata</div>
+          </div>
+          <div class="segundo">
+            <div class="segundoUno">
+              <p> <span>Total</span> <br />/person</p>
+            </div>
+            <div class="segundoDos">plata</div>
+          </div>
+          <div class="tercero">
+            <div><button>Reset</button></div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
+
