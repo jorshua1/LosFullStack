@@ -77,16 +77,18 @@ console.log(nombre);
 let boton2=document.getElementById("boton2")
 let mesajeBo= () => alert("estoy es una captura de eventos");
 boton2.addEventListener("click",mesajeBo)
+
 //mouseover
- let botton3 = document.querySelector("#boton");
- function cambiarBotton3(){
-    botton3.style.backgroundColor="green"
-    botton3.style.color="yellow"
-    botton3.style.border="black"
- }
- botton3.addEventListener("mouseover",cambiarBotton3())
+ let boton3 = document.querySelector("#boton3");
+ function cambiarBoton3(){
+   boton3.style.backgroundColor="red";
+    boton3.style.color="yellow";
+    boton3.style.border="black";
+ } 
+
  function restablecerBotton(){
-    botton3.style.backgroundColor="white"
+    boton3.style.backgroundColor="white";
  }
 
- botton3.addEventListener("mouseover",cambiarBotton3 )
+ boton3.addEventListener("mouseover",cambiarBoton3);
+ boton3.addEventListener("mouseleave",restablecerBotton);
