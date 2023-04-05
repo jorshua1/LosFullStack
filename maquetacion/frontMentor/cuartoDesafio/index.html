@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
@@ -14,44 +14,51 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
   <div class="centro">
-    <h1>SPLITTER</h1>
-    <div class="contenedor1">
-      <div class="contenido" id="bill"><label for="number">Bill</label>
-        <input type="text" name="number" id="number" class="input-number">
-
+  <div class="contenedor">
+    <div class="contenido1">
+      <p class="titulo1">Bill:</p>
+      <div class="val"> 
+        <img src="images/icon-dollar.svg" alt="pesos" />
+        <input type="number">
       </div>
-
-      <div class="estudiante" id="Yuli">Yuli</div>
-      <div class="estudiante" id="Manuel">Manuel</div>
-      
-    
+      <p class="titulo2">Select Tip %</p>
+      <div class="boton">
+        <div class="boton1">5%</div>
+        <div class="boton2">10%</div>
+        <div class="boton3">15%</div>
+        <div class="boton4">25%</div>
+        <div class="boton5">50%</div>
+        <div class="boton6">Custom</div>
+      </div>
+      <p class="titulo3">Number of People:</p>
+      <div class="personas">
+        <img src="images/icon-person.svg" alt="Persona" />
+      </div>
     </div>
- 
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="contenedor2">
+      <div class="contenido2">
+        <div class="primero">
+          <div class="first">
+            <p> <span>Tip Amount</span> <br />/person</p>
+          </div>
+          <!-- <div class="second">plata</div> -->
+        </div>
+        <div class="segundo">
+          <div class="one">
+            <p> <span>Total</span> <br />/person</p>
+          </div>
+          <!-- <div class="two">plata</div> -->
+        </div>
+        <div class="tercero">
+          <div><button>RESET</button></div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 </body>
 </html>
 
