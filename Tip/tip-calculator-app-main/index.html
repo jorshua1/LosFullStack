@@ -17,7 +17,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <script src="js.js"></script>
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
 
@@ -25,44 +25,41 @@
     <div class="completo">
       <div class="mitad1">
         <p class="titulo1">Precio:</p>
-        <div class="inValor"> 
+        <div class="inValor">
           <img src="images/icon-dollar.svg" alt="pesos" />
-          <input type="number">
+          <input type="text"  placeholder="0" step="none" min="0" class="plata">
         </div>
         <p class="titulo2">Cuanto daras de propina %</p>
         <div class="boton">
-          <div class="boton1">5%</div>
-          <div class="boton2">10%</div>
-          <div class="boton3">15%</div>
-          <div class="boton4">25%</div>
-          <div class="boton5">50%</div>
-          <div class="boton6">Custom</div>
+          <button onclick="cinco()"><div class="boton1">5%</div></button>
+          <button onclick="diez()"><div class="boton2">10%</div></button>
+          <button onclick="quince()"><div class="boton3">15%</div></button>
+          <button onclick="veinticinco()"><div class="boton4">25%</div></button>
+          <button onclick="cincuenta()"><div class="boton5">50%</div></button>
+          <button><div class="boton6">Custom</div></button>
         </div>
         <p class="titulo3">Entre cuantas personas:</p>
         <div class="personas">
           <img src="images/icon-person.svg" alt="Persona" />
+          <input type="text"  placeholder="0" step="none" min="1" class="persona" max="30">
         </div>
       </div>
       <div class="mitad2">
         <div class="mitad2Todo">
-          <div class="primero">
             <div class="primeroUno">
-              <p> <span>Tip Amount</span> <br />/person</p>
+              <p><span>Propina</span> <br />/Persona</p>
+              <input type="text" name="" id="tips" disabled>
             </div>
-            <div class="primeroDos">plata</div>
-          </div>
-          <div class="segundo">
             <div class="segundoUno">
-              <p> <span>Total</span> <br />/person</p>
+              <p><span>Total</span> <br />/Persona</p>
+              <input type="text" name="" id="total" disabled>
             </div>
-            <div class="segundoDos">plata</div>
-          </div>
           <div class="tercero">
-            <div><button>Reset</button></div>
+            <div><button onclick="clean()">BORRAR</button></div>
           </div>
         </div>
       </div>
     </div>
+
   </body>
 </html>
-

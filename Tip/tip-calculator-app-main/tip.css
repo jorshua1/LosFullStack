@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   margin-top: 350px;
-  width: 45%;
+  width: 930px;
   margin: 300px 10px 0px 450px;
     border-radius: 15px;
 }
@@ -24,13 +24,26 @@ input{
   outline: none;
 }
 
+.plata{
+  font-size: 20px;
+  font-family: 'Space Mono', monospace ;
+  color: hsl(183, 100%, 15%);
+  text-align: end;
+  background-color: hsl(189, 41%, 97%);
+}
 .inValor {
   background-color: hsl(189, 41%, 97%);
-  margin: -15px 50px 45px 0px;
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
   height: 30px;
+}
+
+.boton button{
+  background: transparent; 
+  border: 0px solid;
+  font-family: 'Space Mono', monospace ;
+  font-size: 20px;
 }
 
 .boton {
@@ -115,13 +128,20 @@ input{
 
 }
 
+.persona{
+  font-size: 20px;
+  font-family: 'Space Mono', monospace ;
+  color: hsl(183, 100%, 15%);
+  text-align: end;
+  background-color: hsl(189, 41%, 97%);
+}
 .personas{
     background-color: hsl(189, 41%, 97%);
     display: flex;
     justify-content: space-between;
-    margin: -15px 50px 5px 0px;
     border-radius: 5px;
     height: 30px;
+    text-align: center;
 }
 
 .mitad2 {
@@ -131,55 +151,33 @@ input{
   border-radius:15px;
   display: grid;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
 span{
   color: white;
 }
 
-.primero{
-  margin: 15px 0px;
-  display: flex;
-  width: 100%;
- font-size: 18px;
-}
+
 
 .primeroUno{
-  width: 50%;
+  width: 80%;
   display: flex ;
   align-items: center;
-  justify-content: center;
-  align-items: center;
-}
-.primeroDos{
-  width: 50%;
-  display: flex;
-  text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.segundo{
-  margin: 15px 0px;
-  display: flex;
-  width: 100%;
- font-size: 18px;
-}
 
 .segundoUno{
-  width: 50%;
+  width: 80%;
   display: flex ;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-.segundoDos{
-  width: 50%;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
+
+
 .tercero{
 margin-top: 20% ;
 text-align: center;
@@ -188,11 +186,36 @@ text-align: center;
 }
 
 .tercero button{
-  background-color: rgb(223, 196, 176);
-  color: black;
-  padding: 10px;
-  text-decoration: none;
-  border-radius: 10px;
-  width: 90%;
+  background-color: hsl(172, 67%, 45%);
+  width:  100%;
+  height: 45px;
+  border-radius: 5px;
+  text-align: center;
+  color:  hsl(183, 100%, 15%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid;
+  font-family: 'Space Mono', monospace ;
+  font-size: 20px;
   
+}
+
+
+#tips{
+  font-size: 20px;
+  font-family: 'Space Mono', monospace ;
+  color: hsl(172, 67%, 45%);
+  text-align: end;
+  font-size: 30px;
+  background-color: transparent;
+}
+
+#total{
+  font-size: 20px;
+  font-family: 'Space Mono', monospace ;
+  color: hsl(172, 67%, 45%);
+  text-align: end;
+  font-size: 30px;
+  background-color: transparent;
 }
