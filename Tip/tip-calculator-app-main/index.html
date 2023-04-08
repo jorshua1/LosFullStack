@@ -26,40 +26,52 @@
       <div class="mitad1">
         <p class="titulo1">Precio:</p>
         <div class="inValor">
-          <img src="images/icon-dollar.svg" alt="pesos" />
-          <input type="text"  placeholder="0" step="none" min="0" class="plata">
+          <img src="images/icon-dollar.svg" alt="pesos"  class="pesos"/>
+          <input
+            type="text"
+            placeholder="0"
+            step="none"
+            min="0"
+            class="plata"
+          />
         </div>
         <p class="titulo2">Cuanto daras de propina %</p>
-        <div class="boton">
-          <button onclick="cinco()"><div class="boton1">5%</div></button>
-          <button onclick="diez()"><div class="boton2">10%</div></button>
-          <button onclick="quince()"><div class="boton3">15%</div></button>
-          <button onclick="veinticinco()"><div class="boton4">25%</div></button>
-          <button onclick="cincuenta()"><div class="boton5">50%</div></button>
-          <button><div class="boton6">Custom</div></button>
+        <div class="boton"> 
+          <button id="boton1" onmouseup="click()" onclick="cinco()" >5%</button>
+          <button id="boton2" onmouseup="click()" onclick="diez()" >10%</button>
+          <button id="boton3" onclick="quince()" onmouseup="click()">15%</button>
+          <button id="boton4" onclick="veinticinco()" onmouseup="click()">25%</button>
+          <button id="boton5" onclick="cincuenta()" onmouseup="click()">50%</button>
+          <button id="boton6" onclick="custom()">Custom</button>
         </div>
         <p class="titulo3">Entre cuantas personas:</p>
         <div class="personas">
-          <img src="images/icon-person.svg" alt="Persona" />
-          <input type="text"  placeholder="0" step="none" min="1" class="persona" max="30">
+          <img src="images/icon-person.svg" alt="Persona" class="people" />
+          <input
+            type="text"
+            placeholder="0"
+            step="none"
+            min="1"
+            class="persona"
+            max="30"
+          />
         </div>
       </div>
       <div class="mitad2">
         <div class="mitad2Todo">
-            <div class="primeroUno">
-              <p><span>Propina</span> <br />/Persona</p>
-              <input type="text" name="" id="tips" disabled>
-            </div>
-            <div class="segundoUno">
-              <p><span>Total</span> <br />/Persona</p>
-              <input type="text" name="" id="total" disabled>
-            </div>
+          <div class="primeroUno">
+            <p><span>Propina</span> <br />/Persona</p>
+            <input type="text" name="" id="tips" disabled placeholder="$0" />
+          </div>
+          <div class="segundoUno">
+            <p><span>Total</span> <br />/Persona</p>
+            <input type="text" name="" id="total" disabled placeholder="$0" />
+          </div>
           <div class="tercero">
             <div><button onclick="clean()">BORRAR</button></div>
           </div>
         </div>
       </div>
     </div>
-
   </body>
 </html>
