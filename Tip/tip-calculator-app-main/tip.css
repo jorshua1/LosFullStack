@@ -30,7 +30,6 @@
     width: 40px !important;
   }
 
-
   .boton {
     grid-template-columns: repeat(2, 160px) !important;
   }
@@ -39,11 +38,11 @@
     width: 300px;
   }
 
-  .persona{
+  .persona {
     font-size: 24px !important;
   }
 
-  .people{
+  .people {
     height: 25px !important;
     width: 40px !important;
   }
@@ -58,7 +57,7 @@
     width: 50% !important;
   }
 
-  #tips{
+  #tips {
     width: 198px !important;
     margin-left: 43px;
   }
@@ -69,7 +68,7 @@
   }
   .tercero button {
     border-radius: 13px !important;
-    width: 95% !important;
+    width: 90% !important;
   }
 }
 
@@ -263,7 +262,7 @@ span {
 
 .tercero button {
   background-color: hsl(172, 67%, 45%);
-  width: 70%;
+  width: 95%;
   height: 45px;
   border-radius: 5px;
   text-align: center;
@@ -284,6 +283,7 @@ span {
   font-size: 30px;
   background-color: transparent;
   padding: 0px 1px;
+  width: 220px;
 }
 
 #total {
@@ -293,4 +293,5 @@ span {
   margin-left: 50px;
   font-size: 30px;
   background-color: transparent;
+  width: 220px !important;
 }
