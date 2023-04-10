@@ -57,6 +57,8 @@
     width: 50% !important;
   }
 
+  
+
   #tips {
     width: 198px !important;
     margin-left: 43px;
@@ -72,6 +74,10 @@
   }
 }
 
+.activo {
+  background-color: "#9fe8df" !important;
+  color: "hsl(183, 100%, 15%)" !important;
+}
 .body {
   background-color: hsl(185, 41%, 84%);
   font-family: "Space Mono", monospace;

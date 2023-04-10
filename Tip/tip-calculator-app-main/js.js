@@ -1,19 +1,21 @@
 const cinco = () => {
+  borrar();
   let valor = document.querySelector(".plata").value;
   let persona = document.querySelector(".persona").value;
   let personacuenta = valor / persona;
   let tip = valor * (5 / 100);
   let personatip = tip / persona;
-  let total = personacuenta + personatip;
+  let total = personacuenta + personatip ;
 
-  document.getElementById("tips").value = "$" + personatip;
-  document.getElementById("total").value = "$" + total;
+  document.getElementById("tips").value = "$" + personatip.toFixed(0);
+  document.getElementById("total").value = "$" + total.toFixed(0);
 
    let boton1 = document.querySelector("#boton1");
    function cambiarEstilo() {
      boton1.style.backgroundColor = "#9fe8df";
      boton1.style.color = "hsl(183, 100%, 15%)";
    }
+  // boton1.classList.add("activo");
    function Normal() {
      boton1.style.backgroundColor = "hsl(183, 100%, 15%)";
      boton1.style.color = "hsl(0, 0%, 100%)";
@@ -24,6 +26,7 @@ const cinco = () => {
 };
 
 const diez = () => {
+  borrar();
   let valor = document.querySelector(".plata").value;
   let persona = document.querySelector(".persona").value;
   let personacuenta = valor / persona;
@@ -31,8 +34,8 @@ const diez = () => {
   let personatip = tip / persona;
   let total = personacuenta + personatip;
 
-  document.getElementById("tips").value = "$" + personatip;
-  document.getElementById("total").value = "$" + total;
+  document.getElementById("tips").value = "$" + personatip.toFixed(0);
+  document.getElementById("total").value = "$" + total.toFixed(0);
 
   let boton2 = document.querySelector("#boton2");
   function cambiarEstilo() {
@@ -48,6 +51,7 @@ const diez = () => {
   boton2.addEventListener("mouseleave", Normal);
 };
 const quince = () => {
+  borrar();
   let valor = document.querySelector(".plata").value;
   let persona = document.querySelector(".persona").value;
   let personacuenta = valor / persona;
@@ -55,8 +59,8 @@ const quince = () => {
   let personatip = tip / persona;
   let total = personacuenta + personatip;
 
-  document.getElementById("tips").value = "$" + personatip;
-  document.getElementById("total").value = "$" + total;
+  document.getElementById("tips").value = "$" + personatip.toFixed(0);
+  document.getElementById("total").value = "$" + total.toFixed(0);
   let boton3 = document.querySelector("#boton3");
   function cambiarEstilo() {
     boton3.style.backgroundColor = "#9fe8df";
@@ -71,6 +75,7 @@ const quince = () => {
   boton3.addEventListener("mouseleave", Normal);
 };
 const veinticinco = () => {
+  borrar();
   let valor = document.querySelector(".plata").value;
   let persona = document.querySelector(".persona").value;
   let personacuenta = valor / persona;
@@ -78,8 +83,8 @@ const veinticinco = () => {
   let personatip = tip / persona;
   let total = personacuenta + personatip;
 
-  document.getElementById("tips").value = "$" + personatip;
-  document.getElementById("total").value = "$" + total;
+  document.getElementById("tips").value = "$" + personatip.toFixed(0);
+  document.getElementById("total").value = "$" + total.toFixed(0);
   let boton4 = document.querySelector("#boton4");
   function cambiarEstilo() {
     boton4.style.backgroundColor = "#9fe8df";
@@ -94,6 +99,7 @@ const veinticinco = () => {
   boton4.addEventListener("mouseleave", Normal);
 };
 const cincuenta = () => {
+  borrar();
   let valor = document.querySelector(".plata").value;
   let persona = document.querySelector(".persona").value;
   let personacuenta = valor / persona;
@@ -101,8 +107,8 @@ const cincuenta = () => {
   let personatip = tip / persona;
   let total = personacuenta + personatip;
 
-  document.getElementById("tips").value = "$" + personatip;
-  document.getElementById("total").value = "$" + total;
+  document.getElementById("tips").value = "$" + personatip.toFixed(0);
+  document.getElementById("total").value = "$" + total.toFixed(0);
   let boton5 = document.querySelector("#boton5");
   function cambiarEstilo() {
     boton5.style.backgroundColor = "#9fe8df";
@@ -127,14 +133,33 @@ const custom = () => {
     boton6.style.backgroundColor = "hsl(183, 100%, 15%)";
     boton6.style.color = "hsl(0, 0%, 100%)";
   }
-
   boton6.addEventListener("click", cambiarEstilo);
   boton6.addEventListener("mouseleave", Normal);
 
+
+  document.getElementById("boton6").addEventListener("keypress", custom);
+  function custom() {
+  let custom =document.querySelector("#boton6").value;
+  let valor = document.querySelector(".plata").value;
+  let persona = document.querySelector(".persona").value;
+  let personacuenta = valor / persona;
+  let tip = valor * ( custom/ 100);
+  let personatip = tip / persona;
+  let total = personacuenta + personatip;
+
+  document.getElementById("tips").value = "$" + personatip.toFixed(0);
+  document.getElementById("total").value = "$" + total.toFixed(0);
+}
+
 };
 
+function borrar(){
+  let boton6 = document.querySelector("#boton6"); 
+  boton6.value = ""
+}
 
 const clean = () => {
+  borrar()
   document.querySelector(".plata").value = "";
   document.querySelector(".persona").value = "";
   document.querySelector("#tips").value = "$0";
