@@ -1,39 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <title>Tip calculator app</title>
-  <link rel="stylesheet" href="./styles.css">
- 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-</head>
-
-
-<body>
-  <div class="father">
-  <h2>Bill</h2>
-  <fieldset>
-    <label type="number" name="age" min="13" max="120"> </label>
-        
-  </fieldset>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    
-  </div>
-</body>
+    <title>Tip calculator app</title>
+    <link rel="stylesheet" href="./styles.css" />
 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+  </head>
 
-  <style>
+  <body>
+    <div class="centro">
+    <div class="contenedor">
+      <div class="espacios"></div>
+      <div class="table"></div>
+    </div>
     
+    
+    
+    </div>
+  </body>
+  
+  <style>
+    .centro{
+      background-color: rgb(190, 211, 255);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+    }
+    .contenedor{
+      background-color: white;
+      height: 46%;
+      width: 48%;
+      display: flex;
+      border-radius: 0.8cm;
+      justify-content: center;
+      padding: 1.5% 1.5%;
+    }
+    .espacios{
+      background-color: rgb(250, 242, 242);
+      height: 100%;
+      width: 50%;
+    }
+    .table{
+      background-color: rgb(16, 78, 78);
+      height: 100%;
+      width: 50%;
+      border-radius: 4%;
+    }    
   </style>
-
 </html>
 
-
-
-
-
-
-<!-- BillSelect Tip %5%10%15%25%50%CustomNumber of PeopleTip Amount
-  / personTotal
-  / personReset -->
