@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap');
+
 body {
   height: 100vh;
   margin: 0;
@@ -9,8 +11,8 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -31,33 +33,210 @@ body {
   margin: 0;
 }
 
+.texto {
+  height: 30px;
+  width: 50px;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 100px;
+}
+
 .contenedor {
-  border: 1px solid;
+  width: 50%;
+  height: 450px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.contenedor1 {
   margin: 0;
   padding: 0;
-  width: 50%;
-  height: 500px;
+  width: 47%;
+  margin-left: 50px;
+  height: 390px;
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.contenedor1 p {
+  border: 1px solid;
+  width: 300px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  background-color: aliceblue;
+  background-color: #fff;
 }
 
-.contenedor p{
-    border: 1px solid;
-    width: 300px;
-    height: 30px;
-    margin: 0;
-    padding: 0;
-    border-radius: 10px;
-    display: flex;
+.valor {
+  border: 1px solid;
+  margin: 0%;
+  padding: 0;
+  width: 300px;
+  height: 30px;
+  display: flex;
 }
 
-.valor{
-    border: 1px solid;
-    margin: 0%;
-    padding: 0;
-    width: 300px;
-    height: 30px;
-    display: flex;
+.contenedor2 {
+  height: 390px;
+  width: 42%;
+  display: flex;
+  flex-direction: center;
+  flex-direction: column;
+  margin-top: 30px;
+  border-radius: 10px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: hsl(183, 100%, 15%);
+}
+
+.uno {
+  background-color: hsl(183, 100%, 15%);
+}
+
+.dos {
+  background-color: hsl(183, 100%, 15%);
+}
+
+.tres {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.cuatro {
+  background-color: hsl(183, 100%, 15%);
+}
+
+.cinco {
+  background-color: hsl(183, 100%, 15%);
+}
+
+.seis {
+  background-color: hsl(185, 41%, 84%);
+}
+
+.contenedor-botones {
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 0 10px;
+}
+
+.contenedor-botones button {
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+  border: none;
+}
+
+.texto2 {
+  text-align: left;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.texto3 {
+  margin-top: 30px;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.bill {
+  width: 100%;
+  height: 70px;
+}
+.bill input {
+  width: 80%;
+  padding: 8px 0;
+}
+
+.number {
+  width: 100%;
+  height: 70px;
+}
+
+.number input {
+  width: 80%;
+  padding: 8px 0;
+}
+
+.titulo1{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.titulo1 p{
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.precio1{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  margin-right: 20px;
+}
+
+.titulo2{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: -80px;
+}
+
+.titulo2 p{
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.precio2{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  margin-right: 20px;
+  margin-top: -80px;
+}
+
+.caja-titulo1{
+  width: 100%;
+  display: flex;
+}
+
+.boton1{
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(172, 67%, 45%);
 }
