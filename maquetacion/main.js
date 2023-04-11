@@ -54,7 +54,7 @@ function alerta(){
    alert("alerta")
 }
 
-boton1.addEventListener("click",alerta)
+   boton1.addEventListener("click",alerta)
 
 //mouse over
 let boton3=document.getElementById("boton3")
