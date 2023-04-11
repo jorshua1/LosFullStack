@@ -1,24 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&family=Outfit:wght@400;700&family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="contenedor">
+        <div class="a">
+          <div class="contenido2">
+            <div class="cont">
+              <p class="ll">Bill</p>
+              <div> 
+                <img src="images/icon-dollar.svg" alt="pesos" />
+                <input
+                    type="text"
+                    placeholder="0"
+                    step="none"
+                    min="0"
+                    class="money"
+                  />
+              </div>
+            </div>
+            <div class="cont">
+              <p class="ll">Select Tip%</p>
+            </div>
 
-</head>
-<body>
- <div class="main">
-  <div class="contenedor">
-    <div class="a"></div>
-    <div class="b">
-      <div></div>
+            <div class="botones">
+              <button class="bot">5%</button>
+              <button class="bot">10%</button>
+              <button class="bot">15%</button>
+              <button class="bot">25%</button>
+              <button class="bot">50%</button>
+              <input class="bin" type="number" />
+            </div>
+            <div class="cont">
+              <p class="ll">Number of People</p>
+              <div> 
+                <img src="images/icon-person.svg" alt="person" />
+                <input
+                    type="text"
+                    placeholder="0"
+                    step="none"
+                    min="0"
+                    class="money"
+                  />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="b">
+          <div class="contenido">
+            <div class="text">
+              <p class="ss">
+                Tip Amount <br />
+                <a class="tt">/ person</a>
+              </p>
+            </div>
+            <div class="text"></div>
+            <p class="ss">
+              Total <br />
+              <a class="tt">/ person</a>
+            </p>
+          </div>
+          <div class="bt">
+            <button class="boton">RESET</button>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
- </div>
-</body>
+  </body>
 </html>

@@ -1,31 +1,136 @@
-body{
-    background-color: hsl(185, 41%, 84%);
+body {
+  background-color: hsl(185, 41%, 84%);
 }
-.main{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.contenedor{
-    width: 900px;
-    height: 400px;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 30px;
+.contenedor {
+  width: 900px;
+  height: 400px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
 }
-.b{
-    height: 100%;
-    width: 50%;
-    background-color: hsl(183, 100%, 15%);
-    border-radius: 20px;
+.a {
+  height: 100%;
+  width: 50%;
+}
+.b {
+  height: 100%;
+  width: 50%;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 20px;
+}
+.contenido {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+.cont{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  margin-top:0 ;
+}
+.ll {
+  font-family: "Space Mono";
+  color: gray;
+  margin-bottom: 0;
 }
 
-
-
+.ss {
+  color: white;
+}
+.tt {
+  color: hsl(185, 41%, 84%);
+}
+.text {
+  margin-bottom: 5px;
+}
+.bt {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.boton {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  border: none;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-family: "Space Mono";
+}
+.boton:hover{
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  border: none;
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+  font-family: "Space Mono";
+}
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom:25px ;
+  
+}
+.bot {
+  margin: 10px;
+  height: 40px;
+  width: 120px;
+  font-size: 20px;
+  border: none;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  font-family: "Space Mono";
+}
+.bin {
+  margin: 10px;
+  height: 35px;
+  width: 115px;
+  font-family: "Space Mono";
+  color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  margin-top: 10px;
+  
+}
+.in {
+  width: 90%;
+  font-size: 24px;
+  border: 0;
+  font-family: "Space Mono";
+  background-color: hsl(189, 41%, 97%);
+  text-align: end;
+  color: hsl(183, 100%, 15%);
+  margin-top: 50px;
+  
+}
+.money {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  text-align: end;
+  border: 0;
+  width: 90%;
+}
 
 /* Bill
 
@@ -45,4 +150,6 @@ Tip Amount
 Total
 / person
 
-Reset */
+Reset 
+
+*/
