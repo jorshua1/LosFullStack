@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script src="js.js"></script>
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -22,20 +22,34 @@
       <p class="titulo1">Bill:</p>
       <div class="val"> 
         <img src="images/icon-dollar.svg" alt="pesos" />
-        <input type="number">
+        <input
+            type="text"
+            placeholder="0"
+            step="none"
+            min="0"
+            class="money"
+          />
       </div>
       <p class="titulo2">Select Tip %</p>
       <div class="boton">
-        <div class="boton1">5%</div>
-        <div class="boton2">10%</div>
-        <div class="boton3">15%</div>
-        <div class="boton4">25%</div>
-        <div class="boton5">50%</div>
-        <div class="boton6">Custom</div>
+        <button id="boton1" onmouseup="click()" onclick="cinco()" >5%</button>
+          <button id="boton2" onmouseup="click()" onclick="diez()" >10%</button>
+          <button id="boton3" onclick="quince()" onmouseup="click()">15%</button>
+          <button id="boton4" onclick="veinticinco()" onmouseup="click()">25%</button>
+          <button id="boton5" onclick="cincuenta()" onmouseup="click()" >50%</button>
+          <input id="boton6" onkeypress="custom()" placeholder="Custom" type="text"> 
       </div>
       <p class="titulo3">Number of People:</p>
       <div class="personas">
-        <img src="images/icon-person.svg" alt="Persona" />
+        <img src="images/icon-person.svg" alt="persona" class="People"/>
+        <input
+            type="text"
+            placeholder="0"
+            step="none"
+            min="1"
+            class="persona"
+            max="50"
+          />
       </div>
     </div>
     <div class="contenedor2">
@@ -43,17 +57,19 @@
         <div class="primero">
           <div class="first">
             <p> <span>Tip Amount</span> <br />/person</p>
+          <input type="text" name="" id="tips" disabled placeholder="$0"/>
           </div>
           <!-- <div class="second">plata</div> -->
         </div>
         <div class="segundo">
           <div class="one">
             <p> <span>Total</span> <br />/person</p>
+            <input type="text" name="" id="total" disabled placeholder="$0" />
           </div>
           <!-- <div class="two">plata</div> -->
         </div>
         <div class="tercero">
-          <div><button>RESET</button></div>
+          <div><button onclick="clean()">RESET</button></div>
         </div>
       </div>
     </div>

@@ -1,3 +1,63 @@
+@media screen and (max-width: 375px) {
+  .body {
+    margin: 0px 0px;
+  }
+  .val{
+    width: 300px;
+    margin-bottom: 25px;
+  }
+  
+  .money{
+    font-size: 24px;
+      text-align: center;
+    }
+  
+  .pesos{
+    height: 25px;
+    width: 40px;
+  }
+  
+  .boton{
+    grid-template-columns: repeat(2, 160px);
+  }
+  
+  .personas {
+    width: 300px;
+  }
+  
+  .persona {
+    font-size: 24px;
+  }
+  
+  .people{
+    width: 25px;
+    height: 40px;
+  }
+  
+  .contenedor2{
+    width: 62%;
+    margin-top: 25px;
+    margin-left: 63px;
+  }
+  
+  .primero {
+    width: 50%;
+  }
+  
+  #tips {
+    width: 198px ;
+    margin-left: 43px;
+  }
+  
+  #total {
+    width: 198px ;
+    margin-left: 43px;
+  }
+  .tercero button {
+    border-radius: 13px;
+    width: 90%;
+  }
+}
 
 body {
     background-color: hsl(169, 39%, 81%);
@@ -24,4 +84,105 @@ body {
     border-radius: 15px;
 }
 
+.contenido1{
+  width: 60%;
+  margin: 15px 1px 15px 50px;
+}
 
+input{
+  border: 0;
+  outline: none;
+}
+
+.money{
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  font-family: "Space Mono", monospace;
+  text-align: end;
+  
+}
+
+.val{
+  background-color: hsl(189, 41%, 97%);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.boton {
+  width: 100%;
+  margin: 0px 0px 45px 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  justify-content: start;
+  gap: 15px;
+  font-size: 20px;
+}
+
+#boton1 {
+  background-color: hsl(183, 100%, 15%);
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+}
+
+.persona {
+  font-size: 20px;
+  font-family: "Space Mono", monospace;
+  color: hsl(183, 100%, 15%);
+  text-align: end;
+  background-color: hsl(189, 41%, 97%);
+}
+.personas {
+  background-color: hsl(189, 41%, 97%);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  height: 30px;
+  text-align: center;
+}
+
+.contenedor2{
+  background-color: hsl(183, 100%, 15%);
+  width: 40%;
+  margin: 35px 15px 15px 50px;
+  border-radius: 15px;
+  display: grid;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.primero{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.segundo{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tercero{
+  margin-top: 20%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+span {
+  color: white;
+}
