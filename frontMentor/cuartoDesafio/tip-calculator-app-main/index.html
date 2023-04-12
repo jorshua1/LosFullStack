@@ -36,6 +36,7 @@
                     step="none"
                     min="0"
                     class="money"
+                    id="money"
                   />
               </div>
             </div>
@@ -44,11 +45,11 @@
             </div>
 
             <div class="botones">
-              <button class="bot">5%</button>
-              <button class="bot">10%</button>
-              <button class="bot">15%</button>
-              <button class="bot">25%</button>
-              <button class="bot">50%</button>
+              <button id="btn1" class="bot">5%</button>
+              <button id="btn2" class="bot">10%</button>
+              <button id="btn3" class="bot">15%</button>
+              <button id="btn4" class="bot">25%</button>
+              <button id="btn5" class="bot">50%</button>
               <input class="bin" type="number" />
             </div>
             <div class="cont">
@@ -61,6 +62,7 @@
                     step="none"
                     min="0"
                     class="money"
+                    id="personas"
                   />
               </div>
             </div>
@@ -71,13 +73,29 @@
             <div class="text">
               <p class="ss">
                 Tip Amount <br />
-                <a class="tt">/ person</a>
+                <a class="tt">/ person</a> 
+                <input
+                    type="text"
+                    placeholder="$0"
+                    step="none"
+                    min="0"
+                    class="total"
+                    id="tip"
+                  />
               </p>
             </div>
             <div class="text"></div>
             <p class="ss">
               Total <br />
-              <a class="tt">/ person</a>
+              <a class="tt">/ person</a> 
+              <input
+              type="text"
+              placeholder="$0"
+              step="none"
+              min="0"
+              class="total"
+              id="total"
+            /> 
             </p>
           </div>
           <div class="bt">
@@ -86,5 +104,6 @@
         </div>
       </div>
     </div>
+    <script src="ejecuarto.js"></script>
   </body>
 </html>
