@@ -2,77 +2,80 @@
   .body {
     margin: 0px 0px;
   }
-  
-  .val{
-  /* Cambiar ancho a 100% */
-  width: 100%;
-  margin-bottom: 25px;
+
+  .val {
+    /* Cambiar ancho a 100% */
+    width: 100%;
+    margin-bottom: 25px;
   }
-  
-  .money{
-  font-size: 24px;
-  text-align: center;
+
+  .money {
+    font-size: 24px;
+    text-align: center;
   }
-  
-  .pesos{
-  height: 25px;
-  width: 40px;
+
+  .pesos {
+    height: 25px;
+    width: 40px;
   }
-  
-  .boton{
-  /* Cambiar display a flex */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0px 0px 45px 0px;
-  font-size: 20px;
+
+  .boton {
+    /* Cambiar display a flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 45px 0px;
+    font-size: 20px;
   }
-  
-  #boton1, #boton2, #boton3, #boton4{
-  width: 100%;
-  height: 45px;
-  margin-bottom: 15px;
+
+  #boton1,
+  #boton2,
+  #boton3,
+  #boton4 {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
   }
-  
+
   .personas {
-  width: 100%;
+    width: 100%;
   }
-  
+
   .persona {
-  font-size: 18px; 
+    font-size: 18px;
   }
-  
-  .people{
-  width: 25px;
-  height: 40px;
+
+  .people {
+    width: 25px;
+    height: 40px;
   }
-  
-  .contenedor2{
-  width: 100%;
-  flex-wrap: wrap;
-  margin-top: 25px;
-  margin-left: 0px;
+
+  .contenedor2 {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-left: 0px;
   }
-  
+
   .primero {
-  width: 50%;
+    width: 50%;
   }
-  
+
   #tips {
-  width: 198px ;
-  margin-left: 43px;
+    width: 198px;
+    margin-left: 43px;
   }
-  
+
   #total {
-  width: 198px ;
-  margin-left: 43px;
+    width: 198px;
+    margin-left: 43px;
   }
-  
+
   .tercero button {
-  border-radius: 13px;
-  width: 90%;
+    border-radius: 13px;
+    width: 90%;
   }
-  }
+}
 
 body {
   background-color: hsl(169, 39%, 81%);
@@ -125,7 +128,7 @@ body {
 
 .contenido2 .tercero button {
   width: 100%;
-  background-color: hsl(172,67%,45%);
+  background-color: hsl(172, 67%, 45%);
   border: none;
   padding: 15px;
   color: white;
@@ -133,7 +136,7 @@ body {
 }
 
 .contenido2 .tercero button:active {
-  border: 1px solid hsl(172,67%,45%);
+  border: 1px solid hsl(172, 67%, 45%);
 }
 
 #submit {

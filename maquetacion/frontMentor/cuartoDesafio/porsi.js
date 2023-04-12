@@ -1,89 +1,49 @@
-const form = document.getElementById("formCalculadora");
-const billInput = document.querySelector(".money");
-const customTipInput = document.getElementById("boton6");
-const peopleInput = document.querySelector(".persona");
-const tipAmountInput = document.getElementById("tips");
-const totalAmountInput = document.getElementById("total");
-const resetButton = document.querySelector("button");
+let boton1 = document.getElementById("boton1");
+let boton2 = document.getElementById("boton2")
+let boton3 = document.getElementById("boton3")
+let boton4 = document.getElementById("boton4")
+let boton5 = document.getElementById("boton5")
+let boton6 = document.getElementById("boton6")
 
-let bill = 0;
-let customTip = 0;
-let tipPercentage = 0;
-let numOfPeople = 0;
-
-
-function updateCalculations() {
-  let tipAmount = (bill * (tipPercentage / 100)) / numOfPeople;
-  let totalAmount = (bill * (1 + tipPercentage / 100)) / numOfPeople;
-  tipAmountInput.value = "$" + tipAmount.toFixed(2);
-  totalAmountInput.value = "$" + totalAmount.toFixed(2);
+let procedimiento = (porcentaje, valor) => {
+    let calculoTip = valor * (porcentaje/100);
+    return calculoTip;
 }
 
+function actualizarCampos(valorTotal, valorTip) {
+    document.getElementById("total").value = "$" + valorTotal.toFixed(2);
+    document.getElementById("tips").value = "$" + valorTip.toFixed(2);
+}
 
-billInput.addEventListener("input", (event) => {
-  bill = parseFloat(event.target.value);
-  updateCalculations();
-});
+function calcularPropina(porcentaje) {
+  let valor = parseFloat(document.querySelector(".money").value);
+  let personas = parseInt(document.querySelector(".persona").value);
 
-customTipInput.addEventListener("input", (event) => {
-  customTip = parseFloat(event.target.value);
-  tipPercentage = customTip;
-  updateCalculations();
-});
+  if (isNaN(valor) || isNaN(personas)) {
+      alert("Ingrese un monto de factura válido y el número de personas");
+      return;
+  }
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  numOfPeople = parseFloat(peopleInput.value);
-  updateCalculations();
-});
+  let tip = procedimiento(porcentaje, valor);
+  let total = (tip+valor) / personas;
 
-resetButton.addEventListener("click", (event) => {
-  billInput.value = "";
-  customTipInput.value = "";
-  peopleInput.value = "";
-  tipAmountInput.value = "$0.00";
-  totalAmountInput.value = "$0.00";
-  bill = 0;
-  customTip = 0;
-  tipPercentage = 0;
-  numOfPeople = 0;
-});
+  actualizarCampos(total, tip);
+}
 
+boton1.addEventListener("click", () => calcularPropina(5));
+boton2.addEventListener("click", () => calcularPropina(10));
+boton3.addEventListener("click", () => calcularPropina(15));
+boton4.addEventListener("click", () => calcularPropina(20));
+boton5.addEventListener("click", () => calcularPropina(25));
+boton6.addEventListener("click", () => calcularPropina(parseInt(boton6.value)));
 
-document.getElementById("boton1").addEventListener("click", () => {
-  tipPercentage = 5;
-  updateCalculations();
-});
+function clean() {
+  document.querySelector(".money").value = "";
+  document.querySelector(".persona").value = "";
+  document.getElementById("total").value = "$0.00";
+  document.getElementById("tips").value = "$0.00";
+}
 
-document.getElementById("boton2").addEventListener("click", () => {
-  tipPercentage = 10;
-  updateCalculations();
-});
-
-document.getElementById("boton3").addEventListener("click", () => {
-  tipPercentage = 15;
-  updateCalculations();
-});
-
-document.getElementById("boton4").addEventListener("click", () => {
-  tipPercentage = 25;
-  updateCalculations();
-});
-
-document.getElementById("boton5").addEventListener("click", () => {
-  tipPercentage = 50;
-  updateCalculations();
-});
-const buttons = document.querySelectorAll('.boton button');
-
-buttons.forEach(button => {
-  button.addEventListener('click', function() {
-    const customInput = document.getElementById('custom');
-
-    if (button.id === 'boton6') {
-      customInput.value = '0';
-    } else {
-      customInput.value = customInput.value || '0';
-    }
-  });
+document.getElementById("formCalculadora").addEventListener("submit", (e) => {
+  e.preventDefault();
 });
