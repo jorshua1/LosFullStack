@@ -164,5 +164,3 @@ function usuario(eleccionUsuario) {
 function quitarEfecto() {
   document.getElementById("efecto").style.display = "none";
 }
-
-function piedra() {}

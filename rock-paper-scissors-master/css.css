@@ -55,11 +55,23 @@ body {
     margin-left: 600px;
   }
   
-  
-  #figura{
-  
-          background-color: red;
+
+  #figuras{
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    align-items: center;
+    justify-content: start;
+    gap: 200px;
+    margin-left: 600px;
   }
+  
+  .imagen {
+    display: none;
+  }
+
   
   #efecto h1 {
     text-align: center;
