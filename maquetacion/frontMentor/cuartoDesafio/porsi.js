@@ -1,18 +1,20 @@
 let boton1 = document.getElementById("boton1");
-let boton2 = document.getElementById("boton2")
-let boton3 = document.getElementById("boton3")
-let boton4 = document.getElementById("boton4")
-let boton5 = document.getElementById("boton5")
-let boton6 = document.getElementById("boton6")
+let boton2 = document.getElementById("boton2");
+let boton3 = document.getElementById("boton3");
+let boton4 = document.getElementById("boton4");
+let boton5 = document.getElementById("boton5");
+let boton6 = document.getElementById("boton6");
 
 let procedimiento = (porcentaje, valor) => {
-    let calculoTip = valor * (porcentaje/100);
-    return calculoTip;
-}
+  let personas = Number(document.querySelector(".persona").value);
+  console.log(personas);
+  let calculoTip = (valor * (porcentaje / 100)) / personas;
+  return calculoTip;
+};
 
 function actualizarCampos(valorTotal, valorTip) {
-    document.getElementById("total").value = "$" + valorTotal.toFixed(2);
-    document.getElementById("tips").value = "$" + valorTip.toFixed(2);
+  document.getElementById("total").value = "$" + valorTotal.toFixed(2);
+  document.getElementById("tips").value = "$" + valorTip.toFixed(2);
 }
 
 function calcularPropina(porcentaje) {
@@ -20,13 +22,12 @@ function calcularPropina(porcentaje) {
   let personas = parseInt(document.querySelector(".persona").value);
 
   if (isNaN(valor) || isNaN(personas)) {
-      alert("Ingrese un monto de factura válido y el número de personas");
-      return;
+    alert("Ingrese un monto de factura válido y el número de personas");
+    return;
   }
 
   let tip = procedimiento(porcentaje, valor);
-  let total = (tip+valor) / personas;
-
+  let total = (tip + (valor/personas));
   actualizarCampos(total, tip);
 }
 
