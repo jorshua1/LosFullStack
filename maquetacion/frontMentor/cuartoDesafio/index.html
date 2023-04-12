@@ -19,38 +19,41 @@
   <div class="centro">
   <div class="contenedor">
     <div class="contenido1">
-      <p class="titulo1">Bill:</p>
-      <div class="val"> 
-        <img src="images/icon-dollar.svg" alt="pesos" />
-        <input
-            type="text"
-            placeholder="0"
-            step="none"
-            min="0"
-            class="money"
-          />
-      </div>
-      <p class="titulo2">Select Tip %</p>
-      <div class="boton">
-        <button id="boton1" onmouseup="click()" onclick="cinco()" >5%</button>
-          <button id="boton2" onmouseup="click()" onclick="diez()" >10%</button>
-          <button id="boton3" onclick="quince()" onmouseup="click()">15%</button>
-          <button id="boton4" onclick="veinticinco()" onmouseup="click()">25%</button>
-          <button id="boton5" onclick="cincuenta()" onmouseup="click()" >50%</button>
-          <input id="boton6" onkeypress="custom()" placeholder="Custom" type="text"> 
-      </div>
-      <p class="titulo3">Number of People:</p>
-      <div class="personas">
-        <img src="images/icon-person.svg" alt="persona" class="People"/>
-        <input
-            type="text"
-            placeholder="0"
-            step="none"
-            min="1"
-            class="persona"
-            max="50"
-          />
-      </div>
+      <form id="formCalculadora">
+        <p class="titulo1">Bill:</p>
+        <div class="val"> 
+          <img src="images/icon-dollar.svg" alt="pesos" />
+          <input
+              type="text"
+              placeholder="0"
+              step="none"
+              min="0"
+              class="money"
+            />
+        </div>
+        <p class="titulo2">Select Tip %</p>
+        <div class="boton">
+          <button id="boton1">5%</button>
+          <button id="boton2">10%</button>
+          <button id="boton3">15%</button>
+          <button id="boton4">25%</button>
+          <button id="boton5">50%</button>
+          <input id="boton6" placeholder="Custom" type="text"> 
+        </div>
+        <p class="titulo3">Number of People:</p>
+        <div class="personas">
+          <img src="images/icon-person.svg" alt="persona" class="People"/>
+          <input
+              type="text"
+              placeholder="0"
+              step="none"
+              min="1"
+              class="persona"
+              max="50"
+            />
+        </div>
+        <button id="submit" type="submit">Calculate</button>
+      </form>
     </div>
     <div class="contenedor2">
       <div class="contenido2">
@@ -77,5 +80,3 @@
 </div>
 </body>
 </html>
-
-<!-- reventfor -->
