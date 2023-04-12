@@ -2,7 +2,6 @@ const cinco = () => {
   borrar();
   let valor = document.querySelector(".plata").value;
   let persona = document.querySelector(".persona").value;
-  let personacuenta = valor / persona;
   let tip = valor * (5 / 100);
   let personatip = tip / persona;
   let total = personacuenta + personatip ;
@@ -147,8 +146,8 @@ const custom = () => {
   let personatip = tip / persona;
   let total = personacuenta + personatip;
 
-  document.getElementById("tips").value = "$" + personatip.toFixed(0);
-  document.getElementById("total").value = "$" + total.toFixed(0);
+  document.getElementById("tips").value = "$" + personatip.toFixed(2);
+  document.getElementById("total").value = "$" + total.toFixed(2);
 }
 
 };

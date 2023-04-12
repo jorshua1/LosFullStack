@@ -3,22 +3,85 @@ body {
   font-family: "Lucida Grande", "Lucida Sans", Arial, Sans-serif;
 }
 
-#juego {
-  width: 150px;
-  height: 100px;
-  border-radius: 5px;
+#inicioTitulo{
+  color: white;
+  text-align: center;
+}
+
+#botonesInicio{
+  width: 98%;
   display: grid;
   grid-template-columns: repeat(3, 100px);
-  align-items: center;
-  justify-content: start;
-  gap: 200px;
-  margin-left: 600px;
+  justify-content: center ;
+  gap: 150px;
+}
+
+#botonesInicio button{
+  background-color: rebeccapurple;
+  border: 0;
+  font-size: 15px;
+  border-radius: 50px;
+  height: 45px;
+  width: 150px;
+  font-family: Arial, Helvetica, sans-serif ;
+  color: white;
 }
 
 
-#figura{
 
-        background-color: red;
+#juego {
+  width: 100%;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 200px;
+}
+
+
+
+#puntos{
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  align-items: center;
+  justify-content: center;
+
+}
+
+#yo{
+  color: rgba(255, 255, 106, 0.631);
+  font-size: 15px;
+  text-align: center;
+  border: 5px solid;
+}
+
+#puntoyo{
+ background-color: transparent;
+ color: rgba(255, 255, 106, 0.631);
+ border: 0;
+ font-size: 50PX;
+ text-align: center;
+ width: 65px;
+ margin-bottom: 5px;
+}
+
+
+#bot{
+  color: rgba(255, 255, 106, 0.631);
+  font-size: 15px;
+  text-align: center;
+  border: 5px solid;
+}
+
+ 
+#puntobot{
+ background-color: transparent;
+ color: rgba(255, 255, 106, 0.631);
+ border: 0;
+ font-size: 50PX;
+ text-align: center;
+ width: 65px;
+ margin-bottom: 5px;
 }
 
 #efecto h1 {
