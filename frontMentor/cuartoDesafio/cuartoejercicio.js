@@ -4,42 +4,44 @@ let btdos = document.getElementById("btdos")
 let bttres = document.getElementById("bttres")
 let btcuatro = document.getElementById("btcuatro")
 let btcinco = document.getElementById("btcinco")
+let resultado1 = document.querySelector("#precio1")
+let resultado2 = document.querySelector("#precio2")
+let Custom = document.getElementById("Custom")
 
-let procedimiento = (porcentaje, valor) => {
-    let calculoTip = (valor * porcentaje)/100;
-    alert(
-    `oprimio el boton de ${porcentaje}% para un valor de ${valor} la propina es de ${calculoTip}`
-    );
+let procedimiento = (porcentaje) => {
+    let text1 = Number(document.getElementById("text1").value);
+    let text2 = Number(document.getElementById("text2").value);
+    let persona= text1/text2;
+    let calculoTip=persona*porcentaje;
+    resultado2.value = '$'+persona.toFixed(2);
+    resultado1.value = '$'+calculoTip.toFixed(2);
 }
 
-function uno(){
-    procedimiento(5, 100000);
+function limpiar(){
+    let text1 = document.getElementById("text1");
+    let text2 = document.getElementById("text2");
+    let resultado1 = document.querySelector("#precio1")
+    let resultado2 = document.querySelector("#precio2")
+    resultado1.value = "0.00";
+    resultado2.value = "0.00";
+    text1.value = "";
+    text2.value= "";
 }
+boton1.addEventListener('click',limpiar);
 
-function dos(){
-    procedimiento(5, 100000);
-}
+btuno.addEventListener("click", function (){
+    procedimiento (0.05);
+})
 
-function tres(){
-    procedimiento(5, 100000);
-}
+btdos.addEventListener("click", function(){ procedimiento (0.1);});
+bttres.addEventListener("click", function(){ procedimiento (0.15);});
+btcuatro.addEventListener("click", function(){ procedimiento (0.25);});
+btcinco.addEventListener("click", function(){  procedimiento (0.5);}); 
 
-function cuatro(){
-    procedimiento(5, 100000);
-}
-
-function cinco(){
-    procedimiento(5, 100000);
-}
-
-
-function prueba(){
-    alert("boton")
-}
-
-boton1.addEventListener("click", procedimiento (5, 5000));
-btuno.addEventListener("click", procedimiento (10, 10000));
-btdos.addEventListener("click", procedimiento (15, 15000));
-bttres.addEventListener("click", procedimiento (20, 20000));
-btcuatro.addEventListener("click", procedimiento (25, 25000));
-btcinco.addEventListener("click", procedimiento (50, 50000));
+Custom.addEventListener("keydown", function (){
+if(event.keyCode===13){
+    let Custom2=Number(document.querySelector("#Custom").value)
+        Custom2 = Custom2*0.01;
+        procedimiento (Custom2); 
+    }
+})
