@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+
     <title>Tip calculator app</title>
     <link rel="stylesheet" href="./styles.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -18,26 +23,78 @@
 
   <body>
     <div class="centro">
-    <div class="contenedor">
-      <div class="espacios"></div>
-      <div class="table"></div>
-    </div>
-    
-    
-    
+      <header><span>SPLI</span><span>TTER</span></header>
+      <div class="contenedor">
+        <div class="espacios">
+          <!-- contenedor texto -->
+          <div id="textos">
+            <p class="bill">Bill</p>
+            <!-- contenedor de inputs -->
+            <div id="concon">
+              <img
+                src="../tip-calculator-app-main/images/icon-dollar.svg"
+                type="image"
+                alt="dolar"
+              />
+              <input id="valor" type="text" placeholder="0"/>
+            </div>
+            <!-- contenedor de porcentajes -->
+           
+            <p class="selector">Select tip %</p>
+            <div class="porcen">
+              <button class="boton">5%</button>
+              <button class="boton">10%</button>
+              <button class="boton">15%</button>
+              <button class="boton">25%</button>
+              <button class="boton">50%</button>
+              <input class="custom" type="text" placeholder="Custom" />
+            </div>
+            <!-- contenedor de inputs -->
+            
+            <div id="conte">
+              <p class="people">Number of people</p>
+              <img
+                src="../tip-calculator-app-main/images/icon-person.svg"
+                alt="icon-person"
+                type="image"
+              />
+              <input id="cantipeople" type="text" placeholder="0"/>
+            </div>
+          </div>
+        </div>
+        <!-- el otro contenedor -->
+        <div class="table">
+          <div id="tip">
+          <p class="tip">Tip Amount <br> <span id="personita">/ person</span></p>
+          <input type="text" placeholder="$0.00" id="tipo">
+          </div>
+          <div id="totalito">
+          <p class="total">Total <br> <span id="personita">/ person</span></p>
+          <input type="text" placeholder="$0.00" id="tipo">
+        </div>
+          <button class="reset">RESET</button>
+        </div>
+      </div>
     </div>
   </body>
-  
+
   <style>
-    .centro{
-      background-color: rgb(190, 211, 255);
+body{
+  margin: 0;
+  padding: 0;
+}
+
+    .centro {
+      background-color:  hsl(185, 41%, 84%);
       height: 100vh;
+      gap: 50px;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-    
     }
-    .contenedor{
+
+    .contenedor {
       background-color: white;
       height: 46%;
       width: 48%;
@@ -46,17 +103,139 @@
       justify-content: center;
       padding: 1.5% 1.5%;
     }
-    .espacios{
-      background-color: rgb(250, 242, 242);
+    .espacios {
+      background-color: white;
       height: 100%;
       width: 50%;
+
+      gap: 50px;
     }
-    .table{
+    .table {
       background-color: rgb(16, 78, 78);
       height: 100%;
       width: 50%;
       border-radius: 4%;
-    }    
+    }
+    p {
+     font-family: "Space Mono", monospace;
+      color: hsl(186, 14%, 43%); 
+    }
+    input {
+      border: 0;
+      background-color: hsl(189, 41%, 97%);
+      font-size: 24px;
+      text-align: right;
+    }
+    input:focus {
+      outline: none;
+    }
+    input::placeholder{
+      font-family: "Space Mono", monospace;
+      color:  hsl(187, 13%, 75%);
+      font-size: 25px;
+    }
+   
+    #concon {
+      border: 1px;
+      width: 320px;
+      background-color: hsl(189, 41%, 97%);
+    }
+    #conte {
+      border: 1px;
+      width: 320px;
+      background-color: hsl(189, 41%, 97%);
+    }
+    #textos {
+      padding: 20px 20px;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .porcen {
+      
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 10px;
+      
+    }
+    button {
+      background-color: rgb(16, 78, 78);
+      border-radius: 5px;
+      border: none;
+      width: 30%;
+      font-size: 20px;
+      padding: 10px; 
+      color: white;
+      font-family: "Space Mono", monospace;
+    }
+    .custom {
+      background-color: hsl(189, 41%, 97%);
+      width: 24%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 25px;
+    }
+    .custom::placeholder{
+      color: hsl(186, 14%, 43%);
+      font-family: "Space Mono", monospace;
+    }
+    span{
+      display: flex;
+      flex-direction: column;
+      font-family: "Space Mono", monospace;
+      color:hsl(186, 14%, 43%);
+      font-size: 24px;
+      letter-spacing: 10px;
+    }
+
+    /* el otro lado */
+    #tip{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: rgb(16, 78, 78);
+      padding: 20px;
+    }
+    #tipo{
+      background-color: rgb(16, 78, 78);
+      display: flex;
+      flex-direction: column;
+      
+
+    }
+    .tip #personita{
+      font-family: "Space Mono", monospace;
+      font-size: 15px;
+      letter-spacing: normal;
+    }
+    .tip{
+      color: white;
+      font-family: "Space Mono", monospace;
+      font-size: 17px;
+    }
+
+    .total{
+      color: white;
+      font-family: "Space Mono", monospace;
+      font-size: 17px;
+    }
+    .total #personita{
+      font-family: "Space Mono", monospace;
+      font-size: 15px;
+      letter-spacing: normal;
+    }
+    #totalito{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: rgb(16, 78, 78);
+      padding: 30px;
+    }
   </style>
 </html>
-
