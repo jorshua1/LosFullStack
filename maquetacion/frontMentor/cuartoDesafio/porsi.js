@@ -16,13 +16,19 @@ function actualizarCampos(valorTotal, valorTip) {
 function calcularPropina(porcentaje) {
   let valor = parseFloat(document.querySelector(".money").value);
   let personas = parseInt(document.querySelector(".persona").value);
+  let incorrecto = document.querySelector("#warning");
   if (isNaN(valor) || isNaN(personas)) {
-    alert("Ingrese un monto de factura válido y el número de personas");
+    incorrecto.innerText = "Ingrese un monto de factura válido y el número de persona";
+    incorrecto.removeAttribute("class", "alertHidden")
+    incorrecto.setAttribute("class", "alertShow")
     return;
+  }else{
+    let tip = procedimiento(porcentaje, valor);
+    let total = (tip + (valor/personas));
+    actualizarCampos(total, tip);
+    incorrecto.removeAttribute("class", "alertShow")
+    incorrecto.setAttribute("class", "alertHidden")
   }
-  let tip = procedimiento(porcentaje, valor);
-  let total = (tip + (valor/personas));
-  actualizarCampos(total, tip);
 }
 boton1.addEventListener("click", () => calcularPropina(5));
 boton2.addEventListener("click", () => calcularPropina(10));
