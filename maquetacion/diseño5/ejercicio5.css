@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
-form{
+form {
     position: relative;
     margin: 0;
     padding: 0;
     left: 20px;
 }
 
-.text-result{
+.text-result {
+    height: 50px;
     border: none;
     font-size: 30px;
-    color:  white;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
     text-align: right;
-    width: 80px;
+    width: 170px;
     background-color: transparent;
 }
 
@@ -93,7 +95,7 @@ body {
 .contenedor-number input {
     text-align: right;
     width: 90%;
-    height: 40px;
+    padding: 0 10px;
     border-radius: 5px;
     border: 0;
     outline: none;
@@ -137,12 +139,25 @@ body {
     color: white;
 }
 
-.color-diferent {
+.color-paralelo:hover {
     background: hsl(172, 67%, 45%);
     color: hsl(181, 100%, 14%);
 }
 
+.color-paralelo:focus {
+    background: hsl(172, 100%, 84%);
+    color: hsl(181, 100%, 14%);
+}
+
 .color-custom {
+    outline: 0 none;
+    text-align: right;
+    padding: 6px 0;
+    width: 95px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
     background: #f3f8fb;
     color: #738585;
 }
@@ -242,7 +257,7 @@ body {
 }
 
 @media screen and (max-width:500px) {
-    form{
+    form {
         position: relative;
         margin: 0;
         padding: 0;
@@ -349,12 +364,20 @@ body {
         color: white;
     }
 
-    .color-diferent {
+    .color-paralelo:hover {
         background: hsl(172, 67%, 45%);
         color: hsl(181, 100%, 14%);
     }
 
     .color-custom {
+        outline: 0 none;
+        text-align: right;
+        height: 20px;
+        width: 95px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 700;
         background: #f3f8fb;
         color: #738585;
     }
@@ -385,7 +408,7 @@ body {
     }
 
     .contenedor-result {
-        position: relative ;
+        position: relative;
         background: hsl(183, 100%, 15%);
         height: 250px;
         width: 100%;
