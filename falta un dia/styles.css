@@ -1,0 +1,71 @@
+/* Fuente personalizada de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Estilos para todo el documento */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0F0F0F;
+  color: #FFF;
+}
+
+/* Estilos para el contenedor */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #0FF, #F0F);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Estilos para el encabezado */
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #FFF;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 20px #FFF, 0 0 40px rgba(0, 255, 255, 0.8);
+  animation: neon 1s ease-in-out infinite alternate;
+}
+
+/* Estilos para el párrafo */
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Animación de neón */
+@keyframes neon {
+  from {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 20px #FFF, 0 0 40px rgba(0, 255, 255, 0.8);
+  }
+  to {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 20px #FFF, 0 0 80px rgba(0, 255, 255, 0.8);
+  }
+}
+
+/* Estilos para el hover */
+.container:hover {
+  background-color: #0F0F0F;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+}
+
+h1:hover {
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 20px #FFF, 0 0 40px rgba(0, 255, 255, 0.6), 0 0 80px rgba(0, 255, 255, 0.4);
+  color: #0FF;
+  -webkit-text-stroke: none;
+
+}
