@@ -3,6 +3,7 @@ const cinco = () => {
   let valor = document.querySelector(".plata").value;
   let persona = document.querySelector(".persona").value;
   let tip = valor * (5 / 100);
+  let personacuenta = valor / persona;
   let personatip = tip / persona;
   let total = personacuenta + personatip ;
 
