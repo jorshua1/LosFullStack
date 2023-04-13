@@ -1,21 +1,69 @@
-body{
+body {
     height: 100vh;
-    background-color:  hsl(185, 41%, 84%);
+    background-color: hsl(185, 41%, 84%);
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-.main{
+
+.main {
     background-color: hsl(0, 0%, 100%);
     height: 55vh;
     width: 75%;
     border-radius: 100px solid black;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5%;
+    padding: 3.25%;
+}
+
+.left {
+    height: 100%;
+    width: 50%;
+    border-radius: 5%;
+}
+
+.rigth {
+    height: 100%;
+    width: 50%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5%;
+}
+
+label {
+    font-size: 20px;
+
 
 }
-.left{
-    height: 65%;
-    width: 50%;
-    background-color:  hsl(183, 100%, 15%);
-   
+
+input {
+    text-align: right;
+    width: 85%;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 2% 2% 6.5% 0%;
+}
+
+#bill {
+    background: url(tip-calculator-app-main/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 2%;
+}
+
+#people {
+    background: url(tip-calculator-app-main/images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 2%;
+}
+
+button {
+    width: 26.5%;
+    background-color: hsl(183, 100%, 15%);
+    color: rgb(254, 255, 255);
+    font-size: 100%;
+    cursor: pointer;
+    padding: 15px 32px;
+    margin: 3% 3% 3% 0%;
+    border-radius: 10px;
 }
