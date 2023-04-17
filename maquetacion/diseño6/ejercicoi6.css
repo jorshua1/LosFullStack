@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    background: #03071e;
+}
+
+.caja-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.caja-score {
+    top: 20px;
+    position: relative;
+    border: 1px solid;
+    border-radius: 30px;
+    width: 40%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.score {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 40px;
+}
+
+.score section {
+    width: 300px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section>p {
+    color: rgb(24, 24, 24);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+section>span {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(24, 24, 24);
+}
+
+.caja-juego {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.juego {
+    top: 80px;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 50px;
+}
+
+.piedra,
+.papel,
+.tijera {
+    position: relative;
+    width: 10%;
+    height: 30%;
+    border: 15px solid;
+    background: transparent;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.papel {
+    top: -150px;
+    border-color: blue;
+    transition: all .4s ease-in-out;
+}
+
+.piedra {
+    border-color: red;
+    transition: all .4s ease-in-out;
+}
+
+.tijera {
+    border-color: green;
+    transition: all .4s ease-in-out;
+}
+
+.papel:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 255);
+}
+
+.piedra:hover {
+    box-shadow: 0px 0px 30px 1px rgba(255, 0, 0);
+}
+
+.tijera:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 0);
+}
+
+.papel:focus {
+    box-shadow: inset 0px 0px 30px 1px rgba(0, 0, 255);
+}
+
+.piedra:focus {
+    box-shadow: inset 0px 0px 30px 1px rgba(255, 0, 0);
+}
+
+.tijera:focus {
+    box-shadow: inset 0px 0px 30px 1px rgba(0, 255, 0);
+}
+
+.acciones {
+    top:-40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 20%;
+    gap: 60px 0;
+}
+
+.acciones p{
+font-size: 50px;
+font-weight: 500;
+}
+
+.acciones button{
+    padding: 10px 60px;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: 2px solid white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.acciones button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+.acciones button:focus{
+    background-color: white;
+    color: black;
+    box-shadow:inset 0px 0px 20px 0px rgb(0, 0, 0);
+}
+
+.caja-boton {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 95%;
+    height: 100px;
+}
+
+.caja-boton button{
+    padding: 10px 60px;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: 2px solid white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.caja-boton button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+.caja-boton button:focus{
+    background-color: white;
+    color: black;
+    box-shadow:inset 0px 0px 20px 0px rgb(0, 0, 0);
+}
