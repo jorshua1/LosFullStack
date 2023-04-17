@@ -340,3 +340,339 @@ body {
 .contenedor2 .button:active {
   border: 1px solid hsl(172, 67%, 45%);
 }
+
+@media screen and (max-width: 450px) {
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Space Mono";
+  }
+
+  .contenedorpadre {
+    background-color: hsl(177, 61%, 88%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .titulo {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 10px;
+  }
+
+  .titulo p {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .texto {
+    height: 30px;
+    width: 50px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 100px;
+  }
+  
+  .contenedor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .contenedor1 {
+    width: 90%;
+    height: 70%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .contenedor1 p {
+    border: 1px solid;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .valor {
+    border: 1px solid;
+    margin: 0%;
+    padding: 0;
+    width: 300px;
+    height: 30px;
+    display: flex;
+  }
+  
+  .contenedor2 {
+    height: 300px;
+    width: 85%;
+    margin-left: 30px;
+    border-radius: 10px;
+    justify-content: space-around;
+    background-color: hsl(183, 100%, 15%);
+  }
+  
+  .uno {
+    background-color: hsl(183, 100%, 15%);
+  }
+  .uno:hover {
+    background-color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+  }
+  
+  .dos {
+    background-color: hsl(183, 100%, 15%);
+  }
+  .dos:hover {
+    background-color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+  }
+  
+  .tres {
+    background-color: hsl(183, 100%, 15%);
+  }
+  .tres:hover {
+    background-color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+  }
+  
+  .cuatro {
+    background-color: hsl(183, 100%, 15%);
+  }
+  .cuatro:hover {
+    background-color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+  }
+  
+  .cinco {
+    background-color: hsl(183, 100%, 15%);
+  }
+  .cinco:hover {
+    background-color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+  }
+  
+  .contenedor-botones input {
+    background-color: hsl(0, 5%, 91%);
+    border: none;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Space Mono";
+  }
+  
+  .contenedor-botones {
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 0 10px;
+    font-size: 30px;
+    font-weight: 100;
+  }
+  
+  .contenedor-botones button {
+    height: 40px;
+    width: 125px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Space Mono";
+  }
+  
+  .texto2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    font-size: 15px;
+    font-weight: 100px;
+    color: #6f6f6f;
+  }
+  
+  .texto3 {
+    height: 40px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 30px;
+  }
+  .bill {
+    width: 100%;
+    height: 70px;
+    margin-left: 30px;
+    color: #6f6f6f;
+    justify-content: space-between;
+  }
+  
+  .bill svg {
+    margin-left: -50px;
+  }
+  
+  .bill input {
+    width: 90%;
+    padding: 3px 0;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Space Mono";
+    text-align: right;
+    background-color: rgb(231, 248, 248);
+    border: none;
+    color: hsl(183, 100%, 15%);
+  }
+  
+  .number {
+    width: 100%;
+    height: 70px;
+    color: #6f6f6f;
+  }
+  
+  .number input {
+    width: 80%;
+    padding: 3px 0;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Space Mono";
+    text-align: right;
+    background-color: rgb(222, 249, 249);
+    border: none;
+    color: hsl(183, 100%, 15%);
+  }
+  
+  .number svg {
+    margin-left: -5px;
+  }
+  
+  .titulo1 {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 100px;
+  }
+  
+  .titulo1 p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  
+  .titulo2 {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  .titulo2 p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  
+  .precio2 {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin-right: 20px;
+    margin-top: -80px;
+    font-size: 50px;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+  }
+  
+  .caja-titulo1 {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .caja-titulo1 input::placeholder {
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(172, 67%, 45%);
+  }
+  
+  .resultado {
+    outline: 0 none;
+    width: 250px;
+    margin-right: 20px;
+    height: 50px;
+    font-size: 40px;
+    border: none;
+    font-family: "Space Mono";
+    text-align: right;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(172, 67%, 45%);
+  }
+  
+  .boton1 {
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+  }
+  
+  .contenedor2 .button:active {
+    border: 1px solid hsl(172, 67%, 45%);
+  }
+}
