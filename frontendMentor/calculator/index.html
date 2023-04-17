@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    link
+    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
     <title>Calculator</title>
 </head>
 
@@ -16,22 +19,45 @@
             <form action="">
                 <label for="bill" class="labels">Bill</label>
                 <br>
-                <input type="number" id="bill" name="factura">
+                <input type="number" id="bill" name="factura" placeholder="0">
                 <br>
                 <label class="labels" for="botones">Select Tip%</label>
-                <div> <button>5%</button> <button>10%</button> <button>20%</button><br>
-                    <button>25%</button> <button>50%</button> <button>Costum</button>
+                <div>
+                    <button>5%</button>
+                    <button>10%</button>
+                    <button>20%</button>
+                    <button>25%</button>
+                    <button>50%</button>
+                    <button>Custom</button>
                 </div>
                 <label for="people" class="labels">Number of people</label><br>
-                <input type="number" id="people" name="personas">
+                <input type="number" id="people" name="personas" placeholder="0">
             </form>
 
         </div>
         <div class="rigth">
-       
+            <div class="amount">
+                <p>Tip Amount <br>
+                    <strong>/person</strong>
+                </p>
+                <input type="text" id="amount" placeholder="$0.00">
+            </div>
+            
+            <div class="total">
+                <p>Total <br>
+                    <strong>/person</strong>
+                </p>
+                <input type="text" id="totalP"    placeholder="$0.00">
+                
+
+            </div>
+           <button class="reset">RESET</button>
+            
+
 
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
