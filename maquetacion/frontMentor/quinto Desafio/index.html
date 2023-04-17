@@ -8,36 +8,53 @@
     <title>Frontend Mentor | Rock, Paper, Scissors</title>
   </head>
   <body>
-    <!-- <div id="inicio">
-    <h1 id="inicioTitulo">Escoje modo de juego</h1>
-<div id="botonesInicio">
-<button id="tres">MEJOR DE 3</button>
-<button id="cinco">MEJOR DE 5</button>
-<button id="diez">MEJOR DE 10</button>  
-</div>
-  </div> -->
-
-    <h1>Piedra Papel o Tijeras</h1>
-    <div id="juego">
-      <div onclick="usuario('0');" id="piedra">
-        <img src="images/icon-rock.svg" alt="piedra" />
+    <div class="contenedor">
+      <div class="inicio">
+        <h1 class="titulo">Rock, Paper, Scissors</h1>
+        <div class="botones-inicio">
+          <button class="button">BEST OF 3</button>
+          <button class="button">BEST OF 5</button>
+          <button class="button">BEST OF 10</button>
+        </div>
       </div>
-      <div onclick="usuario('1');" id="papel">
-        <img src="images/icon-paper.svg" alt="papel" />
-      </div>
-      <div onclick="usuario('2');" id="tijera">
-        <img src="images/icon-scissors.svg" alt="tijeras" />
-      </div>
-    </div>
-    <div id="efecto" style="display: none"></div>
-    <div id="puntos">
-      <div id="you">
-        <h1>Tu</h1>
-        <input type="text" id="puntoyo" disabled value="0" />
-      </div>
-      <div id="bot">
-        <h1>Bot</h1>
-        <input type="text" id="puntobot" disabled value="0" />
+      <div class="pantalladejuego">
+        <div class="marcador">
+          <div class="score">
+            <p class="etiqueta">YOU</p>
+            <p class="puntuacion">0</p>
+          </div>
+          <div class="ronda">
+            <p class="ronda-etiqueta">ROUND</p>
+            <p class="valorronda">1</p>
+          </div>
+          <div class="score">
+            <p class="etiqueta">BOT</p>
+            <p class="puntuacion">0</p>
+          </div>
+        </div>
+        <div class="gameplay">
+          <div class="eleccion" onclick="usuario('0')">
+            <img src="images/icon-rock.svg" alt="rock" />
+          </div>
+          <div class="eleccion" onclick="usuario('1')">
+            <img src="images/icon-paper.svg" alt="paper" />
+          </div>
+          <div class="eleccion" onclick="usuario('2')">
+            <img src="images/icon-scissors.svg" alt="scissors" />
+          </div>
+        </div>
+        <div class="resultados">
+          <div class="resultado-etiqueta">YOU PICKED</div>
+          <div class="imagen-resultante">
+            <img src="images/icon-rock.svg" alt="rock" />
+          </div>
+          <div class="resultado-etiqueta">THE HOUSE PICKED</div>
+          <div class="imagen-resultante">
+            <img src="images/icon-paper.svg" alt="paper" />
+          </div>
+          <div class="texto-resultante">YOU LOSE</div>
+          <button class="play-again-button">PLAY AGAIN</button>
+        </div>
       </div>
     </div>
     <script src="sisa.js"></script>

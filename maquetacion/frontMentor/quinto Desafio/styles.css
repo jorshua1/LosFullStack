@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box; /*calcular el ancho y alto total de un elemento. */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(229, 25%, 15%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 15px;
+}
+
+.contenedor {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /*añade efectos de sombra alrededor del marco */
+  padding: 50px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.titulo {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.botones-inicio {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.button {
+  background-color: hsl(349, 71%, 52%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 15px 25px;
+  text-transform: uppercase; /*convierte el texto en mayusculas*/
+  transition: background-color 0.3s ease; 
+}
+
+.button:hover {
+  background-color: hsl(349, 70%, 56%);
+}
+
+.marcador {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.score,
+.ronda {
+  text-align: center;
+}
+
+.etiqueta,
+.ronda-etiqueta {
+  color: hsl(229, 64%, 46%);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.puntuacion,
+.valorronda {
+  color: hsl(229, 25%, 31%);
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.gameplay {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.eleccion {
+  background-color: hsl(0, 0%, 90%);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+  transition: background-color 0.3s ease;
+}
+
+.eleccion:hover {
+  background-color: hsl(0, 0%, 80%);
+}
+
+.imagen-resultante {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 120px;
+  width: 120px;
+}
+
+.resultado-etiqueta {
+  color: hsl(229, 64%, 46%);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.texto-resultante {
+  color: hsl(229, 64%, 46%);
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
