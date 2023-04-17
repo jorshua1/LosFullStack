@@ -31,11 +31,11 @@
 
           <p class="selector">Select tip %</p>
           <div class="porcen">
-            <button class="boton" onclick="boton1()">5%</button>
-            <button class="boton">10%</button>
-            <button class="boton">15%</button>
-            <button class="boton">25%</button>
-            <button class="boton">50%</button>
+            <button class="boton" id="botn1" onclick="boton1()">5%</button>
+            <button class="boton" id="botn2" onclick="boton2()">10%</button>
+            <button class="boton" id="botn3" onclick="boton3()">15%</button>
+            <button class="boton" id="botn4" onclick="boton4()">25%</button>
+            <button class="boton" id="botn5" onclick="boton5()">50%</button>
             <input class="custom" type="text" placeholder="Custom" />
           </div>
           <!-- contenedor de inputs -->
@@ -58,11 +58,12 @@
           <input type="text" placeholder="$0.00" id="tipo" class="tio">
         </div>
         <div class="boreset">
-          <button id="reset">RESET</button>
+          <button id="reset" onclick="reseteado()">RESET</button>
         </div>
       </div>
     </div>
   </div>
+  <script src="main.js"></script>
 </body>
 
 <style>
@@ -145,7 +146,7 @@
     background-color: hsl(189, 41%, 97%);
   }
   img{
-    width: 50px;
+   
     height: 25px;
   }
   #textos {
@@ -262,7 +263,7 @@
   }
 
   .tio {
-    width: 81%;
+    width: 77%;
     display: flex;
     justify-content: space-around;
 
