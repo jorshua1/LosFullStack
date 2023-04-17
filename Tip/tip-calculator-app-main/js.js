@@ -15,7 +15,6 @@ const cinco = () => {
      boton1.style.backgroundColor = "#9fe8df";
      boton1.style.color = "hsl(183, 100%, 15%)";
    }
-  // boton1.classList.add("activo");
    function Normal() {
      boton1.style.backgroundColor = "hsl(183, 100%, 15%)";
      boton1.style.color = "hsl(0, 0%, 100%)";
