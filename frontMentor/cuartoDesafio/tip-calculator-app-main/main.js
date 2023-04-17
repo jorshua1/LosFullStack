@@ -32,6 +32,7 @@ function calculoPropina(porcentaje){
         // error.removeAttribute("class", "alerthidden")
         // error.setAttribute("class", "alertShow")
         console.log(tip, total)
+        document.getElementById("tip", "total")
     }
 }
 
