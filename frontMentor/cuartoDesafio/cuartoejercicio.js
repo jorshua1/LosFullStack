@@ -11,10 +11,16 @@ let Custom = document.getElementById("Custom")
 let procedimiento = (porcentaje) => {
     let text1 = Number(document.getElementById("text1").value);
     let text2 = Number(document.getElementById("text2").value);
-    let persona= text1/text2;
+
+    if(isNaN(text1)&&isNaN(text2)){
+        let persona= text1/text2;
     let calculoTip=persona*porcentaje;
     resultado2.value = '$'+persona.toFixed(2);
     resultado1.value = '$'+calculoTip.toFixed(2);
+    }else{
+        let text2 = document.getElementById("text2");
+        text2.value= "falta este campo";
+    }
 }
 
 function limpiar(){
