@@ -13,15 +13,53 @@ puntaje_maquina.innerHTML = "0";
 let cont = 0;
 
 piedra.addEventListener("click", function () {
-    alert("piedra");
+    let piedra="piedra";
+    three(piedra)
 })
 papel.addEventListener("click", function () {
-    alert("papel");
+    let papel="papel";
+    three(papel)
 })
 tijera.addEventListener("click", function () {
-    alert("tijera");
+    let tijera="tijera";
+    three(tijera)
 })
 
 juego.addEventListener("click", function () {
-    
+
 })
+
+function three(x) {
+    if (x === "piedra") {
+        let saca;
+        let random = Math.floor(Math.random()*3)+1;
+        if(random==1){
+            saca=="piedra";
+        }else if(random==2){
+            saca=="papel";
+        }else{
+            saca=="tijera";
+        }
+        
+        if(saca==x){
+            alert("empate")
+        }else if(saca!=x){
+            
+        }
+
+    } else if (x === "papel") {
+        let random = Math.floor(Math.random()*2)+1;
+        if(random==1){
+
+        }else{
+            
+        }
+    } else if (x === "tijera") {
+        let random = Math.floor(Math.random()*2)+1;
+        if(random==1){
+
+        }else{
+            
+        }
+    }
+}
