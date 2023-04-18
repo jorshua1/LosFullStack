@@ -22,6 +22,7 @@ body {
   padding: 50px;
   width: 80%;
   max-width: 400px;
+  border: 2px solid white;
 }
 
 .titulo {
@@ -60,11 +61,16 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  background-color: hsl(229, 64%, 30%);
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .score,
 .ronda {
   text-align: center;
+  border: 1px solid white;
+  padding: 10px;
 }
 
 .etiqueta,
@@ -97,6 +103,11 @@ body {
   height: 80px;
   width: 80px;
   transition: background-color 0.3s ease;
+}
+
+.eleccion img {
+  display: block; 
+  margin: 0 auto;
 }
 
 .eleccion:hover {
