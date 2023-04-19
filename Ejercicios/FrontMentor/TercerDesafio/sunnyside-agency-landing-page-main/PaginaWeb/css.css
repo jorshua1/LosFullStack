@@ -1,0 +1,664 @@
+@media screen and (max-width: 375px) {
+  nav .linksPc {
+    display: none;
+  }
+
+  nav .linksm {
+    display: block;
+  }
+
+  .nav_links {
+    position: fixed;
+    left: 50px;
+    top: 150px;
+    padding: 100px 100px 100px 100px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    line-height: 100px;
+    clip-path: circle(0% at top right);
+    transition: clip-path 0.5s;
+  }
+  nav a {
+    color: black !important;
+  }
+  .nav_links:target {
+    clip-path: circle(150% at top left);
+  }
+
+  body #padre {
+    background: url(images/desktop/mobile/image-header.jpg) no-repeat center;
+  }
+
+  #padre nav .hamburguesa {
+    margin: 0px 100px 0px 100px;
+    display: flex;
+    height: 24px;
+    width: 24px;
+  }
+  nav {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 25px !important;
+  }
+
+  .verMas h1 {
+    margin-top: 1%;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 4px;
+  }
+  .verMas img {
+    margin-top: 5%;
+  }
+  .primero {
+    flex-direction: column-reverse;
+  }
+
+  .primeroTexto {
+    width: 100% !important;
+  }
+  .primeroTexto h1 {
+    font-size: 30px !important;
+    margin: 15% 15% 0% 15% !important;
+    text-align: center;
+  }
+
+  .primeroTexto p {
+    font-size: 18px !important;
+    margin: 5% 5% 10% 5% !important;
+    text-align: center;
+    color: hsl(210, 4%, 67%);
+  }
+  .primeroImagen {
+    width: 100% !important;
+  }
+
+  .segundo {
+    flex-direction: column;
+  }
+
+  .segundoTexto {
+    width: 100% !important;
+  }
+  .segundoTexto h1 {
+    font-size: 30px !important;
+    margin: 15% 15% 0% 15% !important;
+    text-align: center;
+  }
+
+  .segundoTexto p {
+    font-size: 18px !important;
+    margin: 5% 5% 10% 5% !important;
+    text-align: center;
+    color: hsl(210, 4%, 67%);
+  }
+  .segundoImagen {
+    width: 100% !important;
+  }
+  .dosfin {
+    flex-direction: column;
+  }
+
+  .dosfin .cerezaCel {
+    display: block;
+    height: auto;
+    width: 200%;
+  }
+  .cereza img {
+    display: none;
+  }
+
+  .dosH1 {
+    top: 65% !important;
+    left: 125% !important;
+    margin: 5% -180px 0% -180px !important;
+  }
+
+  .dosP {
+    position: absolute;
+    top: 75% !important;
+    left: 100% !important;
+    margin: 5% -180px 0% -180px !important;
+    line-height: 20px !important;
+    font-size: 15px;
+  }
+
+  .mandarina {
+    width: 100% !important;
+  }
+
+  .mandarina img {
+    display: none;
+  }
+
+  .dosfin .mandarinaCel {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  .dosH1m {
+    top: 65% !important;
+    left: 70% !important;
+    margin: 5% -180px 0% -180px !important;
+  }
+
+  .dosPm {
+    position: absolute;
+    top: 75% !important;
+    left: 3% !important;
+    margin: 5% 10px 0% 10px !important;
+    line-height: 20px !important;
+    font-size: 18px;
+  }
+
+  .testimonios {
+    margin: 15% 10% 18% 10% !important ;
+    font-size: 15px !important;
+    letter-spacing: 2px;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .info1 {
+    width: 100% !important;
+    line-height: 180% !important;
+    margin-left: 1% !important;
+  }
+
+  .info img {
+    border-radius: 100px;
+    width: 20% !important;
+  }
+
+  .texto1 {
+    margin: 2% 5% 8% 5% !important;
+  }
+
+  .info2 {
+    width: 100% !important;
+    line-height: 180% !important;
+    margin-left: 1% !important;
+  }
+  .texto2 {
+    margin: 2% 5% 8% 5% !important;
+  }
+
+  .info3 {
+    width: 100% !important;
+    line-height: 180% !important;
+    margin-left: 1% !important;
+  }
+  .texto3 {
+    margin: 2% 5% 8% 5% !important;
+  }
+  .imagenes {
+    flex-direction: row;
+    flex-wrap: wrap !important;
+    flex-flow: row;
+  }
+
+  .imagenM {
+    display: none;
+  }
+
+  .imagenM1 {
+    display: block !important;
+    height: auto;
+    width: 100%;
+  }
+  .imagenM2 {
+    display: block !important;
+    height: auto;
+    width: 100%;
+  }
+  .imagenM3 {
+    display: block !important;
+    height: auto;
+    width: 100%;
+  }
+  .imagenM4 {
+    display: block !important;
+    height: auto;
+    width: 100%;
+  }
+
+  .imagen1 {
+    width: 50% !important;
+  }
+  .imagen1 img {
+    width: 100% !important;
+  }
+  .imagen2 {
+    width: 50% !important;
+  }
+  .imagen2 img {
+    width: 100% !important;
+  }
+
+  .imagen3 {
+    width: 50% !important;
+  }
+  .imagen3 img {
+    width: 100% !important;
+  }
+
+  .imagen4 {
+    width: 50% !important;
+  }
+  .imagen4 img {
+    width: 100% !important;
+  }
+
+  .banner1 {
+    margin: 15% 10% 8% 30% !important;
+  }
+  .banner1 img {
+    height: 40px !important;
+    width: 150px !important;
+  }
+
+  .banner2 {
+    margin: 1% 50% 8% 15% !important;
+    hyphens: 100px !important;
+  }
+
+  .banner2 p {
+    margin: 0% 30% 0% 3% !important;
+  }
+
+  .banner3 {
+    margin: 4% 1% 10% 30% !important;
+    letter-spacing: 25px !important;
+  }
+
+  .nav_icono {
+    display: block;
+    background-color: red;
+  }
+}
+
+body {
+  width: 99vw;
+  margin: 0;
+  font-family: "Barlow", serif;
+}
+#padre {
+  width: 100%;
+  height: 100vh;
+  background: url(images/desktop/image-header.jpg) no-repeat center;
+}
+
+nav {
+  padding: 40px 80px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  height: 3em;
+  width: 10em;
+}
+
+
+nav .hamburguesa {
+  display: none;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+a:hover {
+  color: hsl(51, 100%, 49%);
+}
+
+.linksm {
+  display: none;
+}
+.linksCel {
+  display: none;
+}
+.linksPc {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  align-items: center;
+}
+
+.contacto {
+  padding: 20px 30px;
+  color: black;
+  background-color: white;
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+  border-radius: 50px;
+}
+
+.contacto:hover {
+  padding: 20px 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+  border-radius: 50px;
+}
+
+.verMas {
+  width: 100%;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Fraunces", serif;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.verMas h1 {
+  padding-bottom: 80px;
+}
+
+.verMas img {
+  height: calc(114px * 1.5);
+  width: calc(36px * 1.5);
+}
+
+.primero {
+  width: 100%;
+  display: flex;
+}
+
+.primeroTexto {
+  width: 50%;
+  margin: 5% 0% 0% 0%;
+}
+
+.primeroTexto h1 {
+  margin: 8% 20% 0% 20%;
+  font-size: 65px;
+  font-family: "Fraunces", serif;
+}
+
+.primeroTexto p {
+  margin: 5% 20% 0% 20%;
+  font-size: 20px;
+}
+.primeroImagen {
+  width: 50%;
+}
+
+.primeroImagen img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.segundo {
+  width: 100%;
+  display: flex;
+}
+
+.segundoTexto {
+  flex-direction: column;
+  width: 50%;
+}
+
+.segundoTexto h1 {
+  margin: 8% 5% 0% 15%;
+  font-size: 65px;
+  font-family: "Fraunces", serif;
+}
+
+.segundoTexto p {
+  margin: 5% 20% 0% 15%;
+  font-size: 20px;
+}
+.segundoImagen {
+  flex-direction: column;
+  width: 50%;
+}
+
+.segundoImagen img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.dosfin {
+  width: 100%;
+  display: flex;
+}
+
+.cereza {
+  width: 50%;
+  position: relative;
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+}
+
+.cerezaCel {
+  display: none;
+}
+.cereza img {
+  width: 100%;
+}
+.dosH1 {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  font-family: "Fraunces", serif;
+}
+
+.dosP {
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  margin: 3% 30% 0% 30%;
+  line-height: 180%;
+  font-size: 18px;
+}
+
+.mandarina {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: hsl(198, 62%, 26%);
+}
+
+.mandarinaCel {
+  display: none;
+}
+.mandarina img {
+  width: 100%;
+}
+.dosH1m {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  font-family: "Fraunces", serif;
+}
+
+.dosPm {
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  margin: 3% 30% 0% 30%;
+  line-height: 180%;
+  font-size: 18px;
+}
+
+.testimonios {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  margin: 10% 20% 3% 20%;
+  letter-spacing: 5px;
+  font-size: 25px;
+  color: hsl(210, 4%, 67%);
+}
+.info {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+.info img {
+  border-radius: 100px;
+  width: 12%;
+  margin-bottom: 5%;
+}
+.info1 {
+  width: 33.333333%;
+  line-height: 180%;
+  margin-left: 5%;
+}
+.texto1 {
+  color: hsl(213, 9%, 39%);
+  margin: 2% 20% 8% 20%;
+}
+
+.texto11 {
+  margin: 1% 20% 0% 20%;
+  font-family: "Fraunces", serif;
+}
+
+.texto111 {
+  margin: 0% 20% 20% 20%;
+  color: hsl(210, 4%, 67%);
+}
+
+.info2 {
+  width: 33.333333%;
+  line-height: 180%;
+}
+.texto2 {
+  color: hsl(213, 9%, 39%);
+  margin: 2% 20% 8% 20%;
+}
+
+.texto22 {
+  margin: 1% 20% 0% 20%;
+  font-family: "Fraunces", serif;
+}
+
+.texto222 {
+  margin: 0% 20% 20% 20%;
+  color: hsl(210, 4%, 67%);
+}
+
+.info3 {
+  width: 33.333333%;
+  line-height: 180%;
+  margin-right: 5%;
+}
+.texto3 {
+  color: hsl(213, 9%, 39%);
+  font-weight: 600;
+  margin: 2% 20% 8% 20%;
+}
+
+.texto33 {
+  margin: 1% 20% 0% 20%;
+  font-family: "Fraunces", serif;
+}
+
+.texto333 {
+  margin: 0% 20% 20% 20%;
+  color: hsl(210, 4%, 67%);
+}
+
+.imagenes {
+  width: 100%;
+  display: flex;
+}
+.imagenM1 {
+  display: none;
+}
+.imagenM2 {
+  display: none;
+}
+.imagenM3 {
+  display: none;
+}
+.imagenM4 {
+  display: none;
+}
+
+.imagen1 {
+  width: 25%;
+}
+.imagen1 img {
+  width: 100%;
+}
+
+.imagen2 {
+  width: 25%;
+}
+.imagen2 img {
+  width: 100%;
+}
+
+.imagen3 {
+  width: 25%;
+}
+.imagen3 img {
+  width: 100%;
+}
+
+.imagen4 {
+  width: 25%;
+}
+.imagen4 img {
+  width: 100%;
+}
+
+.banner {
+  margin-top: -3px;
+  width: 100%;
+  background-color: hsl(169, 28%, 66%);
+  display: flex;
+  flex-direction: column;
+  color: hsl(168, 34%, 41%);
+}
+
+.banner1 {
+  margin: 4% 10% 4% 45%;
+  font-family: "Barlow", sans-serif;
+}
+
+.banner1 img {
+  height: 60px;
+  width: 200px;
+}
+
+.banner2 {
+  display: flex;
+  margin: 1% 5% 0% 39%;
+  hyphens: 5px;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+
+.banner2 p {
+  margin: 0% 5% 0% 3%;
+}
+.banner3 {
+  margin: 4% 15% 4% 45%;
+  letter-spacing: 25px;
+}
