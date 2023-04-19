@@ -1,37 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-  Score
-  Rules
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
 
-  You Picked
-  The House Picked
+    <div class="principal">
+      <div class="centro">
+        <div class="arriba">
+          <div id="name">
+            ROCK <br />
+            PAPER <br />
+            SCISSORS
+            <div>
+              score <br>
+              <span>12</span>
+            </div>
+          </div>
+        </div>
+        <div class="abajo"></div>
+      </div>
+    </div>
 
-  You Win
-  You Lose
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
 
-  Play Again
+      .principal {
+        background-color: hsl(237, 49%, 15%);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .centro {
+        background-color: hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
+        height: 50%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+      }
+      .arriba {
+        background-color: hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* font-family: 'Space Mono', monospace; */
+      }
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      #name {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-size: 30px;
+        width: 100%;
+        height: 20;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: sandybrown;
+        color: white;
+        border: 3px solid white;
+        border-radius: 0.5em;
+        padding: 10px;
+      }
 
+      .abajo {
+        background-color: hsl(237, 49%, 15%);
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        height: 100%;
+        width: 100%;
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body></body>
 </html>
