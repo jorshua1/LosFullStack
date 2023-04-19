@@ -1,296 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip calculator app</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+  </head>
 
-  <title>Tip calculator app</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-</head>
+  <body>
+    <div class="centro">
+      <header><span>SPLI</span><span>TTER</span></header>
+      <div class="contenedor">
+        <div class="espacios">
+          <!-- contenedor texto -->
+          <div id="textos">
+            <p class="bill">Bill</p>
+            <!-- contenedor de inputs -->
+            <div id="concon">
+              <img
+                src="../tip-calculator-app-main/images/icon-dollar.svg"
+                type="image"
+                alt="dolar"
+              />
+              <input id="valor" type="text" placeholder="0" />
+            </div>
+            <!-- contenedor de porcentajes -->
 
-<body>
-  <div class="centro">
-    <header><span>SPLI</span><span>TTER</span></header>
-    <div class="contenedor">
-      <div class="espacios">
-        <!-- contenedor texto -->
-        <div id="textos">
-          <p class="bill">Bill</p>
-          <!-- contenedor de inputs -->
-          <div id="concon">
-            <img src="../tip-calculator-app-main/images/icon-dollar.svg" type="image" alt="dolar"/>
-            <input id="valor" type="text" placeholder="0" />
-          </div>
-          <!-- contenedor de porcentajes -->
-
-          <p class="selector">Select tip %</p>
-          <div class="porcen">
-            <button class="boton" id="botn1">5%</button>
-            <button class="boton" id="botn2">10%</button>
-            <button class="boton" id="botn3">15%</button>
-            <button class="boton" id="botn4">25%</button>
-            <button class="boton" id="botn5">50%</button>
-            <input class="custom" type="text" placeholder="Custom" />
-          </div>
-          <!-- contenedor de inputs -->
-          <p class="people">Number of people</p>
-          <div id="conte">
-
-            <img src="../tip-calculator-app-main/images/icon-person.svg" alt="icon-person" type="image"/>
-            <input id="cantipeople" type="text" placeholder="0" />
+            <p class="selector">Select tip %</p>
+            <div class="porcen">
+              <button class="boton" id="botn1">5%</button>
+              <button class="boton" id="botn2">10%</button>
+              <button class="boton" id="botn3">15%</button>
+              <button class="boton" id="botn4">25%</button>
+              <button class="boton" id="botn5">50%</button>
+              <input id="custom" type="text" placeholder="Custom" />
+            </div>
+            <!-- contenedor de inputs -->
+            <p class="people">Number of people</p>
+            <div id="conte">
+              <div style="display: flex;">
+                <img
+                  src="../tip-calculator-app-main/images/icon-person.svg"
+                  alt="icon-person"
+                  type="image"
+                  id="person"
+                />
+                <input id="cantipeople" type="text" placeholder="0" />
+              </div>
+            </div>
+            <span class="alertHidden" id="error">Ingrese un valor válido</span>
           </div>
         </div>
-      </div>
-      <!-- el otro contenedor -->
-      <div class="table">
-        <div id="tip">
-          <p class="tip">Tip Amount <br> <span id="personita">/ person</span></p>
-          <input type="text" placeholder="$0.00" id="tipo">
-        </div>
-        <div id="totalito">
-          <p class="total">Total <br> <span id="personita">/ person</span></p>
-          <input type="text" placeholder="$0.00" id="tipo" class="tio">
-        </div>
-        <div class="boreset">
-          <button id="reset" onclick="reseteado()">RESET</button>
+        <!-- el otro contenedor -->
+        <div class="table">
+          <div id="memo">
+            <div id="tipx">
+              <p class="tip">
+                Tip Amount <br />
+                <span id="personita">/ person</span>
+              </p>
+              <span id="tipo">$0.00</span>
+            </div>
+            <div id="totalito">
+              <p class="total">
+                Total <br />
+                <span id="personita">/ person</span>
+              </p>
+              <span id="tio">$0.00</span>
+            </div>
+            <div class="boreset">
+              <button id="reset">RESET</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-  }
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-  .centro {
-    background-color: hsl(185, 41%, 84%);
-    height: 100vh;
-    gap: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+    .centro {
+      background-color: hsl(185, 41%, 84%);
+      height: 100vh;
+      gap: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .contenedor {
-    background-color: white;
-    height: 46%;
-    width: 48%;
-    display: flex;
-    border-radius: 0.8cm;
-    justify-content: center;
-    padding: 1.5% 1.5%;
-  }
+    .contenedor {
+      background-color: white;
+      height: 46%;
+      width: 48%;
+      display: flex;
+      border-radius: 0.8cm;
+      justify-content: center;
+      padding: 1.5% 1.5%;
+    }
 
-  .espacios {
-    background-color: white;
-    height: 100%;
-    width: 50%;
+    .espacios {
+      background-color: white;
+      height: 100%;
+      width: 50%;
 
-    gap: 50px;
-  }
+      gap: 50px;
+    }
 
-  .table {
-    background-color: rgb(16, 78, 78);
-    height: 100%;
-    width: 50%;
-    border-radius: 4%;
+    .table {
+      background-color: rgb(16, 78, 78);
+      height: 100%;
+      width: 50%;
+      border-radius: 4%;
+    }
 
-  }
+    #memo {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0;
+      flex-wrap: wrap;
+    }
 
-  p {
-    font-family: "Space Mono", monospace;
-    color: hsl(186, 14%, 43%);
-  }
+    p {
+      font-family: "Space Mono", monospace;
+      color: hsl(186, 14%, 43%);
+    }
 
-  input {
-    border: 0;
-    background-color: hsl(189, 41%, 97%);
-    font-size: 24px;
-    text-align: right;
-    display: flex;
+    input {
+      border: 0;
+      background-color: hsl(189, 41%, 97%);
+      font-size: 24px;
+      text-align: right;
+      display: flex;
+    }
 
-  }
+    input:focus {
+      outline: none;
+    }
 
-  input:focus {
-    outline: none;
-  }
+    input::placeholder {
+      font-family: "Space Mono", monospace;
+      color: hsl(187, 13%, 75%);
+      font-size: 25px;
+    }
 
-  input::placeholder {
-    font-family: "Space Mono", monospace;
-    color: hsl(187, 13%, 75%);
-    font-size: 25px;
-  }
+    #concon {
+      border: 1px;
+      width: 320px;
+      display: flex;
+      background-color: hsl(189, 41%, 97%);
+    }
 
-  #concon {
-    border: 1px;
-    width: 320px;
-    display: flex;
-    background-color: hsl(189, 41%, 97%);
-  }
+    #conte {
+      border: 1px;
+      width: 320px;
+      display: flex;
+      background-color: hsl(189, 41%, 97%);
+    }
+    img {
+      height: 25px;
+    }
+    #textos {
+      padding: 20px 20px;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
 
-  #conte {
-    border: 1px;
-    width: 320px;
-    display: flex;
-    background-color: hsl(189, 41%, 97%);
-  }
-  img{
-   
-    height: 25px;
-  }
-  #textos {
-    padding: 20px 20px;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
+    .porcen {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 10px;
+    }
 
-  .porcen {
+    .boton {
+      background-color: rgb(16, 78, 78);
+      border-radius: 5px;
+      border: none;
+      width: 30%;
+      font-size: 20px;
+      padding: 10px;
+      color: white;
+      font-family: "Space Mono", monospace;
+    }
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    gap: 10px;
+    #custom {
+      background-color: hsl(189, 41%, 97%);
+      width: 24%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 25px;
+    }
 
-  }
+    #custom::placeholder {
+      color: hsl(186, 14%, 43%);
+      font-family: "Space Mono", monospace;
+    }
 
-  .boton {
-    background-color: rgb(16, 78, 78);
-    border-radius: 5px;
-    border: none;
-    width: 30%;
-    font-size: 20px;
-    padding: 10px;
-    color: white;
-    font-family: "Space Mono", monospace;
-  }
+    span {
+      display: flex;
+      flex-direction: column;
+      font-family: "Space Mono", monospace;
+      color: hsl(186, 14%, 43%);
+      font-size: 24px;
+      letter-spacing: 10px;
+    }
 
-  .custom {
-    background-color: hsl(189, 41%, 97%);
-    width: 24%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    font-size: 25px;
-  }
+    /* el otro lado */
+    #tipx {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: rgb(16, 78, 78);
+      justify-content: space-around;
+    }
 
-  .custom::placeholder {
-    color: hsl(186, 14%, 43%);
-    font-family: "Space Mono", monospace;
-  }
+    #tipo {
+      background-color: rgb(16, 78, 78);
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
 
-  span {
-    display: flex;
-    flex-direction: column;
-    font-family: "Space Mono", monospace;
-    color: hsl(186, 14%, 43%);
-    font-size: 24px;
-    letter-spacing: 10px;
-  }
+    .tip #personita {
+      font-family: "Space Mono", monospace;
+      font-size: 18px;
+      letter-spacing: normal;
+    }
 
-  /* el otro lado */
-  #tip {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgb(16, 78, 78);
-    padding: 20px;
-    border-radius: 50px;
-  }
+    .tip {
+      color: white;
+      font-family: "Space Mono", monospace;
+      font-size: 20px;
+      width: 30%;
+      height: 60px;
+    }
 
-  #tipo {
-    background-color: rgb(16, 78, 78);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+    .total {
+      color: white;
+      font-family: "Space Mono", monospace;
+      font-size: 20px;
+      height: 60px;
+      width: 30%;
+    }
 
-  .tip #personita {
-    font-family: "Space Mono", monospace;
-    font-size: 15px;
-    letter-spacing: normal;
-  }
+    .total #personita {
+      font-family: "Space Mono", monospace;
+      font-size: 18px;
+      letter-spacing: normal;
+    }
 
-  .tip {
-    color: white;
-    font-family: "Space Mono", monospace;
-    font-size: 17px;
-  }
+    #totalito {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: rgb(16, 78, 78);
 
-  .total {
-    color: white;
-    font-family: "Space Mono", monospace;
-    font-size: 17px;
-  }
+      justify-content: space-around;
+    }
 
-  .total #personita {
-    font-family: "Space Mono", monospace;
-    font-size: 15px;
-    letter-spacing: normal;
-  }
+    #tipo {
+      font-size: 50px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      color: hsl(175, 56%, 51%);
+    }
 
-  #totalito {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgb(16, 78, 78);
-    padding: 20px;
+    #tio {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      background-color: rgb(16, 78, 78);
+      color: hsl(175, 56%, 51%);
+      font-size: 50px;
+    }
 
+    #reset {
+      font-size: 25px;
+      width: 90%;
 
-  }
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(22, 96, 96);
+      border: none;
+      border-radius: 7px;
+      font-family: "Space Mono", monospace;
+      color: hsl(183, 100%, 15%);
+    }
 
-  #tipo::placeholder {
-    font-size: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: hsl(175, 56%, 51%);
-  }
+    .boreset {
+      display: flex;
+      justify-content: center;
+      padding: 110px 20px;
+    }
 
-  .tio {
-    width: 77%;
-    display: flex;
-    justify-content: space-around;
+    .alertHidden {
+      display: none;
+    }
 
-  }
-
-  #reset {
-    font-size: 25px;
-    width: 90%;
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(22, 96, 96);
-    border: none;
-    border-radius: 7px;
-    font-family: "Space Mono", monospace;
-    color: hsl(183, 100%, 15%);
-  }
-
-  .boreset {
-    display: flex;
-    justify-content: center;
-    padding: 80px 20px;
-
-
-  }
-</style>
-
+    .alertShow {
+      display: block;
+      color: red;
+      font-size: 12px;
+      letter-spacing: 0;
+    }
+  </style>
 </html>
