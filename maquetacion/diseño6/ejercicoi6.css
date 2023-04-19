@@ -29,16 +29,18 @@ body {
     width: 40%;
     height: 200px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .titulo {
+    top: -20px;
+    left: -50px;
+    position: relative;
     width: 100%;
     height: 70px;
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 700;
 }
 
@@ -52,10 +54,12 @@ body {
 }
 
 .score section {
-    width: 200px;
-    height: 80px;
+    position: relative;
+    left: 30px;
+    width: 150px;
+    height: 100px;
     background: rgb(255, 255, 255);
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 section {
@@ -111,7 +115,7 @@ section>span {
 }
 
 .papel {
-    top: -120px;
+    top: -150px;
     border-color: blue;
     transition: all .4s ease-in-out;
 }
@@ -150,47 +154,6 @@ section>span {
     box-shadow: inset 0px 0px 30px 1px rgba(0, 255, 0);
 }
 
-.acciones {
-    top:-40px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
-    height: 20%;
-    gap: 60px 0;
-}
-
-.acciones p{
-font-size: 50px;
-font-weight: 500;
-}
-
-.acciones button{
-    padding: 10px 60px;
-    color: rgb(255, 255, 255);
-    background: transparent;
-    border: 2px solid white;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 600;
-    border-radius: 10px;
-    transition: all .4s ease-in-out;
-}
-
-.acciones button:hover{
-    background-color: white;
-    color: black;
-    box-shadow: 0px 0px 20px rgb(255, 255, 255);
-}
-
-.acciones button:focus{
-    background-color: white;
-    color: black;
-    box-shadow:inset 0px 0px 20px 0px rgb(0, 0, 0);
-}
-
 .caja-boton {
     display: flex;
     align-items: center;
@@ -199,7 +162,8 @@ font-weight: 500;
     height: 100px;
 }
 
-.caja-boton button{
+.caja-boton button {
+    position: relative;
     padding: 10px 60px;
     color: rgb(255, 255, 255);
     background: transparent;
@@ -211,14 +175,138 @@ font-weight: 500;
     transition: all .4s ease-in-out;
 }
 
-.caja-boton button:hover{
+.caja-boton button:hover {
     background-color: white;
     color: black;
     box-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 
-.caja-boton button:focus{
+.caja-boton button:focus {
     background-color: white;
     color: black;
-    box-shadow:inset 0px 0px 20px 0px rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 20px 0px rgb(0, 0, 0);
+}
+
+.caja-resultado {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03071e;
+    position: absolute;
+    top: 0;
+    left: -2000px;
+    gap: 30px;
+    transition: all .1s ease-in-out;
+}
+
+.caja-resultado p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.caja-resultado button {
+    padding: 10px 25px;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    transition: .4s all ease-in-out;
+}
+
+.caja-resultado button:hover{
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+.caja-resultado button:focus{
+    box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+}
+
+.caja-jugador,
+.caja-maquina {
+    width: 200px;
+    height: 200px;
+    border: 30px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#result-piedra,
+#result-papel,
+#result-tijera,
+#result-piedra2,
+#result-papel2,
+#result-tijera2 {
+    position: relative;
+    left: 25px;
+    top: 30px;
+    width: 0;
+    height: 0;
+    fill: #03071e;
+}
+
+.caja-reglas{
+    
+    top: 100px;
+    left: 390px;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.caja-opaco{
+    transition: all .4s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.5);
+    left: -2000px;
+    top: 0;
+}
+
+.caja-reglas h1{
+    color: black;
+    position: absolute;
+    width: 80%;
+    top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.caja-reglas button{
+    color: black;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    font-weight: 500;
+}
+.caja-reglas button:hover{
+    color: rgb(255, 0, 0);
+}
+
+.caja-reglas svg{
+    position: relative;
+    top: 100px;
+}
+
+.titulo-result{
+    top:100px;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    width: 51%;
+    display: flex;
+    justify-content: space-between;
 }
