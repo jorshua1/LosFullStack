@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.superior {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  justify-content: space-between;
+  padding: 3% 0% 3% 7.8%;
+}
+
+.banner {
+  align-items: center;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  justify-content: space-between;
+  width: 90%;
+}
+.imagen {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 5%;
+}
+
+.imagen img {
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+.banner a {
+  text-decoration: none;
+  color: gray;
+}
+
+.izBanner {
+  display: flex;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+.izBanner ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+.dos {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.deBanner {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+
+.deBanner button {
+  background-color: #2acfcf;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  height: 50px;
+  width: 120px;
+}
+
+.mitad {
+  font-family: Poppins, sans-serif;
+  padding: 3% 0 3% 7.8%;
+  display: flex;
+  width: 90%;
+}
+
+.muno {
+  width: 40%;
+}
+
+.muno h1 {
+  font-size: 60px;
+  font-weight: 750;
+  line-height: 60px;
+  margin-bottom: 25px;
+}
+
+.muno p {
+  font-size: 20px;
+  color: #9e9aa7;
+  line-height: 30px;
+}
+
+.muno button {
+  background-color: #2acfcf;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  height: 60px;
+  width: 200px;
+  margin-top: 70px;
+}
+
+.mdos {
+  width: 50%;
+}
+.mdos img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.acortador {
+  align-items: center;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  justify-content: space-evenly;
+}
+.acortadordos {
+  display: flex;
+  background-color: #3b3054;
+  background-image: url(images/bg-shorten-desktop.svg);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 58%;
+  height: 130px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.acortadordos input {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  outline: none;
+  position: relative;
+  width: 600px;
+  height: 45px;
+  align-items: center;
+}
+
+.acortadordos button {
+  background-color: #2acfcf;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  height: 50px;
+  width: 150px;
+}
+
+.estadisticas{
+    font-family: Poppins, sans-serif;
+    width: 100%;
+    background-color:#ebe7ef;
+    text-align: center;
+    align-items: center;
+}
+
+.primero{
+    display: grid;
+    padding: 10% 7.8% 3% 30%;
+    width: 40%;
+    align-items: center;
+    
+}
+
+.primero h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.primero p{
+    font-size: 25px;
+    color: #9e9aa7;
+    align-items: center;
+    line-height:30px;
+}
+
+.segundo{
+    padding: 3% 7.8% 3% 7.8%;
+    display: flex;
+}
+
+.cuadritos{
+    display: flex;
+    gap: 25px;
+}
+
+.cuadritos div{
+   background-color: white;
+   text-align: start;
+}
+
+.cuadritos div h1{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.cuadritos div p{
+    font-size: 20px;
+    color: #9e9aa7;
+    width: 80%;
+    line-height:25px;
+}
+
+.cuadritos img{
+background-color: #3b3054;
+border-radius: 50%;
+height: 4.5em;
+justify-content: space-evenly;
+margin-bottom: 2.5em;
+margin-top: -2.5em;
+width: 4.5em;
+}
+
+.cuadrouno{padding: 10px 30px 30px 30px;}
+.cuadrodos{padding: 10px 30px 30px 30px;}
+.cuadrotres{padding: 10px 30px 30px 30px;}
