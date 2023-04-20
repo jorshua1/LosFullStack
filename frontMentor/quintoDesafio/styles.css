@@ -17,12 +17,14 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #03071e;
+  display: none;
 }
 
 .contenedor1 {
   width: 35%;
   height: 140px;
   margin-top: 70px;
+  margin-left: -150px;
   display: flex;
   border: 1px solid cornsilk;
   justify-content: space-between;
@@ -56,6 +58,7 @@ body {
     width: 29%;
     height: 400px;
     margin-top: 70px;
+    margin-left: -200px;
     display: flex;
     border-radius: 10px;
 }
@@ -116,16 +119,13 @@ body {
 .contenedor3{
   width: 6%;
   height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 1750px;
+  margin-left: 700px;
   border: 1px solid white;
   border-radius: 7px;
-  margin-top: 50px;
+  margin-top: 10px;
   background-color:#03071e;
   color: white;
-}
+} 
 
 .contenedor3 button{
   width: 100%;
@@ -141,10 +141,11 @@ body {
   height: 420px;
   font-size: 1.4em;
   position: absolute;
-  left: 750px;
+  left: 660px;
   top: 200px;
   margin: 0;
   border-radius: 10px;
+  display: none;
 }
 
 .subcontenedor3 svg{
@@ -156,6 +157,7 @@ body {
   width: 150px;
   height: 60px;
   display: flex;
+  flex-wrap: wrap;
   font-size: 30px;
   color: #03071e;
   margin-top: 40px;
@@ -165,12 +167,200 @@ body {
 
 .subcontenedor3 button{
   position: relative;
-  top: -20px;
-  padding: 20px;
+  margin-top: -70px;
   font-size: 30px;
   border: none;
   text-align: center;
-  margin-left: 220px;
+  margin-left: 290px;
   background: transparent;
   color:rgb(172, 172, 172)
+}
+
+
+/* ESTE ES UN NUEVO CONTENEDOR */
+
+.contenedorsubpadre {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #03071e;
+}
+
+.subcontenedor1{
+  width: 35%;
+  height: 140px;
+  margin-top: 70px;
+  margin-left: -150px;
+  display: flex;
+  border: 1px solid cornsilk;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  font-size: 30px;
+}
+
+.titulo1 {
+  width: 20%;
+  height: 100%;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.cuadro1 {
+  width: 120px;
+  height: 110px;
+  margin-right: 20px;
+  border-radius: 10px;
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  background-color: white;
+  color: rgb(0, 48, 220)
+}
+
+.subcontenedor2{
+    width: 35%;
+    height: 300px;
+    margin-top: 70px;
+    margin-left: -150px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.papel{
+    margin-left: 80px;
+    margin-top: 30px;
+    width: 6%;
+    height: 120px;
+    display: flex;
+    border: 20px solid hsl(230, 89%, 62%);
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: white;
+    position:absolute;
+}
+
+.piedra{
+    margin-left: 450px;
+    width: 8%;
+    height: 150px;
+    display: flex;
+    border: 20px solid hsl(349, 71%, 52%);
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: white;
+    margin-top: 60px;
+    position:absolute;
+}
+
+.tijera{
+    margin-left: 20px;
+    margin-top: 60px;
+    width: 8%;
+    height: 150px;
+    display: flex;
+    border: 20px solid hsl(39, 89%, 49%);
+    justify-content: center;
+    align-items: center;
+    border-radius: 190px;
+    background-color: white;
+    position:absolute;
+}
+
+.imagen svg{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 90px;
+    margin-left: 120px;
+}
+
+.subcontenedor3{
+  width: 6%;
+  height: 35px;
+  margin-left: 700px;
+  border: 1px solid white;
+  border-radius: 7px;
+  margin-top: 10px;
+  background-color:#03071e;
+  color: white;
+} 
+
+.subcontenedor3 button{
+  width: 100%;
+  height: 33px;
+  border-radius: 7px;
+  background-color: #03071e;
+  color: white;
+}
+
+.subcontenedor3{
+  background-color: white;
+  width: 410px;
+  height: 420px;
+  font-size: 1.4em;
+  position: absolute;
+  left: 660px;
+  top: 200px;
+  margin: 0;
+  border-radius: 10px;
+  display: none;
+}
+
+.subcontenedor3 svg{
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.regla{
+  width: 150px;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  color: #03071e;
+  margin-top: 40px;
+  margin-left: 40px;
+  border-radius: 10px;
+}
+
+.subcontenedor3 button{
+  position: relative;
+  margin-top: -70px;
+  font-size: 30px;
+  border: none;
+  text-align: center;
+  margin-left: 290px;
+  background: transparent;
+  color:rgb(172, 172, 172)
+}
+
+.titulo2{
+  width: 30%;
+  height: 30px;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+.titulo3{
+  width: 30%;
+  height: 30px;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
 }
