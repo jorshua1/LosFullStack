@@ -1,8 +1,117 @@
+@media screen and (max-width: 375px) {
+  .superior {
+    justify-content: center;
+  }
+
+  .dos {
+    display: none !important;
+  }
+
+  .hambuger {
+    display: flex !important;
+  }
+
+  .mitad {
+    display: grid !important;
+  }
+
+  .mdos {
+    display: none;
+  }
+
+  .work {
+    display: flex !important;
+  }
+
+  .work img {
+    width: 340px;
+    height: 280px;
+  }
+
+  .muno {
+    width: 100% !important;
+  }
+
+  .muno h1 {
+    font-size: 49px !important;
+    line-height: 58px !important;
+    margin-bottom: 17px !important;
+  }
+
+  .muno p {
+    padding-right: 55px;
+  }
+  .muno button {
+    width: 297px !important;
+    margin-top: 49px !important;
+    margin-bottom: 25px;
+  }
+
+  .acortadordos {
+    display: grid !important;
+    width: 366px !important;
+  }
+
+  .acortadordos input {
+    width: 318px !important;
+  }
+
+  .acortadordos button {
+    align-items: center;
+    width: 329px !important;
+  }
+
+  .primero {
+    padding: 10% 50px 3% 70px !important;
+  }
+  .cuadritos {
+    display: grid !important;
+  }
+
+  .estadisticas {
+    height: auto !important;
+  }
+
+  .casiFinal {
+    font-size: 10px !important;
+    height: 110px !important;
+  }
+  .casiFinal {
+    height: 43px;
+    font-size: 19px;
+  }
+  .final {
+    display: grid !important;
+    gap: 0% !important;
+    text-align: center !important;
+    font-size: 10px !important;
+  }
+  .final div {
+    gap: 1px;
+  }
+  .final p {
+    margin-bottom: 0% !important;
+  }
+  .urls {
+    width: 366px !important;
+    height: 209px !important;
+  }
+  
+  .urlss {
+    gap: 12px !important;
+    font-size: 12px !important;
+}
+.urlss button {
+  font-size: 13px !important;
+  height: 29px !important;
+  width: 101px !important;
+}
+}
+
 * {
   margin: 0;
   padding: 0;
 }
-
 .superior {
   align-items: center;
   background-color: #fff;
@@ -12,7 +121,6 @@
   justify-content: space-between;
   padding: 3% 0% 3% 7.8%;
 }
-
 .banner {
   align-items: center;
   display: flex;
@@ -36,27 +144,26 @@
   text-decoration: none;
   color: gray;
 }
-
 .izBanner {
   display: flex;
   width: 50%;
   text-align: center;
   align-items: center;
 }
-
 .izBanner ul {
   list-style: none;
   display: flex;
   gap: 18px;
 }
-
+.hambuger {
+  display: none;
+}
 .dos {
   display: flex;
   text-align: center;
   justify-content: space-between;
   width: 90%;
 }
-
 .deBanner {
   display: flex;
   text-align: center;
@@ -64,7 +171,6 @@
   align-items: center;
   width: 20%;
 }
-
 .deBanner button {
   background-color: #2acfcf;
   border: none;
@@ -77,31 +183,29 @@
   height: 50px;
   width: 120px;
 }
-
 .mitad {
   font-family: Poppins, sans-serif;
   padding: 3% 0 3% 7.8%;
   display: flex;
   width: 90%;
 }
-
+.work {
+  display: none;
+}
 .muno {
   width: 40%;
 }
-
 .muno h1 {
   font-size: 60px;
   font-weight: 750;
   line-height: 60px;
   margin-bottom: 25px;
 }
-
 .muno p {
   font-size: 20px;
   color: #9e9aa7;
   line-height: 30px;
 }
-
 .muno button {
   background-color: #2acfcf;
   border: none;
@@ -153,7 +257,7 @@
   width: 600px;
   height: 45px;
   align-items: center;
-  padding-left:15px ;
+  padding-left: 15px;
   color: gray;
 }
 
@@ -170,8 +274,7 @@
   width: 150px;
 }
 
-
-.nuevos{
+.nuevos {
   align-items: center;
   display: flex;
   font-family: Poppins, sans-serif;
@@ -180,25 +283,28 @@
   display: none;
 }
 
-.urls{
+.urls {
   margin-top: 20px;
   display: grid;
-  background-color:white;
+  background-color: white;
   border-radius: 10px;
-  width: 800px;
-  height: 130px;
+  width: 950px;
+  height: 200px;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.urlss{
+.urlss {
   display: flex;
   gap: 80px;
   text-align: center;
   align-items: center;
 }
 
-.urlss button{
+.urlss p {
+}
+
+.urlss button {
   background-color: #2acfcf;
   border: none;
   border-radius: 20px;
@@ -210,7 +316,6 @@
   height: 33px;
   width: 122px;
 }
-
 
 .estadisticas {
   font-family: Poppins, sans-serif;
@@ -344,4 +449,3 @@
   list-style: none;
   margin: 8% 0;
 }
-

@@ -1,10 +1,8 @@
 let x = document.getElementById("recorte");
 let nuevos = document.querySelector(".nuevos");
-
 x.addEventListener("click", () => {
   nuevos.style.display = "flex";
 });
-
 async function acortador() {
   let links = document.querySelector(".links").value;
   url = `https://api.shrtco.de/v2/shorten?url=${links}`;
@@ -16,28 +14,27 @@ async function acortador() {
   let original_link = result.original_link;
   return showLinks({ short_link, short_link2, short_link3, original_link });
 }
-
 x.addEventListener("click", () => acortador());
-
 function showLinks({ short_link, short_link2, short_link3, original_link }) {
   document.getElementById("Link1").innerText = short_link;
   document.getElementById("Link2").innerText = short_link2;
   document.getElementById("Link3").innerText = short_link3;
   document.getElementById("url").innerText = original_link;
+  document.getElementById("url1").innerText = original_link;
+  document.getElementById("url2").innerText = original_link;
 }
-
-boton=""
-
 function copiar(id) {
   let link1 = document.getElementById(`${id}`).innerText;
   navigator.clipboard.writeText(link1);
   let boton = document.querySelector(`#btn${id}`)
   boton.innerText = "¡COPIADO!";
-  boton.style.color="black"
+  boton.style.color="black";
+  setTimeout(()=>{
+    boton.innerText = "COPIAR";
+    boton.style.color="white";
+  }, 2000)
 }
 
 document.querySelector("#btnLink1").addEventListener("click", () => copiar("Link1"));
 document.querySelector("#btnLink2").addEventListener("click", () => copiar("Link2"));
 document.querySelector("#btnLink3").addEventListener("click", () => copiar("Link3"));
-
-
