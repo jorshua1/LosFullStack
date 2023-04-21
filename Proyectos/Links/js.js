@@ -1,5 +1,9 @@
 let x = document.getElementById("recorte");
+let nuevos = document.querySelector(".nuevos");
 
+x.addEventListener("click", () => {
+  nuevos.style.display = "flex";
+});
 
 async function acortador() {
   let links = document.querySelector(".links").value;
@@ -9,15 +13,31 @@ async function acortador() {
   let short_link = result.short_link;
   let short_link2 = result.short_link2;
   let short_link3 = result.short_link3;
-  let original_link = result.original_link
-  return showLinks({ short_link, short_link2, short_link3, original_link});
+  let original_link = result.original_link;
+  return showLinks({ short_link, short_link2, short_link3, original_link });
 }
 
 x.addEventListener("click", () => acortador());
 
 function showLinks({ short_link, short_link2, short_link3, original_link }) {
-  document.getElementById("link1").innerText = short_link;
-  document.getElementById("link2").innerText = short_link2;
-  document.getElementById("link3").innerText = short_link3;
+  document.getElementById("Link1").innerText = short_link;
+  document.getElementById("Link2").innerText = short_link2;
+  document.getElementById("Link3").innerText = short_link3;
   document.getElementById("url").innerText = original_link;
 }
+
+boton=""
+
+function copiar(id) {
+  let link1 = document.getElementById(`${id}`).innerText;
+  navigator.clipboard.writeText(link1);
+  let boton = document.querySelector(`#btn${id}`)
+  boton.innerText = "¡COPIADO!";
+  boton.style.color="black"
+}
+
+document.querySelector("#btnLink1").addEventListener("click", () => copiar("Link1"));
+document.querySelector("#btnLink2").addEventListener("click", () => copiar("Link2"));
+document.querySelector("#btnLink3").addEventListener("click", () => copiar("Link3"));
+
+
