@@ -38,3 +38,22 @@ function copiar(id) {
 document.querySelector("#btnLink1").addEventListener("click", () => copiar("Link1"));
 document.querySelector("#btnLink2").addEventListener("click", () => copiar("Link2"));
 document.querySelector("#btnLink3").addEventListener("click", () => copiar("Link3"));
+
+
+let btnMenu = document.querySelector(".hambugerr");
+let menu = document.querySelector(".menuHam");
+let hambuger = document.querySelector(".hambugerDos");
+
+btnMenu.addEventListener("click", () => {
+    menu.style.display = "block";
+    hambuger.style.display = "block";
+    btnMenu.style.display = "none";
+    btnMenu.style.color = "white";
+  });
+
+  hambuger.addEventListener("click", () => {
+    menu.style.display = "none";
+    hambuger.style.display = "none";
+    btnMenu.style.display = "block";
+  });
+
