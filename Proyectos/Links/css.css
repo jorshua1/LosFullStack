@@ -24,7 +24,7 @@
   }
 
   .work img {
-    width: 340px;
+    width: 325px;
     height: 280px;
   }
 
@@ -96,16 +96,16 @@
     width: 366px !important;
     height: 209px !important;
   }
-  
+
   .urlss {
-    gap: 12px !important;
+    gap: 4px !important;
     font-size: 12px !important;
-}
-.urlss button {
-  font-size: 13px !important;
-  height: 29px !important;
-  width: 101px !important;
-}
+  }
+  .urlss button {
+    font-size: 13px !important;
+    height: 29px !important;
+    width: 101px !important;
+  }
 }
 
 * {
@@ -158,6 +158,61 @@
 .hambuger {
   display: none;
 }
+
+.hambugerDos {
+  display: none;
+}
+
+.menuHam{
+  display: none;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  align-items: center;
+  background-color: #3b3054;
+  margin: 5% 10% 3% 10%;
+  color: white;
+  border-radius: 25px;
+  position: absolute;
+  top: 82px;
+  left: 34px;
+  width: 225px;
+  
+}
+
+.menuHam li{
+  list-style: none;
+  cursor: pointer;
+}
+.menuUno ul{
+  display: grid;
+  gap: 25px;
+  padding-bottom: 30px;
+  padding-top: 25px;
+}
+
+
+
+.menuDos ul{
+  display: grid;
+  gap: 25px;
+  padding-bottom: 25px;
+}
+
+
+.menuDos button{
+  background-color: #2acfcf;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  height: 40px;
+  width: 118px;
+}
+
+
 .dos {
   display: flex;
   text-align: center;
@@ -299,9 +354,6 @@
   gap: 80px;
   text-align: center;
   align-items: center;
-}
-
-.urlss p {
 }
 
 .urlss button {
