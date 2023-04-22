@@ -32,7 +32,7 @@ function copiar(id) {
   setTimeout(()=>{
     boton.innerText = "COPIAR";
     boton.style.color="white";
-  }, 2000)
+  }, 1000)
 }
 
 document.querySelector("#btnLink1").addEventListener("click", () => copiar("Link1"));

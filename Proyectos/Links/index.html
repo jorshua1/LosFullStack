@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css.css" />
     <title>Acortador de links</title>
   </head>
@@ -12,6 +18,10 @@
       <div class="banner">
         <div class="imagen">
           <img src="images/logo.svg" alt="Logo" />
+        </div>
+
+        <div class="hambuger">
+          <img src="images/hamburger.png" alt="hamburger" width="25px" height="25px">
         </div>
 
         <div class="dos">
@@ -38,6 +48,11 @@
     </div>
 
     <div class="mitad">
+
+      <div class="work">
+        <img src="images/illustration-working.svg" alt="imagen">
+      </div>
+
       <div class="muno">
         <h1>Acorta tus links mucho mas</h1>
         <p>
@@ -53,8 +68,29 @@
 
     <div class="acortador">
       <div class="acortadordos">
-        <input type="text" placeholder="Acortar tu enlace aquí..." />
-        <button>¡Acortalo!</button>
+        <input
+          type="text"
+          placeholder="Acortar tu enlace aquí..."
+          class="links"
+        />
+        <button id="recorte">¡Acortalo!</button>
+      </div>
+    </div>
+
+    <div class="nuevos">
+      <div class="urls">
+        <div class="urlss">
+          <p id="url"></p>
+          <span id="Link1"></span> <button id="btnLink1">COPIAR</button>
+        </div>
+        <div class="urlss">
+          <p id="url1"></p>
+          <span id="Link2"></span><button id="btnLink2">COPIAR</button>
+        </div>
+        <div class="urlss">
+          <p id="url2"></p>
+          <span id="Link3"></span><button id="btnLink3">COPIAR</button>
+        </div>
       </div>
     </div>
 
@@ -70,7 +106,9 @@
       <div class="segundo">
         <div class="cuadritos">
           <div class="cuadrouno">
-            <div><img src="images/icon-brand-recognition.svg" alt="Imagenes"></div> 
+            <div>
+              <img src="images/icon-brand-recognition.svg" alt="Imagenes" />
+            </div>
             <h1>Reconocimiento de marca</h1>
             <p>
               Aumente el reconocimiento de su marca con cada clic. Los enlaces
@@ -79,7 +117,9 @@
             </p>
           </div>
           <div class="cuadrodos">
-           <div><img src="images/icon-detailed-records.svg" alt="Imagenes"></div> 
+            <div>
+              <img src="images/icon-detailed-records.svg" alt="Imagenes" />
+            </div>
             <h1>Registros detallados</h1>
             <p>
               Obtenga información sobre quién hace clic en sus enlaces. Saber
@@ -88,7 +128,9 @@
             </p>
           </div>
           <div class="cuadrotres">
-           <div><img src="images/icon-fully-customizable.svg" alt="Imagenes"></div> 
+            <div>
+              <img src="images/icon-fully-customizable.svg" alt="Imagenes" />
+            </div>
             <h1>Totalmente personalizable</h1>
             <p>
               Mejore el conocimiento de la marca y la visibilidad del contenido
@@ -100,11 +142,45 @@
       </div>
     </div>
 
-
-    <div class="bannerDos">
-      <div><h1>Impulsa tus enlaces hoy </h1></div>
-      <div><button>Empezar</button></div>
+    <div class="casiFinal">
+      <h1>Impulsa tus enlaces hoy</h1>
+      <button>Empezar</button>
     </div>
 
+    <div class="final">
+      <div><img src="images/logo.svg" alt="Logo" /></div>
+      <div>
+        <p>Características</p>
+        <ul>
+          <li><a href="#si">Acortamiento de enlaces</a></li>
+          <li><a href="#si">Enlaces de marca</a></li>
+          <li><a href="#si">Análisis </a></li>
+        </ul>
+      </div>
+      <div>
+        <p>Recursos</p>
+        <ul>
+          <li><a href="#si">Blog</a></li>
+          <li><a href="#si">Desarrolladores</a></li>
+          <li><a href="#si">Asistencia</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>Compañía</p>
+        <ul>
+          <li><a href="#si">Acerca de</a></li>
+          <li><a href="#si">Nuestro equipo</a></li>
+          <li><a href="#si">Carreras</a></li>
+          <li><a href="#si">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <img src="images/icon-facebook.svg" alt="Redes" />
+        <img src="images/icon-twitter.svg" alt="Redes" />
+        <img src="images/icon-pinterest.svg" alt="Redes" />
+        <img src="images/icon-instagram.svg" alt="Redes" />
+      </div>
+    </div>
+    <script src="js.js"></script>
   </body>
 </html>
