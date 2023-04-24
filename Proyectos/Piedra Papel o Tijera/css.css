@@ -14,6 +14,7 @@ body {
   grid-template-columns: repeat(4, 100px);
   justify-content: center ;
   gap: 150px;
+
 }
 
 #botonesInicio button{
@@ -25,6 +26,7 @@ body {
   width: 150px;
   font-family: Arial, Helvetica, sans-serif ;
   color: white;
+  cursor: pointer;
 }
 
 
@@ -109,6 +111,11 @@ body {
     gap: 200px;
     margin-left: 32%;
   }
+
+
+  #juego div{
+    cursor: pointer;
+  }
   
 
   #figuras{
@@ -121,6 +128,7 @@ body {
     justify-content: start;
     gap: 200px;
     margin-left: 600px;
+    cursor: pointer;
   }
   
   .imagen {
@@ -132,7 +140,7 @@ body {
     text-align: center;
     font-size: 5em;
     color: #fff;
-    margin: 2em 0 0;
+    margin: 0.5em 0 0;
     padding: 0;
     line-height: 1em;
   
