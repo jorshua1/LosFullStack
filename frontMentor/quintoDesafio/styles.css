@@ -17,14 +17,14 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #03071e;
-  display: none;
+  position: absolute;
 }
 
 .contenedor1 {
   width: 35%;
   height: 140px;
   margin-top: 70px;
-  margin-left: -150px;
+  margin-left: -40px;
   display: flex;
   border: 1px solid cornsilk;
   justify-content: space-between;
@@ -36,10 +36,11 @@ body {
 
 .titulo {
   width: 20%;
-  height: 100%;
-  margin-top: 30px;
+  height: 80%;
+  margin-top: 2px;
   margin-left: 20px;
 }
+
 .cuadro {
   width: 120px;
   height: 110px;
@@ -51,83 +52,69 @@ body {
   align-items: center;
   border: 1px solid white;
   background-color: white;
-  color: rgb(0, 48, 220)
+  color: rgb(0, 48, 220);
 }
 
-.contenedor2{
-    width: 29%;
-    height: 400px;
-    margin-top: 70px;
-    margin-left: -200px;
-    display: flex;
-    border-radius: 10px;
+.contenedor2 {
+  width: 30%;
+  height: 400px;
+  margin-top: 70px;
+  margin-left: -150px;
+  display: flex;
+  border-radius: 10px;
 }
 
-.papel{
-    margin-left: 80px;
-    margin-top: 30px;
-    width: 6%;
-    height: 120px;
-    display: flex;
-    border: 20px solid hsl(230, 89%, 62%);
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    background-color: white;
-    position:absolute;
+.opcion {
+  position: absolute;
+  padding: 37px;
+  border-radius: 50%;
 }
 
-.piedra{
-    margin-left: 200px;
-    width: 6%;
-    height: 120px;
-    display: flex;
-    border: 20px solid hsl(349, 71%, 52%);
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    background-color: white;
-    margin-top: 210px;
-    position:absolute;
+.opcion:hover {
+  box-shadow: 1px 1px 1px 10px ;
 }
 
-.tijera{
-    margin-left: 310px;
-    margin-top: 30px;
-    width: 6%;
-    height: 120px;
-    display: flex;
-    border: 20px solid hsl(39, 89%, 49%);
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    background-color: white;
-    position:absolute;
+.papel {
+  top: 290px;
+  left: 700px;
+  border: 20px solid hsl(230, 89%, 62%);
 }
 
-.imagen svg{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 90px;
-    margin-left: 120px;
+.piedra {
+  top: 480px;
+  left: 807px;
+  border: 20px solid hsl(349, 71%, 52%);
 }
 
-.contenedor3{
+.tijera {
+  top: 290px;
+  left: 920px;
+  border: 20px solid hsl(39, 89%, 49%);
+}
+
+.imagen svg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: -20px;
+  left: 20px;
+}
+
+.contenedor3 {
   width: 6%;
   height: 35px;
-  margin-left: 700px;
+  margin-left: 900px;
   border: 1px solid white;
   border-radius: 7px;
   margin-top: 10px;
-  background-color:#03071e;
+  background-color: #03071e;
   color: white;
-} 
+}
 
-.contenedor3 button{
+.contenedor3 button {
   width: 100%;
   height: 33px;
   border-radius: 7px;
@@ -135,25 +122,25 @@ body {
   color: white;
 }
 
-.subcontenedor3{
+.subcontenedor3 {
   background-color: white;
   width: 410px;
   height: 420px;
   font-size: 1.4em;
   position: absolute;
-  left: 660px;
+  left: 720px;
   top: 200px;
   margin: 0;
   border-radius: 10px;
   display: none;
 }
 
-.subcontenedor3 svg{
+.subcontenedor3 svg {
   margin-top: 10px;
   margin-left: 50px;
 }
 
-.reglas{
+.reglas {
   width: 150px;
   height: 60px;
   display: flex;
@@ -165,7 +152,7 @@ body {
   border-radius: 10px;
 }
 
-.subcontenedor3 button{
+.subcontenedor3 button {
   position: relative;
   margin-top: -70px;
   font-size: 30px;
@@ -173,9 +160,8 @@ body {
   text-align: center;
   margin-left: 290px;
   background: transparent;
-  color:rgb(172, 172, 172)
+  color: rgb(172, 172, 172);
 }
-
 
 /* ESTE ES UN NUEVO CONTENEDOR */
 
@@ -196,9 +182,11 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #03071e;
+  position: relative;
+  left: -2000px;
 }
 
-.subcontenedor1{
+.subcontenedor1 {
   width: 35%;
   height: 140px;
   margin-top: 70px;
@@ -229,81 +217,83 @@ body {
   align-items: center;
   border: 1px solid white;
   background-color: white;
-  color: rgb(0, 48, 220)
+  color: rgb(0, 48, 220);
 }
 
-.subcontenedor2{
-    width: 6%;
-    height: 300px;
-    margin-top: 70px;
-    margin-left: -70px;
-    border-radius: 10px;
+.subcontenedor2 {
+  width: 6%;
+  height: 300px;
+  margin-top: 70px;
+  margin-left: -70px;
+  border-radius: 10px;
 }
 
-.papel{
-    margin-left: 80px;
-    margin-top: 30px;
-    width: 6%;
-    height: 120px;
-    display: flex;
-    border: 20px solid hsl(230, 89%, 62%);
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    background-color: white;
-    position:absolute;
+/*
+.papel1 {
+  margin-left: 80px;
+  margin-top: 30px;
+  width: 6%;
+  height: 120px;
+  display: flex;
+  border: 20px solid hsl(230, 89%, 62%);
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: white;
+  position: absolute;
 }
 
-.piedra{
-    margin-left: 230px;
-    width: 8%;
-    height: 150px;
-    display: flex;
-    border: 20px solid hsl(349, 71%, 52%);
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    background-color: white;
-    margin-top: 30px;
-    position:absolute;
+.piedra1 {
+  margin-left: 230px;
+  width: 8%;
+  height: 150px;
+  display: flex;
+  border: 20px solid hsl(349, 71%, 52%);
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: white;
+  margin-top: 40px;
+  position: absolute;
 }
 
-.tijera{
-    margin-left: -290px;
-    margin-top: 40px;
-    width: 8%;
-    height: 150px;
-    display: flex;
-    border: 20px solid hsl(39, 89%, 49%);
-    justify-content: center;
-    align-items: center;
-    border-radius: 190px;
-    background-color: white;
-    position:absolute;
+.tijera1 {
+  margin-left: -280px;
+  margin-top: 40px;
+  width: 8%;
+  height: 150px;
+  display: flex;
+  border: 20px solid hsl(39, 89%, 49%);
+  justify-content: center;
+  align-items: center;
+  border-radius: 190px;
+  background-color: white;
+  position: absolute;
+}
+*/
+
+.imagen svg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 90px;
+  margin-left: 120px;
 }
 
-.imagen svg{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 90px;
-    margin-left: 120px;
-}
-
-.contenedorsub3{
-  width: 70%;
+.contenedorsub3 {
+  width: 100%;
   height: 35px;
-  margin-left: 750px;
+  margin-left: 484px;
   border: 1px solid white;
   border-radius: 7px;
-  margin-top: 300px;
-  background-color:#03071e;
-} 
+  margin-top: 380px;
+  background-color: #03071e;
+}
 
-.contenedorsub3 button{
+.contenedorsub3 button {
   width: 100%;
   height: 33px;
   border-radius: 7px;
@@ -311,62 +301,63 @@ body {
   color: white;
 }
 
-.ssubcontenedor3{
+.ssubcontenedor3 {
   background-color: white;
   width: 410px;
   height: 420px;
   font-size: 1.4em;
+  margin-left: 70px;
   position: absolute;
   left: -2000px;
   top: 200px;
-  margin: 0;
   border-radius: 10px;
 }
 
-.ssubcontenedor3 svg{
-  margin-top: 50px;
+.ssubcontenedor3 svg {
+  margin-top: 10px;
   margin-left: 50px;
 }
 
-.reglas{
+.regla{
   width: 150px;
   height: 60px;
   display: flex;
   flex-wrap: wrap;
   font-size: 30px;
-  color: white;
-  background-color: #03071e;
-  margin-top: 40px;
+  color: #03071e;
+  margin-top: 30px;
   margin-left: 40px;
   border-radius: 10px;
 }
 
-.ssubcontenedor3 button{
+.ssubcontenedor3 button {
   position: relative;
-  margin-top: 20px;
+  margin-top: -70px;
   font-size: 30px;
   border: none;
   text-align: center;
-  margin-left: 290px;
+  margin-left: 300px;
   background: transparent;
-  color:rgb(172, 172, 172)
+  color: rgb(172, 172, 172);
 }
 
-.titulo2{
+
+.titulo2 {
   width: 90%;
   height: 30px;
   display: flex;
   margin-left: -250px;
+  margin-top: 20px;
   font-size: 20px;
   color: white;
   border-radius: 10px;
 }
 
-.titulo3{
+.titulo3 {
   width: 100%;
   height: 30px;
   display: flex;
-  margin-top: -240px;
+  margin-top: -290px;
   margin-left: 280px;
   font-size: 20px;
   color: white;
@@ -384,15 +375,15 @@ body {
   text-align: center;
   justify-content: center;
   border-radius: 10px;
-  background-color: white
+  background-color: white;
 }
 
-.jugar:hover{
+.jugar:hover {
   color: black;
   color: red;
 }
 
-.perdedor{
+.resultado {
   margin: 0;
   padding: 0;
   height: 70px;
@@ -406,13 +397,4 @@ body {
   margin-left: -80px;
   border-radius: 10px;
   color: white;
-}
-
-.ganador{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  background-color: aqua;
-  display: none;
 }
