@@ -6,23 +6,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    height: 100vh;
-}
-
 .caja-todo {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: hsl(230, 25%, 95%);
 }
 
 header {
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 85%;
+    width: 100%;
     height: 100px;
 }
 
@@ -50,7 +48,7 @@ header figure {
 }
 
 .enlaces a {
-    color:hsl(257, 7%, 63%);
+    color: hsl(257, 7%, 63%);
     font-weight: 600;
     text-decoration: none;
     font-size: 15px;
@@ -66,7 +64,8 @@ header figure {
     justify-content: center;
     gap: 5px;
 }
-.enlace-login button{
+
+.enlace-login button {
     font-size: 12px;
     padding: 7px 20px;
     border-radius: 25px;
@@ -74,40 +73,54 @@ header figure {
     font-size: 15px;
 }
 
-.login{
+.login {
     border: none;
     background: transparent;
     color: hsl(257, 7%, 63%);
 }
 
-.sign{
+.sign {
     border: none;
     background: hsl(180, 66%, 49%);
     color: white;
 }
 
-.more{
-    width: 78%;
-    min-height: 500px;
+.more {
+    background-image: url(url-shortening-api-master/images/illustration-working.png);
+    background-repeat: no-repeat;
+    background-position: 600px 0px;
+    background-color: white;
+    width: 100%;
+    min-height: 650px;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
 }
 
-.more h1{
+.more h1 {
+    position: relative;
+    top: -30px;
+    margin-left: 100px;
     width: 600px;
     font-size: 66px;
     line-height: 80px;
-    color:  hsl(255, 11%, 22%);
+    color: hsl(255, 11%, 22%);
 }
-.more p{
+
+.more p {
+    position: relative;
+    top: -30px;
+    margin-left: 100px;
     width: 500px;
     font-size: 20px;
     color: hsl(257, 7%, 63%);
 }
 
-.more button{
+.more button {
+    position: relative;
+    top: -30px;
+    margin-left: 100px;
     width: 180px;
     padding: 0 3px;
     height: 50px;
@@ -119,23 +132,24 @@ header figure {
     color: white;
 }
 
-.url{
+.url {
+    background-image: url("url-shortening-api-master/images/bg-boost-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 150px;
     width: 80%;
-    background: hsl(257, 27%, 26%);
+    background-color: hsl(257, 27%, 26%);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
     border-radius: 10px;
+    position: relative;
+    top: -80px;
 }
-.url svg{
-}
 
-
-
-.url input{
+.url input {
     position: relative;
     width: 70%;
     padding: 20px 20px;
@@ -145,7 +159,7 @@ header figure {
     font-weight: 500;
 }
 
-.url button{
+.url button {
     position: relative;
     padding: 15px 45px;
     border-radius: 10px;
@@ -154,4 +168,192 @@ header figure {
     font-size: 17px;
     background: hsl(180, 66%, 49%);
     color: white;
+}
+
+.caja-estadisticas {
+    width: 100%;
+    height: 600px;
+}
+
+.estadisticas {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+}
+
+.estadisticas h3 {
+    font-size: 30px;
+}
+
+.estadisticas p {
+    color: hsl(257, 7%, 63%);
+    font-size: 15px;
+    width: 38%;
+    text-align: center;
+}
+
+.cajitas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+.cajita {
+    background: white;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cajita h5 {
+    position: relative;
+    top: -23px;
+    width: 82%;
+    font-size: 20px;
+}
+
+.cajita p {
+    position: relative;
+    top: -23px;
+    width: 82%;
+    color: hsl(257, 7%, 63%);
+    font-size: 13px;
+}
+
+.cajita figure {
+    position: relative;
+    top: -45px;
+    left: -85px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: hsl(257, 27%, 26%);
+}
+
+.uno figure {
+    background-image: url(url-shortening-api-master/images/icon-brand-recognition.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dos figure {
+    background-image: url(url-shortening-api-master/images/icon-detailed-records.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tres figure {
+    background-image: url(url-shortening-api-master/images/icon-fully-customizable.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dos {
+    position: relative;
+    top: 30px;
+}
+
+.tres {
+    position: relative;
+    top: 60px;
+}
+
+.boost {
+    width: 100%;
+    height: 200px;
+    background-image: url(url-shortening-api-master/images/bg-boost-desktop.png);
+    background-color: hsl(257, 27%, 26%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.boost h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.boost button {
+    font-size: 12px;
+    padding: 9px 22px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    background: hsl(180, 66%, 49%);
+    color: white;
+}
+
+.pie {
+    background-color: hsl(260, 8%, 14%);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.pie-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 60%;
+    height: 100%;
+}
+
+.feature,
+.resources,
+.company {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.redes {
+    width: 20%;
+    display: flex;
+    gap: 15px;
+}
+
+.feature p,
+.resources p,
+.company p {
+    font-weight: 600;
+}
+
+.feature ul,
+.resources ul,
+.company ul {
+    list-style: none;
+    font-size: 14px;
+    color: hsl(257, 7%, 63%)
+}
+
+.feature li,
+.resources li,
+.company li {
+    margin-bottom: 10px;
 }
