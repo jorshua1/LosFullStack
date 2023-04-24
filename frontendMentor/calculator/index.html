@@ -8,31 +8,31 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
     <title>Calculator</title>
 </head>
 
 <body>
     <div class="main">
         <div class="left">
-            <form action="">
+           
                 <label for="bill" class="labels">Bill</label>
                 <br>
-                <input type="number" id="bill" name="factura" placeholder="0">
+                <input type="text" id="bill"  oninput="validarValor()" placeholder="0">
                 <br>
                 <label class="labels" for="botones">Select Tip%</label>
                 <div>
-                    <button>5%</button>
-                    <button>10%</button>
-                    <button>20%</button>
-                    <button>25%</button>
-                    <button>50%</button>
-                    <button>Custom</button>
+                    <button id="cinco" onclick="calcularPorcentaje(5)" disabled>5%</button>
+                    <button id="diez" onclick="calcularPorcentaje(10)" disabled>10%</button>
+                    <button id="viente" onclick="calcularPorcentaje(15)" disabled>15%</button>
+                    <button id="vecinco" onclick="calcularPorcentaje(25)" disabled>25%</button>
+                    <button id="cincuenta" onclick="calcularPorcentaje(50)" disabled>50%</button>
+                   <input  oninput="calcularOtroPorcentaje()"type="text" id="otro" placeholder="Custom" disabled>
                 </div>
                 <label for="people" class="labels">Number of people</label><br>
-                <input type="number" id="people" name="personas" placeholder="0">
-            </form>
+                <input  oninput="pagoPorPersona()"type="text" id="people" name="personas" placeholder="0">
+
 
         </div>
         <div class="rigth">
@@ -41,19 +41,19 @@
                     <strong>/person</strong>
                 </p>
                 <input type="text" id="amount" placeholder="$0.00">
-            </div>
-            
-            <div class="total">
+             </div>
+
+             <div class="total">
                 <p>Total <br>
                     <strong>/person</strong>
                 </p>
-                <input type="text" id="totalP"    placeholder="$0.00">
-                
+                <input type="text" id="totalP" placeholder="$0.00">
 
-            </div>
-           <button class="reset">RESET</button>
+
+             </div>
+             <button id="reset">RESET</button>
+
             
-
 
         </div>
     </div>

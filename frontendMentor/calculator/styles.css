@@ -31,7 +31,7 @@ body {
     width: 50%;
     background-color: hsl(183, 100%, 15%);
     border-radius: 5%;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Space Mono', monospace; 
 }
 
 label {
@@ -41,7 +41,7 @@ label {
 }
 
 input {
-    background-color: hsl(185, 41%, 84%);
+    background-color:hsl(185, 41%, 84%);
     text-align: right;
     width: 85%;
     border-radius: 6px;
@@ -76,6 +76,19 @@ button {
     border-radius: 10px;
     font-family: 'Space Mono', monospace;
     font-size: 20px;
+}
+#otro{
+    width: 15%;
+    background-color: hsl(189, 41%, 97%);
+    color:hsl(183, 100%, 15%);
+    cursor: pointer;
+    padding: 12px 28px;
+    margin: 3% 3% 2% 0%;
+    border-radius: 10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    text-align: center;
+    
 }
 .amount{
     margin-left: 10%;
@@ -115,15 +128,18 @@ button {
    
     
 }
-.reset{
+#reset{
     height: 15%;
     width: 70%;
     background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
     display: flex;
     align-items: center;
     justify-content: center;
-  margin-left: 15%;
-    
-   
+  margin-left: 15%;  
+}
+::placeholder{
+    color: hsl(172, 67%, 45%);
+    align-items: center;
 }
 
