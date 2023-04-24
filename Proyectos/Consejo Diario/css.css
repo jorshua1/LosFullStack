@@ -1,0 +1,60 @@
+@media screen and (max-width: 375px) {
+  body {
+    width: 85% !important;
+    padding: 1px 19px 15px !important;
+  }
+  #imagenPausa{
+    height: 17px !important;
+    width: 247px !important;
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 800px;
+  background: hsl(218deg, 23%, 16%);
+  padding: 15px;
+  font-family: "Manrope", sans-serif;
+}
+
+.padre {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: hsl(217deg, 19%, 24%);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.padre span {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+}
+
+#i {
+  font-size: 17px;
+  color:hsl(150deg, 100%, 66%);
+}
+
+.padre button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  padding: 6.9px;
+  height: 38px;
+  width: 38px;
+  border-radius: 19%;
+  background-color: hsl(150deg, 100%, 66%);
+  border: none;
+}
