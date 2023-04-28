@@ -149,4 +149,25 @@ opacity: 0.6;
     .grid{
         grid-template-columns: repeat(1, minmax(0,1fr)) !important;
     }
+    .navbar {
+        font-size: .7rem;
+    }
+
+    .filter-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    
+    .form-search {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .form-search input{
+        width: 85%;
+    }
 }

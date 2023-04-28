@@ -16,3 +16,7 @@ btnDark.addEventListener('click', () =>{
         `
     }
 })
+
+
+// Filtro de Busqueda
+// 
