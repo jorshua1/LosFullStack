@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript">
+            //Selecciono el elemento con el id app
+            const app = document.getElementById('app');
+
+            //Creo un elemento h1
+            const header = document.createElement('h1');
+
+            // Creo un nuevo nodo de texto para el h1
+            const texto = "Desarrollar. Previsualizar. Implementar."
+            const text = document.createTextNode(texto);
+
+            //Agrego el nodo de texto al h1
+            header.appendChild(text);
+
+            //Agrego el h1 al div con el id app
+            app.appendChild(header);
+            
+        </script>
+    </body>
+</html>
